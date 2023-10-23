@@ -55,7 +55,7 @@ public class KnobMove : MonoBehaviour
         Vector3 localScale = knobRectTransform.localScale; // Get the local scale factor
         float scaleX = localScale.x;
         
-        // Calculate the Radius of the Circle that has this script attached
+        // Calculate the Radius of the Nob
         knobRadius = circleRectTransform.sizeDelta.x * 0.5f * scaleX; 
     }
 
@@ -91,8 +91,8 @@ public class KnobMove : MonoBehaviour
     {
         var radians = Mathf.Deg2Rad * angle;
         
-         knobX = centerPos.x + circleRadius * Mathf.Cos(radians);
-         knobY = centerPos.y + circleRadius * Mathf.Sin(radians);
+         knobX = centerPos.x + (circleRadius-knobRadius) * Mathf.Cos(radians);
+         knobY = centerPos.y + (circleRadius-knobRadius) * Mathf.Sin(radians);
     }
     
     private void MoveKnob()
