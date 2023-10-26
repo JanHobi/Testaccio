@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityMeshSimplifier;
+using TMPro;
 
 public class MeshSimplification : MonoBehaviour
 {
     [Range(0f, 1f)]
     public float quality = 0.5f;
+    public TextMeshPro textMeshPro;
+    public int progress;
 
     private MeshFilter meshFilter;
     private Mesh originalMesh; // Store a reference to the original mesh
@@ -18,6 +21,7 @@ public class MeshSimplification : MonoBehaviour
     void Update()
     {
         SimplifyMesh();
+        textMeshPro.text = "Score: " + progress.ToString();
     }
 
     void SimplifyMesh()
