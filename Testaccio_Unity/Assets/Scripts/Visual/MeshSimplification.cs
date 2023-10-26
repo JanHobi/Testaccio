@@ -4,39 +4,51 @@ using TMPro;
 
 public class MeshSimplification : MonoBehaviour
 {
+    // public
     [Range(0f, 1f)]
-    public float quality = 0.5f;
-    public TextMeshPro textMeshPro;
-    public int progress;
+    [SerializeField] public float quality = 0.5f;
+    [SerializeField] public TextMeshProUGUI textField;
+    [SerializeField] public string objectName;
 
+    // private
     private MeshFilter meshFilter;
-    private Mesh originalMesh; // Store a reference to the original mesh
+    private Mesh originalMesh;
+    private float progress = 0f;
 
     void Start()
     {
         meshFilter = GetComponent<MeshFilter>();
-        originalMesh = meshFilter.mesh; // Store the original mesh
+        originalMesh = meshFilter.mesh;
     }
 
     void Update()
     {
         SimplifyMesh();
-        textMeshPro.text = "Score: " + progress.ToString();
+        ObjectUpdater();
     }
 
+    // simplifies the mesh with the MeshSimplifier package
     void SimplifyMesh()
     {
-        Mesh mesh = originalMesh; // Use the original mesh for simplification
+        Mesh mesh = originalMesh;
         MeshSimplifier simplifier = new MeshSimplifier();
         simplifier.Initialize(mesh);
         simplifier.SimplifyMesh(quality);
         meshFilter.mesh = simplifier.ToMesh();
     }
 
-    // Function to revert back to the original mesh
+    // updates the objects name and formats the quality into progress
+    void ObjectUpdater()
+    {
+        progress = quality * 100f;
+        progress = Mathf.Round(progress);
+        textField.text = objectName + ": " + progress.ToString() + "%";
+    }
+
+    // revert back to the original mesh
     [ContextMenu("Revert to Original Mesh")]
     public void RevertToOriginalMesh()
     {
-        meshFilter.mesh = originalMesh; // Set the mesh back to the original mesh
+        meshFilter.mesh = originalMesh;
     }
 }
