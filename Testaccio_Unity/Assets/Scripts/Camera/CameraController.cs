@@ -2,14 +2,16 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform target;  // The game object to rotate around
-    public float rotationSpeed = 1f;
-    public float zoomSpeed = 5f; // Zoom speed
-    public float minZoomDistance = 2f; // Minimum distance from the target
-    public float maxZoomDistance = 10f; // Maximum distance from the target
-    public Vector3 targetOffset; // Offset from the target's position
+    // public
+    [SerializeField] public Transform target;
+    [SerializeField] public float rotationSpeed = 1f;
+    [SerializeField] public float zoomSpeed = 5f;
+    [SerializeField] public float minZoomDistance = 2f;
+    [SerializeField] public float maxZoomDistance = 10f;
+    [SerializeField] public Vector3 targetOffset;
+    [SerializeField] public float currentZoomDistance;
 
-    public float currentZoomDistance;
+    // private
     private Vector3 offset;
 
     void Start()
