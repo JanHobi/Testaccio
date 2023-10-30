@@ -42,7 +42,7 @@ public class MeshSimplification : MonoBehaviour
     {
         progress = quality * 100f;
         progress = Mathf.Round(progress);
-        textField.text = objectName + ": " + progress.ToString() + "%";
+        textField.text = "<font=" + "LiberationSans SDF" + ">" + "<mark=#46FF00>" + objectName + ": " + progress.ToString() + "%" + "</mark>";
     }
 
     // revert back to the original mesh
