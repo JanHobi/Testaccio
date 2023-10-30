@@ -831,94 +831,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3992751666792777949, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3992751666792777949, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3992751666792777949, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2110776834}
-    - target: {fileID: 3992751666792777949, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3992751666792777949, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Size2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3992751666792777949, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UI.CircleSizeChange, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3992751666792777949, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452073256120301905, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452073256120301905, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452073256120301905, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2110776834}
     - target: {fileID: 4452073256120301905, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452073256120301905, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Size1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452073256120301905, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UI.CircleSizeChange, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452073256120301905, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6554005100778485193, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2110776834}
     - target: {fileID: 6554005100778485193, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Size4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6554005100778485193, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UI.CircleSizeChange, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6554005100778485193, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2110776834}
     - target: {fileID: 6561203843771012488, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
         type: 3}
       propertyPath: m_Name
@@ -926,39 +851,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9057479494753965258, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9057479494753965258, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9057479494753965258, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2110776834}
-    - target: {fileID: 9057479494753965258, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9057479494753965258, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Size3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9057479494753965258, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UI.CircleSizeChange, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9057479494753965258, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -967,6 +862,24 @@ PrefabInstance:
 --- !u!224 &1406246262 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3217175774858275726, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1406246261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1406246263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6554129164188641239, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1406246261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1406246264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4520628103182781197, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1406246261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1406246265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3359947820872042249, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
     type: 3}
   m_PrefabInstance: {fileID: 1406246261}
   m_PrefabAsset: {fileID: 0}
@@ -1088,6 +1001,12 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &1542604940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6908084209456008686, guid: 2ac8d2221d43b104d93d54afa4cf3bd3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1406246261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1600320123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1368,11 @@ MonoBehaviour:
   - 1
   - 1.5
   - 2
+  allButtonFillings:
+  - {fileID: 1542604940}
+  - {fileID: 1406246265}
+  - {fileID: 1406246264}
+  - {fileID: 1406246263}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
