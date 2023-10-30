@@ -1,18 +1,39 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CircleSizeChange : MonoBehaviour
+namespace UI
 {
-    // Start is called before the first frame update
-    void Start()
+    public class CircleSizeChange : MonoBehaviour
     {
-        
-    }
+        [HideInInspector] public float activeCircleSize ;
 
-    // Update is called once per frame
-    void Update()
-    {
+        [SerializeField] private float[] allCircleSizes = new float[4];
+        // Start is called before the first frame update
+        void Start()
+        {
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
         
+        }
+
+        public void Size1()
+        {
+            activeCircleSize = allCircleSizes[1];
+        }
+        public void Size2()
+        {
+            activeCircleSize = allCircleSizes[2];;
+        }
+        public void Size3()
+        {
+            activeCircleSize = allCircleSizes[3];;
+        }
+        public void Size4()
+        {
+            activeCircleSize = allCircleSizes[4];;
+        }
     }
 }

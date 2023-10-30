@@ -384,7 +384,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2922874491450421728}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI.CircleSizeChange, Assembly-CSharp
+        m_MethodName: Size3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &2090586395421395234 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3345964886314696409, guid: 2bc3292ea807e8d4bb6f8304f4f1bab5,
@@ -607,12 +619,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: UI.CircleSizeChange, Assembly-CSharp
+        m_MethodName: Size4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -832,7 +844,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2725959543471133785}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI.CircleSizeChange, Assembly-CSharp
+        m_MethodName: Size2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2725959543471133785 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2016524989387179547, guid: 2bc3292ea807e8d4bb6f8304f4f1bab5,
@@ -1622,7 +1646,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7215126123533176420}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI.CircleSizeChange, Assembly-CSharp
+        m_MethodName: Size1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &5886808784092706470 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3345964886314696409, guid: 2bc3292ea807e8d4bb6f8304f4f1bab5,
