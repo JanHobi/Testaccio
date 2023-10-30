@@ -52,21 +52,23 @@ public class KnobMove : MonoBehaviour
     
     private void CalculateKnobRadius()
     {
-        Vector3 localScale = knobRectTransform.localScale; // Get the local scale factor
-        float scaleX = localScale.x;
-        
+        Vector3 worldscale = knobRectTransform.lossyScale; // Get the local scale factor
+        float worldScaleX = worldscale.x; // only take the x-scale factor and put it into a float
+
         // Calculate the Radius of the Nob
-        knobRadius = circleRectTransform.sizeDelta.x * 0.5f * scaleX; 
+        knobRadius = knobRectTransform.sizeDelta.x * 0.5f * worldScaleX; 
+        
     }
 
     private void CalculateCircleRadius()
     {
         // Calculate Big Circle Radius
-        Vector3 localScale = circleRectTransform.localScale; // Get the local scale factor
-        float scaleX = localScale.x;
+        Vector3 worldscale = circleRectTransform.lossyScale; // Get the local scale factor
+        float worldScaleX = worldscale.x; // only take the x-scale factor and put it into a float
         
         // Calculate the Radius of the Circle that has this script attached
-        circleRadius = circleRectTransform.sizeDelta.x * 0.5f * scaleX; 
+        circleRadius = circleRectTransform.sizeDelta.x * 0.5f * worldScaleX; 
+        
     }
     
     private void GetPlayerInputData()
@@ -89,10 +91,11 @@ public class KnobMove : MonoBehaviour
 
     private void KnobToCenterDistance()
     {
+        // Convert angle to radians (in order to be able to use Sin und Cos)
         var radians = Mathf.Deg2Rad * angle;
         
-         knobX = centerPos.x + (circleRadius-knobRadius) * Mathf.Cos(radians);
-         knobY = centerPos.y + (circleRadius-knobRadius) * Mathf.Sin(radians);
+         knobX = centerPos.x + circleRadius * Mathf.Cos(radians);
+         knobY = centerPos.y + circleRadius * Mathf.Sin(radians);
     }
     
     private void MoveKnob()
