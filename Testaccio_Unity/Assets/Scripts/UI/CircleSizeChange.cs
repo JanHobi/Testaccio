@@ -11,6 +11,8 @@ namespace UI
         [SerializeField] private float[] allCircleSizes = new float[4];
 
         [SerializeField] private GameObject[] allButtonFillings = new GameObject[4];
+
+        [SerializeField] private Transform selectedCircle;
         
         // Start is called before the first frame update
         void Start()
@@ -34,15 +36,21 @@ namespace UI
             if (index >= 0 && index <= allButtonFillings.Length)
             {
                 DeactivateAllButtonFillings();
-                Debug.Log("index: " + index);
                 allButtonFillings[index].SetActive(true); // Activate the specific button's filling
                 activeCircleSize = allCircleSizes[index]; // Set the new Size of the Circle
+                
+                ApplyCircleSize();
             }
             else
             {
                 Debug.LogError("Index out of range: " + index);
             }
-            
+
+            void ApplyCircleSize()
+            {
+                selectedCircle.localScale = new Vector3(activeCircleSize, activeCircleSize, activeCircleSize);
+            }
+
         }
 
         public void Size1()

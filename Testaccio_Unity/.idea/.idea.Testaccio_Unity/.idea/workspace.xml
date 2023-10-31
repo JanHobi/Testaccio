@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/UISize.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/UISize.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CircleSizeChange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CircleSizeChange.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +60,8 @@
       <workItem from="1697707369875" duration="3053000" />
       <workItem from="1697790690928" duration="4494000" />
       <workItem from="1698045662747" duration="13164000" />
-      <workItem from="1698656483901" duration="4426000" />
+      <workItem from="1698656483901" duration="4773000" />
+      <workItem from="1698756808685" duration="784000" />
     </task>
     <servers />
   </component>
