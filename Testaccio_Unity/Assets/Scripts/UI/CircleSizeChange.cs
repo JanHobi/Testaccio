@@ -13,6 +13,8 @@ namespace UI
         [SerializeField] private GameObject[] allButtonFillings = new GameObject[4];
 
         [SerializeField] private Transform selectedCircle;
+   
+        
         
         // Start is called before the first frame update
         void Start()
@@ -49,8 +51,15 @@ namespace UI
             void ApplyCircleSize()
             {
                 selectedCircle.localScale = new Vector3(activeCircleSize, activeCircleSize, activeCircleSize);
+
+                // Now change the active Circle's Position slightly so they still overlap only on one point
+                AdjustCirclePos();
             }
 
+        }
+
+        private void AdjustCirclePos()
+        {
         }
 
         public void Size1()
