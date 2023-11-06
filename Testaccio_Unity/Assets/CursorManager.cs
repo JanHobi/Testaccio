@@ -5,7 +5,7 @@ public class CursorManager : MonoBehaviour
 {
     // public
     [SerializeField] public Texture2D hoverCursor;
-    [SerializeField] public Texture2D pressedCursor; // New cursor texture for click state
+    [SerializeField] public Texture2D pressedCursor;
 
     // private
     private Vector2 cursorHotspot;
