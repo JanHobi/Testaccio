@@ -34,57 +34,35 @@ namespace UnityEngine.UI.Extensions
             {
                 return;
             }
-            //Performance check to only redraw when the child transforms move
-            if (previousPositions != null && previousPositions.Length == transforms.Length)
+
+            // Calculate positions based on bottom right corner of RectTransform at index 1
+            Vector3 bottomRightCorner = transforms[1].TransformPoint(new Vector3(1f, 0f, 0f));
+            Vector3[] points = new Vector3[transforms.Length];
+            
+            for (int i = 0; i < transforms.Length; i++)
             {
-                bool updateLine = false;
-                for (int i = 0; i < transforms.Length; i++)
+                // Use bottom right corner position for index 1, original pivot points for other indices
+                if (i == 1)
                 {
-                    if (!updateLine && previousPositions[i] != transforms[i].position)
-                    {
-                        updateLine = true;
-                    }
+                    points[i] = bottomRightCorner;
                 }
-                if (!updateLine) return;
+                else
+                {
+                    points[i] = transforms[i].TransformPoint(transforms[i].pivot);
+                }
             }
 
-            // Get the pivot points
-            Vector2 thisPivot = rt.pivot;
-            Vector2 canvasPivot = canvas.pivot;
-
-            // Set up some arrays of coordinates in various reference systems
-            Vector3[] worldSpaces = new Vector3[transforms.Length];
-            Vector3[] canvasSpaces = new Vector3[transforms.Length];
-            Vector2[] points = new Vector2[transforms.Length];
-
-            // First, convert the pivot to worldspace
+            // Convert points to canvas space
+            Vector2[] canvasPoints = new Vector2[transforms.Length];
             for (int i = 0; i < transforms.Length; i++)
             {
-                worldSpaces[i] = transforms[i].TransformPoint(thisPivot);
+                canvasPoints[i] = canvas.InverseTransformPoint(points[i]);
             }
 
-            // Then, convert to canvas space
-            for (int i = 0; i < transforms.Length; i++)
-            {
-                canvasSpaces[i] = canvas.InverseTransformPoint(worldSpaces[i]);
-            }
-
-            // Calculate delta from the canvas pivot point
-            for (int i = 0; i < transforms.Length; i++)
-            {
-                points[i] = new Vector2(canvasSpaces[i].x, canvasSpaces[i].y);
-            }
-
-            // And assign the converted points to the line renderer
-            lr.Points = points;
+            // Assign the converted points to the line renderer
+            lr.Points = canvasPoints;
             lr.RelativeSize = false;
             lr.drivenExternally = true;
-
-            previousPositions = new Vector3[transforms.Length];
-            for (int i = 0; i < transforms.Length; i++)
-            {
-                previousPositions[i] = transforms[i].position;
-            }
         }
     }
 }
