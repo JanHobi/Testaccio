@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3735816549587160245
+--- !u!1001 &6945947756586372266
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -50,21 +50,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3584091649628817176, guid: 4e84b8fd5703f784eabe8f07746bcade,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3584091649628817176, guid: 4e84b8fd5703f784eabe8f07746bcade,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3584091649628817176, guid: 4e84b8fd5703f784eabe8f07746bcade,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3584091649628817176, guid: 4e84b8fd5703f784eabe8f07746bcade,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -101,12 +86,12 @@ PrefabInstance:
     - target: {fileID: 3584091649628817176, guid: 4e84b8fd5703f784eabe8f07746bcade,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -600
+      value: -585.7
       objectReference: {fileID: 0}
     - target: {fileID: 3584091649628817176, guid: 4e84b8fd5703f784eabe8f07746bcade,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 490
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3584091649628817176, guid: 4e84b8fd5703f784eabe8f07746bcade,
         type: 3}
@@ -123,25 +108,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3854314691959504804, guid: 4e84b8fd5703f784eabe8f07746bcade,
-        type: 3}
-      propertyPath: m_text
-      value: QUIT
-      objectReference: {fileID: 0}
     - target: {fileID: 5120483118086905206, guid: 4e84b8fd5703f784eabe8f07746bcade,
         type: 3}
       propertyPath: m_Name
-      value: QuitButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 5120483118086905206, guid: 4e84b8fd5703f784eabe8f07746bcade,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5390541306781843313, guid: 4e84b8fd5703f784eabe8f07746bcade,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: Button
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

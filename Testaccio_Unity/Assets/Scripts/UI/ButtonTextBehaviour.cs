@@ -22,6 +22,7 @@ public class ButtonTextBehaviour : MonoBehaviour
     {
         buttonText.text = buttonText.text.Replace("<u>", "");
         buttonText.text = buttonText.text.Replace("</u>", "");
+        buttonText.text = buttonText.text.Replace("<mark=#46FF00>", "</mark>");
     }
 
     public void ClickButton()

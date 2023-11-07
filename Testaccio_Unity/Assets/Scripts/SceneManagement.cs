@@ -24,4 +24,20 @@ public class SceneManagement : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+    }
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1;
+        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetActiveScene().buildIndex -1));
+    }
 }
