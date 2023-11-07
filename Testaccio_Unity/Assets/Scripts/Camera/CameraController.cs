@@ -41,6 +41,6 @@ public class CameraController : MonoBehaviour
         transform.position = desiredPosition;
         transform.LookAt(target.position + targetOffset);
 
-        Debug.Log(currentZoomDistance);
+        //Debug.Log(currentZoomDistance);
     }
 }
