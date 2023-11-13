@@ -223,4 +223,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 4894791168085898129}
-  fadeSpeed: 0.8
+  fadeSpeed: 0.4
