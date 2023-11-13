@@ -80,8 +80,11 @@ public class KnobMove : MonoBehaviour
     {
         if (stopCircling)
             return;
+
+        float distancePerFrame = rotationSpeed * Time.deltaTime;
+
         
-        angle += Time.deltaTime * rotationSpeed;
+        angle += distancePerFrame / circleRadius;
          
         if (angle > 360.0f)
         {
