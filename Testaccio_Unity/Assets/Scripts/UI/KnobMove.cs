@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UI;
 using Unity.VisualScripting;
 using UnityEngine.UIElements;
 
@@ -84,7 +85,7 @@ public class KnobMove : MonoBehaviour
         float distancePerFrame = rotationSpeed * Time.deltaTime;
 
         
-        angle += distancePerFrame / circleRadius;
+        angle += (distancePerFrame / circleRadius) * 1000;
          
         if (angle > 360.0f)
         {
