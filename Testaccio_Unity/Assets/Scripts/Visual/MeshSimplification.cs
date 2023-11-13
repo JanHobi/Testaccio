@@ -9,22 +9,26 @@ public class MeshSimplification : MonoBehaviour
     [SerializeField] public float quality = 0.5f;
     [SerializeField] public TextMeshProUGUI textField;
     [SerializeField] public string objectName;
+    [SerializeField] public float offsetQuality;
 
     // private
     private MeshFilter meshFilter;
     private Mesh originalMesh;
     private float progress = 0f;
+    private Animator animator;
 
     void Start()
     {
         meshFilter = GetComponent<MeshFilter>();
         originalMesh = meshFilter.mesh;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         SimplifyMesh();
         ObjectUpdater();
+        AnimationSync();
     }
 
     // simplifies the mesh with the MeshSimplifier package
@@ -43,6 +47,13 @@ public class MeshSimplification : MonoBehaviour
         progress = quality * 100f;
         progress = Mathf.Round(progress);
         textField.text = "<font=" + "Roboto-Medium SDF" + ">" + "<mark=#46FF00>" + " " + objectName + ": " + progress.ToString() + "% " + "</mark>";
+    }
+
+    public void AnimationSync()
+    {
+        AnimatorStateInfo animState = animator.GetCurrentAnimatorStateInfo(0);
+        float currentTime = animState.normalizedTime % 1;
+        quality = currentTime;
     }
 
     // revert back to the original mesh
