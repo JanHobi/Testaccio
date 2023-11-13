@@ -388,7 +388,7 @@ PrefabInstance:
     - target: {fileID: 5897238250168022473, guid: eb076d85fb2a26547976f0d2add3c671,
         type: 3}
       propertyPath: rotationSpeed
-      value: 5000
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_useNativeSize: 0
   m_points:
   - {x: 1, y: -19.200012}
-  - {x: 649.8601, y: -60.799988}
+  - {x: 601.69104, y: 47.409973}
   lineThickness: 50
   relativeSize: 0
   lineList: 0
@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_useNativeSize: 0
   m_points:
   - {x: 1, y: -19.200012}
-  - {x: 495.53003, y: -60.799988}
+  - {x: 447.36108, y: 47.409973}
   lineThickness: 50
   relativeSize: 0
   lineList: 0
@@ -1496,7 +1496,7 @@ PrefabInstance:
     - target: {fileID: 5897238250168022473, guid: eb076d85fb2a26547976f0d2add3c671,
         type: 3}
       propertyPath: rotationSpeed
-      value: 5000
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
