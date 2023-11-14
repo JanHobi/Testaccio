@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/UIRhythm.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/UIRhythm.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CircleSizeChange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CircleSizeChange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/KnobPlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/KnobPlayerInput.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +62,7 @@
       <workItem from="1698656483901" duration="4773000" />
       <workItem from="1698756808685" duration="2468000" />
       <workItem from="1699878450965" duration="3676000" />
-      <workItem from="1699963431177" duration="1537000" />
+      <workItem from="1699963431177" duration="2545000" />
     </task>
     <servers />
   </component>
