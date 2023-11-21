@@ -1221,6 +1221,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CirclesCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5970777193423767944, guid: 0be0745b7cd0847f09003480cdd6988e,
+        type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6193665838772652438, guid: 0be0745b7cd0847f09003480cdd6988e,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -9,7 +9,7 @@ namespace UI
         private float knobY;
     
         [SerializeField] private float rotationSpeed = 200;
-        private bool stopCircling;
+        [HideInInspector] public static bool stopCircling;
         [HideInInspector] public float angle;
     
         private float circleRadius;

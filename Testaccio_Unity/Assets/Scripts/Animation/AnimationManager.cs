@@ -10,7 +10,7 @@ namespace Animation
     {
         private float animationPosition;
 
-        [SerializeField] private KnobMove activeCircle;
+        public KnobMove activeCircle;
         private SelectAnimator selectAnimator;
         private Animator activeAnimator;
 
@@ -26,10 +26,10 @@ namespace Animation
             CalculateAnimationPosition();
             AndMakeItAlwaysPositive();
             GetSelectedAnimator();
+            ManipulateAnimator();
         }
 
-       
-
+        
         private void CalculateAnimationPosition()
         {
             animationPosition = ExtensionMethods.Remap(activeCircle.angle, 1, 360, 0, 1);
@@ -52,8 +52,11 @@ namespace Animation
         private void ManipulateAnimator()
         {
             AnimatorStateInfo animState = activeAnimator.GetCurrentAnimatorStateInfo(0);
-            float currentTime = animState.normalizedTime % 1;
-            animationPosition = currentTime;
+            float currentTime = animationPosition;
+            
+            // Set the animator's normalized time based on the calculated animationPosition
+            activeAnimator.Play(animState.fullPathHash, 0, currentTime);
+
         }
     }
 }

@@ -1,12 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Animation;
+using UI;
 using UnityEngine;
 
 public class SelectAnimator : MonoBehaviour
 {
     [SerializeField] private List<GameObject> interactableObjects;
     [HideInInspector] public Animator selectedAnimator;
+    private KnobMove knobMove;
+
+
+    private void Start()
+    {
+        KnobMove.stopCircling = true;
+    }
 
     // Update is called once per frame
     void Update()
@@ -30,6 +39,7 @@ public class SelectAnimator : MonoBehaviour
                     {
                       // Check if Object has Animator component
                       Animator animator = hit.transform.GetComponent<Animator>();
+                      KnobMove.stopCircling = false;
                       
                       if (animator != null)
                       {
