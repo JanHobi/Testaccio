@@ -9,9 +9,7 @@ namespace UI
         [HideInInspector] public float activeCircleSize ;
 
         [SerializeField] private float[] allCircleSizes = new float[4];
-
-        [SerializeField] private GameObject[] allButtonFillings = new GameObject[4];
-
+        
         [SerializeField] private Transform selectedCircle;
    
         
@@ -23,22 +21,12 @@ namespace UI
         }
         
         
-        // Deactivate all button fillings
-        private void DeactivateAllButtonFillings()
-        {
-            foreach (var filling in allButtonFillings)
-            {
-                filling.SetActive(false);
-            }
-        }
         
         // Activate the specific button filling and set activeCircleSize
         private void ActivateButtonFilling(int index)
         {
-            if (index >= 0 && index <= allButtonFillings.Length)
+            if (index >= 0 && index <= allCircleSizes.Length)
             {
-                DeactivateAllButtonFillings();
-                allButtonFillings[index].SetActive(true); // Activate the specific button's filling
                 activeCircleSize = allCircleSizes[index]; // Set the new Size of the Circle
                 
                 ApplyCircleSize();
