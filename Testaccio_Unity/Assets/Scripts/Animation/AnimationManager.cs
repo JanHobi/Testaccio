@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Calculations;
 using UI;
@@ -5,21 +6,29 @@ using UnityEngine;
 
 namespace Animation
 {
-    public class AnimationSpeed : MonoBehaviour
+    public class AnimationManager : MonoBehaviour
     {
         private float animationPosition;
 
         [SerializeField] private KnobMove activeCircle;
-        [SerializeField] private List<Animator> animators;
+        private SelectAnimator selectAnimator;
+        private Animator activeAnimator;
 
+        private void Start()
+        {
+            // Link
+            selectAnimator = GetComponent<SelectAnimator>();
+        }
 
         // Update is called once per frame
         void Update()
         {
             CalculateAnimationPosition();
             AndMakeItAlwaysPositive();
-
+            GetSelectedAnimator();
         }
+
+       
 
         private void CalculateAnimationPosition()
         {
@@ -33,6 +42,12 @@ namespace Animation
             {
                 animationPosition = 0;
             }
+        }
+        
+        private void GetSelectedAnimator()
+        {
+            activeAnimator = selectAnimator.selectedAnimator;
+            
         }
     }
 }
