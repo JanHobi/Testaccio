@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationSpeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationSpeed.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
       <workItem from="1698756808685" duration="2468000" />
       <workItem from="1699878450965" duration="3676000" />
       <workItem from="1699963431177" duration="3064000" />
-      <workItem from="1700558373705" duration="3500000" />
+      <workItem from="1700558373705" duration="5851000" />
     </task>
     <servers />
   </component>

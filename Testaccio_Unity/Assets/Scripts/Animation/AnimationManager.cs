@@ -47,7 +47,13 @@ namespace Animation
         private void GetSelectedAnimator()
         {
             activeAnimator = selectAnimator.selectedAnimator;
-            
+        }
+
+        private void ManipulateAnimator()
+        {
+            AnimatorStateInfo animState = activeAnimator.GetCurrentAnimatorStateInfo(0);
+            float currentTime = animState.normalizedTime % 1;
+            animationPosition = currentTime;
         }
     }
 }
