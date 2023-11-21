@@ -22,7 +22,15 @@ namespace UI
         private RectTransform knobRectTransform;
 
         private KnobPlayerInput knobPlayerInput;
+        
+        // Static instance to allow easy access to methods
+        private static KnobMove instance;
     
+        private void Awake()
+        {
+            instance = this;
+        }
+        
         // Start is called before the first frame update
         void Start()
         {
@@ -105,12 +113,12 @@ namespace UI
             knob.transform.position = new Vector3(knobX, knobY, 0);
         }
 
-        public void JumpToAnimator(Animator selectedAnimator)
+        public static void JumpToAnimator(Animator selectedAnimator)
         {
             // When the player selects a new object, the knob has to jump to the current frame of the animtion
-            if (selectedAnimator != null)
+            if (instance != null && selectedAnimator != null)
             {
-                angle = ExtensionMethods.Remap(selectedAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime, 0, 1, 1,
+                instance.angle = ExtensionMethods.Remap(selectedAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime, 0, 1, 1,
                     360);
             }
         }
