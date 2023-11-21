@@ -13,7 +13,6 @@ namespace Animation
         public KnobMove activeCircle;
         private SelectAnimator selectAnimator;
         private Animator activeAnimator;
-
         private void Start()
         {
             // Link
@@ -53,10 +52,9 @@ namespace Animation
         {
             AnimatorStateInfo animState = activeAnimator.GetCurrentAnimatorStateInfo(0);
             float currentTime = animationPosition;
-            
+
             // Set the animator's normalized time based on the calculated animationPosition
             activeAnimator.Play(animState.fullPathHash, 0, currentTime);
-
         }
     }
 }

@@ -9,7 +9,7 @@ public class SelectAnimator : MonoBehaviour
 {
     [SerializeField] private List<GameObject> interactableObjects;
     [HideInInspector] public Animator selectedAnimator;
-    private KnobMove knobMove;
+    [SerializeField] private KnobMove knobMove;
 
 
     private void Start()
@@ -45,6 +45,9 @@ public class SelectAnimator : MonoBehaviour
                       {
                           // Store the found Animator in the public variable
                           selectedAnimator = animator;
+                          
+                          // Jump the knob to the position of the selected animator's timeline
+                          knobMove.JumpToAnimator(selectedAnimator);
 
                           // The object is interactable and has an Animator component
                           Debug.Log("Clicked on an interactable object with an Animator component");

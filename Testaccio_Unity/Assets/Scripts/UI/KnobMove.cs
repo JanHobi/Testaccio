@@ -1,3 +1,5 @@
+using System;
+using Calculations;
 using UnityEngine;
 
 namespace UI
@@ -101,6 +103,16 @@ namespace UI
         private void MoveKnob()
         {
             knob.transform.position = new Vector3(knobX, knobY, 0);
+        }
+
+        public void JumpToAnimator(Animator selectedAnimator)
+        {
+            // When the player selects a new object, the knob has to jump to the current frame of the animtion
+            if (selectedAnimator != null)
+            {
+                angle = ExtensionMethods.Remap(selectedAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime, 0, 1, 1,
+                    360);
+            }
         }
     }
 }

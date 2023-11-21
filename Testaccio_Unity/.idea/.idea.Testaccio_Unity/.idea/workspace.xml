@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Boat.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Boat.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/KnobMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/KnobMove.cs" afterDir="false" />
@@ -13,6 +12,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,7 +75,7 @@
       <workItem from="1698756808685" duration="2468000" />
       <workItem from="1699878450965" duration="3676000" />
       <workItem from="1699963431177" duration="3064000" />
-      <workItem from="1700558373705" duration="9813000" />
+      <workItem from="1700558373705" duration="12021000" />
     </task>
     <servers />
   </component>
