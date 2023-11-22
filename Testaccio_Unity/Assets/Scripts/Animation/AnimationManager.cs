@@ -4,6 +4,7 @@ using Calculations;
 using UI;
 using UnityEngine;
 
+
 namespace Animation
 {
     public class AnimationManager : MonoBehaviour
@@ -13,6 +14,8 @@ namespace Animation
         public KnobMove activeCircle;
         private SelectAnimator selectAnimator;
         private Animator activeAnimator;
+        private Dictionary<Animator, float> allAnimationSizes = new Dictionary<Animator, float>();
+      
         private void Start()
         {
             // Link
@@ -24,7 +27,6 @@ namespace Animation
         {
             CalculateAnimationPosition();
             AndMakeItAlwaysPositive();
-            GetSelectedAnimator();
             ManipulateAnimator();
         }
 
@@ -43,18 +45,50 @@ namespace Animation
             }
         }
         
-        private void GetSelectedAnimator()
+        public void GetSelectedAnimator()
         {
             activeAnimator = selectAnimator.selectedAnimator;
+        }
+        
+        public void ApplyStoredCircleSizes()
+        {
+
+            // TryGetValue searches for the value in the dictionary and returns true if found
+            if (allAnimationSizes.TryGetValue(activeAnimator, out float storedRadius))
+            {
+                Debug.Log("Applying Stored Value (" + storedRadius + ") to " + activeAnimator );
+                KnobMove.instance.UpdateScale(storedRadius);
+               // KnobMove.instance.Radius = storedRadius;
+            }
+            else
+            {
+                Debug.Log("No stored circle size found for the current animator. Taking Value 50");
+                allAnimationSizes.Add(activeAnimator, 1);
+                KnobMove.instance.UpdateScale(1);
+            }
         }
 
         private void ManipulateAnimator()
         {
+            if (activeAnimator == null) return;
+
             AnimatorStateInfo animState = activeAnimator.GetCurrentAnimatorStateInfo(0);
             float currentTime = animationPosition;
 
             // Set the animator's normalized time based on the calculated animationPosition
             activeAnimator.Play(animState.fullPathHash, 0, currentTime);
+            
+        }
+
+        public void UpdateDictionaryCircleSize()
+        {
+            if (activeAnimator == null) return;
+            
+
+            // Update the dictionary with new circle size when pressing on a circle
+            allAnimationSizes[activeAnimator] = CircleSizeChange.ActiveCircleSize;
+            
+            Debug.Log("Added new Radius (" + KnobMove.instance.Radius +") value to Dictionary index " + activeAnimator);
         }
     }
 }
