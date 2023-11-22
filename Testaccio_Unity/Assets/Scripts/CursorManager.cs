@@ -8,7 +8,7 @@ public class CursorManager : MonoBehaviour
     [SerializeField] public Texture2D pressedCursor;
 
     // private
-    public Vector2 cursorHotspot;
+    private Vector2 cursorHotspot;
 
     void Start()
     {
