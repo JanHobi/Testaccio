@@ -58,7 +58,6 @@ namespace Animation
             {
                 Debug.Log("Applying Stored Value (" + storedRadius + ") to " + activeAnimator );
                 KnobMove.instance.UpdateScale(storedRadius);
-               // KnobMove.instance.Radius = storedRadius;
             }
             else
             {
@@ -84,7 +83,6 @@ namespace Animation
         {
             if (activeAnimator == null) return;
             
-
             // Update the dictionary with new circle size when pressing on a circle
             allAnimationSizes[activeAnimator] = CircleSizeChange.ActiveCircleSize;
             

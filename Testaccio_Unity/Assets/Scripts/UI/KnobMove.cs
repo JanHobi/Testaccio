@@ -91,7 +91,7 @@ namespace UI
             float distancePerFrame = rotationSpeed * Time.deltaTime;
 
         
-            angle += (distancePerFrame / Radius) * 1000;
+            angle += (distancePerFrame / Radius);
          
             if (angle > 360.0f)
             {
