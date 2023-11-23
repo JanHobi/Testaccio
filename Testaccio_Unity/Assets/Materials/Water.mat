@@ -47,7 +47,7 @@ Material:
     - _RefractionScale: 12.16
     - _RefractionStrength: 0.72
     - _ReftractionSpeed: 0.06
-    - _WaterDepth: 6.67
+    - _WaterDepth: 10.31
     - _WaveHeight: 41.1
     - _WaveScale: 54.3
     - _WaveSpeed: 0.01
