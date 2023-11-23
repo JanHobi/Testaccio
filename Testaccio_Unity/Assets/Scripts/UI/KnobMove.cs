@@ -13,8 +13,7 @@ namespace UI
         [SerializeField] private float rotationSpeed = 200;
         [HideInInspector] public static bool stopCircling;
         [HideInInspector] public float angle;
-    
-        private float circleRadius;
+
         private float knobRadius;
         private Vector2 centerPos;
     
@@ -24,8 +23,8 @@ namespace UI
         private KnobPlayerInput knobPlayerInput;
         
         // Static instance to allow easy access to methods
-        private static KnobMove instance;
-    
+        public static KnobMove instance;
+
         private void Awake()
         {
             instance = this;
@@ -47,7 +46,7 @@ namespace UI
         }
 
         // Update is called once per frame
-        void Update()
+        void FixedUpdate()
         {
             CalculateCircleRadius();
             CalculateKnobRadius();
@@ -66,6 +65,8 @@ namespace UI
             knobRadius = knobRectTransform.sizeDelta.x * 0.5f * worldScaleX; 
         
         }
+        
+        public float Radius { get; set; }
 
         private void CalculateCircleRadius()
         {
@@ -74,8 +75,7 @@ namespace UI
             float worldScaleX = worldscale.x; // only take the x-scale factor and put it into a float
         
             // Calculate the Radius of the Circle that has this script attached
-            circleRadius = circleRectTransform.sizeDelta.x * 0.5f * worldScaleX; 
-        
+            Radius = circleRectTransform.sizeDelta.x * 0.5f * worldScaleX;
         }
     
         private void GetPlayerInputData()
@@ -91,7 +91,7 @@ namespace UI
             float distancePerFrame = rotationSpeed * Time.deltaTime;
 
         
-            angle += (distancePerFrame / circleRadius) * 1000;
+            angle += (distancePerFrame / Radius) * 1000;
          
             if (angle > 360.0f)
             {
@@ -104,8 +104,8 @@ namespace UI
             // Convert angle to radians (in order to be able to use Sin und Cos)
             var radians = Mathf.Deg2Rad * angle;
         
-            knobX = centerPos.x + circleRadius * Mathf.Cos(radians);
-            knobY = centerPos.y + circleRadius * Mathf.Sin(radians);
+            knobX = centerPos.x + Radius * Mathf.Cos(radians);
+            knobY = centerPos.y + Radius * Mathf.Sin(radians);
         }
     
         private void MoveKnob()
@@ -121,6 +121,12 @@ namespace UI
                 instance.angle = ExtensionMethods.Remap(selectedAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime, 0, 1, 1,
                     360);
             }
+        }
+
+        public void UpdateScale(float activeCircleSize)
+        {
+            transform.localScale = new Vector3(activeCircleSize, activeCircleSize, activeCircleSize);
+            CalculateCircleRadius();
         }
     }
 }

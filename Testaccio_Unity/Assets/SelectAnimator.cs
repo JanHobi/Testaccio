@@ -9,11 +9,13 @@ public class SelectAnimator : MonoBehaviour
 {
     [SerializeField] private List<GameObject> interactableObjects;
     [HideInInspector] public Animator selectedAnimator;
+    private AnimationManager animationManager;
 
 
     private void Start()
     {
         KnobMove.stopCircling = true;
+        animationManager = GetComponent<AnimationManager>();
     }
 
     // Update is called once per frame
@@ -42,25 +44,25 @@ public class SelectAnimator : MonoBehaviour
                       
                       if (animator != null)
                       {
+                          
                           // Store the found Animator in the public variable
                           selectedAnimator = animator;
                           
+                          // Call the Get function
+                          animationManager.GetSelectedAnimator();
+                          
+                          // Apply the before stored circle size of this object
+                          animationManager.ApplyStoredCircleSizes();
+                          
                           // Jump the knob to the position of the selected animator's timeline
                           KnobMove.JumpToAnimator(selectedAnimator);
-
-                          // The object is interactable and has an Animator component
-                          Debug.Log("Clicked on an interactable object with an Animator component");
+                          
                       }
                       else
                       {
                           // The object is interactable, but doesn't have an Animator component
                           Debug.Log("Clicked on an interactable object without an Animator component");
                       }
-                    }
-                    else
-                    {
-                        // The clicked object is not in the list of interactable objects
-                        Debug.Log("Clicked on a non-interactable object");
                     }
                 }
             }
