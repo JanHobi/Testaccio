@@ -11,7 +11,7 @@ namespace Animation
     {
         private float animationPosition;
 
-        public KnobMove activeCircle;
+        public KnobMove knobMove;
         private SelectAnimator selectAnimator;
         private Animator activeAnimator;
         private Dictionary<Animator, float> allAnimationSizes = new Dictionary<Animator, float>();
@@ -20,6 +20,7 @@ namespace Animation
         {
             // Link
             selectAnimator = GetComponent<SelectAnimator>();
+            knobMove = GetComponent<KnobMove>();
         }
 
         // Update is called once per frame
@@ -33,7 +34,7 @@ namespace Animation
         
         private void CalculateAnimationPosition()
         {
-            animationPosition = ExtensionMethods.Remap(activeCircle.angle, 1, 360, 0, 1);
+            animationPosition = ExtensionMethods.Remap(knobMove.angle, 1, 360, 0, 1);
         }
 
         private void AndMakeItAlwaysPositive()

@@ -7,6 +7,7 @@ namespace UI
     public class KnobMove : MonoBehaviour
     {
         [SerializeField] private GameObject knob;
+        [SerializeField] private GameObject circle;
         private float knobX;
         private float knobY;
     
@@ -33,10 +34,10 @@ namespace UI
         // Start is called before the first frame update
         void Start()
         {
-            centerPos = transform.position;
+            centerPos = circle.transform.position;
         
             // Go get the Circle Rect Transform Component
-            circleRectTransform = transform.GetComponent<RectTransform>();
+            circleRectTransform = circle.GetComponent<RectTransform>();
         
             // Go get the Knob Rect Transform Component
             knobRectTransform = knob.GetComponent<RectTransform>();
@@ -125,7 +126,7 @@ namespace UI
 
         public void UpdateScale(float activeCircleSize)
         {
-            transform.localScale = new Vector3(activeCircleSize, activeCircleSize, activeCircleSize);
+            circle.transform.localScale = new Vector3(activeCircleSize, activeCircleSize, activeCircleSize);
             CalculateCircleRadius();
         }
     }
