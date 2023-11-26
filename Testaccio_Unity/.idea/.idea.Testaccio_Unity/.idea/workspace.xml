@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Knob.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Knob.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/TimeCompass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/TimeCompass.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/KnobMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/KnobMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SelectAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SelectAnimator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +80,8 @@
       <workItem from="1700558373705" duration="18248000" />
       <workItem from="1700663090906" duration="9154000" />
       <workItem from="1700730136259" duration="1885000" />
-      <workItem from="1700834625875" duration="389000" />
+      <workItem from="1700834625875" duration="997000" />
+      <workItem from="1700995003444" duration="606000" />
     </task>
     <servers />
   </component>

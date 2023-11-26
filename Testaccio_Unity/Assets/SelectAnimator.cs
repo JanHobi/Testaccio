@@ -10,12 +10,15 @@ public class SelectAnimator : MonoBehaviour
     [SerializeField] private List<GameObject> interactableObjects;
     [HideInInspector] public Animator selectedAnimator;
     private AnimationManager animationManager;
+    private KnobMove knobMove;
+    [SerializeField] private GameObject timeCompass;
 
 
     private void Start()
     {
         KnobMove.stopCircling = true;
         animationManager = GetComponent<AnimationManager>();
+        knobMove = GetComponent<KnobMove>();
     }
 
     // Update is called once per frame
@@ -44,7 +47,13 @@ public class SelectAnimator : MonoBehaviour
                       
                       if (animator != null)
                       {
+
+                          // Give every interactable object a Knob
+                          Instantiate(knobMove.knob, timeCompass.transform);
                           
+                          // Set it active
+                          knobMove.knob.SetActive(true);
+
                           // Store the found Animator in the public variable
                           selectedAnimator = animator;
                           

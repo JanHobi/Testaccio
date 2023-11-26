@@ -914,6 +914,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Size1
       objectReference: {fileID: 0}
+    - target: {fileID: 8828794349418115287, guid: 0be0745b7cd0847f09003480cdd6988e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5970777193423767944, guid: 0be0745b7cd0847f09003480cdd6988e, type: 3}
     - {fileID: 4443443646392169012, guid: 0be0745b7cd0847f09003480cdd6988e, type: 3}
@@ -1431,11 +1436,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1702532437333652305, guid: 93bf2ecc2bbeed7459b64c41666137c9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3017736412738817349, guid: 93bf2ecc2bbeed7459b64c41666137c9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1396318801}
   m_SourcePrefab: {fileID: 100100000, guid: 93bf2ecc2bbeed7459b64c41666137c9, type: 3}
+--- !u!1 &1145566429 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8803111594070188056, guid: 0be0745b7cd0847f09003480cdd6988e,
+    type: 3}
+  m_PrefabInstance: {fileID: 711042170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1206903311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 939131959641566010, guid: 0be0745b7cd0847f09003480cdd6988e,
@@ -1802,6 +1818,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1069050468}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1396318801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396318793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df6272e9ab2d6a4da5901cbfad6774e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectToAnimate: {fileID: 1600112322}
 --- !u!1001 &1410142417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1923,6 +1952,12 @@ Transform:
   - {fileID: 57278668}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -21.5, z: 0}
+--- !u!1 &1600112322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5999805738528876889, guid: 93bf2ecc2bbeed7459b64c41666137c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1069050468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1601120221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,6 +2337,11 @@ PrefabInstance:
       propertyPath: knobMove
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8399546397654099426, guid: 5d82288f1ec6d43b092b199c568ce4d4,
+        type: 3}
+      propertyPath: timeCompass
+      value: 
+      objectReference: {fileID: 1145566429}
     - target: {fileID: 8399546397654099426, guid: 5d82288f1ec6d43b092b199c568ce4d4,
         type: 3}
       propertyPath: interactableObjects.Array.size

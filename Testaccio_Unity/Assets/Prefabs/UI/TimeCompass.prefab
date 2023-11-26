@@ -570,6 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knob: {fileID: 4282426084395935344}
+  circle: {fileID: 0}
   rotationSpeed: 8
   angle: 0
 --- !u!114 &8953822425735783571

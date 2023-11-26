@@ -11,7 +11,7 @@ namespace Animation
     {
         private float animationPosition;
 
-        public KnobMove knobMove;
+        [HideInInspector] public KnobMove knobMove;
         private SelectAnimator selectAnimator;
         private Animator activeAnimator;
         private Dictionary<Animator, float> allAnimationSizes = new Dictionary<Animator, float>();

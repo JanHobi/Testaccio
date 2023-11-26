@@ -6,7 +6,7 @@ namespace UI
 {
     public class KnobMove : MonoBehaviour
     {
-        [SerializeField] private GameObject knob;
+        public GameObject knob;
         [SerializeField] private GameObject circle;
         private float knobX;
         private float knobY;
