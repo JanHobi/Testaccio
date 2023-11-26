@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Calculations;
 using UnityEngine;
 
@@ -25,6 +26,8 @@ namespace UI
         
         // Static instance to allow easy access to methods
         public static KnobMove instance;
+
+        [HideInInspector] public Dictionary<GameObject, GameObject> InteractablesAndKnobs = new Dictionary<GameObject, GameObject>();
 
         private void Awake()
         {
