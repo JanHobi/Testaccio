@@ -12,9 +12,8 @@ namespace UI
 
         [SerializeField] private float[] allCircleSizes = new float[4];
         
-        [SerializeField] private Transform selectedCircle;
 
-        [SerializeField] private AnimationManager _animationManager;
+        public static event Action<float> OnSizeChangeRequested; 
 
         // Start is called before the first frame update
         void Start()
@@ -25,36 +24,31 @@ namespace UI
         
         
         // Activate the specific button filling and set activeCircleSize
-        private void ActivateButtonFilling(int index)
+        private void ChangeCircleSize(int index)
         {
             if (index >= 0 && index <= allCircleSizes.Length)
             {
                 ActiveCircleSize = allCircleSizes[index]; // Set the new Size of the Circle
-                
-                KnobMove.instance.UpdateScale(ActiveCircleSize);
-                _animationManager.UpdateDictionaryCircleSize();
             }
-            else
-            {
-                Debug.LogError("Index out of range: " + index);
-            }
+
+            OnSizeChangeRequested?.Invoke(ActiveCircleSize);
         }
 
         public void Size1()
         {
-            ActivateButtonFilling(0);
+            ChangeCircleSize(0);
         }
         public void Size2()
         {
-            ActivateButtonFilling(1);
+            ChangeCircleSize(1);
         }
         public void Size3()
         {
-            ActivateButtonFilling(2);
+            ChangeCircleSize(2);
         }
         public void Size4()
         {
-            ActivateButtonFilling(3);
+            ChangeCircleSize(3);
         }
     }
 }

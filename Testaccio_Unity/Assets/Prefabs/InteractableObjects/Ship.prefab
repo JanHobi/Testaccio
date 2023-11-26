@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7610057317692851190}
   - component: {fileID: 1674324880360925161}
   - component: {fileID: 6936155149274198549}
-  - component: {fileID: 7195619726644316367}
+  - component: {fileID: 3298862944995553788}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Interactable
@@ -133,7 +133,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4493585093827132993, guid: 135403c576510ad458e1e137c0867f5e, type: 3}
---- !u!114 &7195619726644316367
+--- !u!114 &3298862944995553788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
