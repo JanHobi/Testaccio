@@ -47,13 +47,24 @@ public class SelectAnimator : MonoBehaviour
                       
                       if (animator != null)
                       {
-
-                          // Give every interactable object a Knob
-                          Instantiate(knobMove.knob, timeCompass.transform);
                           
-                          // Set it active
-                          knobMove.knob.SetActive(true);
+                          GameObject knob = knobMove.knob;
 
+                          if (!knobMove.InteractablesAndKnobs.ContainsKey(hit.transform.gameObject))
+                          {
+                              // Give every interactable object a Knob
+                              Instantiate(knob, timeCompass.transform);
+                          
+                              // Set it active
+                              knob.SetActive(true);
+                          
+                              // add this knob to the all knobs list
+                              knobMove.InteractablesAndKnobs.Add(hit.transform.gameObject, knob);
+                              
+                              Debug.Log("added new line in dictionary: " + hit.transform.gameObject + knob);
+                          }
+                          
+                          
                           // Store the found Animator in the public variable
                           selectedAnimator = animator;
                           
@@ -61,10 +72,10 @@ public class SelectAnimator : MonoBehaviour
                           animationManager.GetSelectedAnimator();
                           
                           // Apply the before stored circle size of this object
-                          animationManager.ApplyStoredCircleSizes();
+                          //animationManager.ApplyStoredCircleSizes();
                           
                           // Jump the knob to the position of the selected animator's timeline
-                          KnobMove.JumpToAnimator(selectedAnimator);
+                          //KnobMove.JumpToAnimator(selectedAnimator);
                           
                       }
                       else
