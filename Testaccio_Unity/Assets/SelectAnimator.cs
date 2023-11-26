@@ -12,6 +12,7 @@ public class SelectAnimator : MonoBehaviour
     private AnimationManager animationManager;
     private KnobMove knobMove;
     [SerializeField] private GameObject timeCompass;
+    
 
 
     private void Start()

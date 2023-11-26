@@ -58,8 +58,11 @@ namespace UI
             CalculateRotationSpeed();
             KnobToCenterDistance();
             MoveKnob();
+            MoveAllKnobs();
         }
-    
+
+        
+
         private void CalculateKnobRadius()
         {
             Vector3 worldscale = knobRectTransform.lossyScale; // Get the local scale factor
@@ -112,6 +115,32 @@ namespace UI
             knobY = centerPos.y + Radius * Mathf.Sin(radians);
         }
     
+        private void MoveAllKnobs()
+        {
+            foreach (var value in InteractablesAndKnobs.Values)
+            {
+                float distancePerFrame = rotationSpeed * Time.deltaTime;
+
+        
+                angle += (distancePerFrame / Radius);
+         
+                if (angle > 360.0f)
+                {
+                    angle -= 360.0f;
+                }
+                
+                // Convert angle to radians (in order to be able to use Sin und Cos)
+                var radians = Mathf.Deg2Rad * angle;
+        
+                knobX = centerPos.x + Radius * Mathf.Cos(radians);
+                knobY = centerPos.y + Radius * Mathf.Sin(radians);
+                
+                knob.transform.position = new Vector3(knobX, knobY, 0);
+            }
+
+           
+        }
+        
         private void MoveKnob()
         {
             knob.transform.position = new Vector3(knobX, knobY, 0);

@@ -34,7 +34,7 @@ namespace Animation
         
         private void CalculateAnimationPosition()
         {
-            animationPosition = ExtensionMethods.Remap(knobMove.angle, 1, 360, 0, 1);
+//            animationPosition = ExtensionMethods.Remap(knobMove.angle, 1, 360, 0, 1);
         }
 
         private void AndMakeItAlwaysPositive()

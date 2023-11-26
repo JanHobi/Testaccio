@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1674324880360925161}
   - component: {fileID: 2252817497934169081}
   - component: {fileID: 6936155149274198549}
-  - component: {fileID: 1702532437333652305}
+  - component: {fileID: 3298862944995553788}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -146,7 +146,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4493585093827132993, guid: 135403c576510ad458e1e137c0867f5e, type: 3}
---- !u!114 &1702532437333652305
+--- !u!114 &3298862944995553788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3017736412738817349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e6115521ff7812448f6f31b7b95406c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8df6272e9ab2d6a4da5901cbfad6774e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectToAnimate: {fileID: 5999805738528876889}
