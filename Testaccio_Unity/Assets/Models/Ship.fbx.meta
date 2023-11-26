@@ -3,27 +3,7 @@ guid: 135403c576510ad458e1e137c0867f5e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Boat_bottom
-    second: {fileID: 2100000, guid: ef28c0930dce05f4dae457c815aa08d0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Boat_top
-    second: {fileID: 2100000, guid: f3acf23af1ddc5842b0bd325818d8aab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Details
-    second: {fileID: 2100000, guid: 3347c1be17a0b944b822606fed67d7b2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Windows
-    second: {fileID: 2100000, guid: 58861c2f9b8eee340a6212d430c46338, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
