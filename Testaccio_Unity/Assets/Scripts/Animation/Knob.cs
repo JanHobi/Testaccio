@@ -93,13 +93,7 @@ namespace Animation
             //myAnimator.Play(animState.fullPathHash, 0, currentTime);
             
         }
-
-        private float RemapValues()
-        {
-            return ExtensionMethods.Remap(angle, 1, 360, 0, 1);
-        }
-       
-
+        
         private void CalculateKnobRadius()
         {
             Vector3 worldscale = knobRectTransform.lossyScale; // Get the local scale factor
