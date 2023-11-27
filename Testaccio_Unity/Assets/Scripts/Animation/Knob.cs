@@ -110,7 +110,7 @@ namespace Animation
             float distancePerFrame = rotationSpeed * Time.deltaTime;
 
         
-            angle += (distancePerFrame / Radius);
+            angle -= (distancePerFrame / Radius);
          
             if (angle > 360.0f)
             {
