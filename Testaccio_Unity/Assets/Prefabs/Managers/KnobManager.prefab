@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3725399054044633292
+--- !u!1 &7137424486024797656
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,57 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2531020385145599837}
-  - component: {fileID: 8561172244665937057}
-  - component: {fileID: 8399546397654099426}
+  - component: {fileID: 3832037171106263175}
+  - component: {fileID: 515736698320199403}
   m_Layer: 0
-  m_Name: AnimationManager
+  m_Name: KnobManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2531020385145599837
+--- !u!4 &3832037171106263175
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3725399054044633292}
+  m_GameObject: {fileID: 7137424486024797656}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 84.36719, y: 149.12878, z: -19.331944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8561172244665937057
+--- !u!114 &515736698320199403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3725399054044633292}
+  m_GameObject: {fileID: 7137424486024797656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22555814e988845d4a87009dfb2390e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeCircle: {fileID: 0}
---- !u!114 &8399546397654099426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3725399054044633292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546f4d9bd383243d08020388c1e4885d, type: 3}
+  m_Script: {fileID: 11500000, guid: 22f1742b96c1b4622b2a5e75df044d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactableObjects:
   - {fileID: 0}
   - {fileID: 0}
-  selectedAnimator: {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  startingCircle: {fileID: 0}
+  knobPrefab: {fileID: 5549109066441771107, guid: 70051eac4bb5cd0448d56d39d770e66c,
+    type: 3}
+  timeCompass: {fileID: 0}
