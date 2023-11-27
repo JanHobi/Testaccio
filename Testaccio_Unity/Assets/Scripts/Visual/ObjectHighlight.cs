@@ -5,19 +5,49 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class ObjectHighlight : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        GetComponent<Renderer>().material.SetFloat("_OutlineThickness", 0f);
-    }
+    [SerializeField] private Color highlightColor = Color.red;
 
     private void OnMouseEnter()
     {
-        GetComponent<Renderer>().material.SetFloat("_OutlineThickness", 1f);
+        Material[] mats = GetComponent<MeshRenderer>().materials;
+        foreach (Material mat in mats)
+        {
+            mat.EnableKeyword("_EMISSION");
+            mat.SetColor("_EmissionColor", highlightColor);
+        }
+
+        foreach (Transform child in transform)
+        {
+            Material[] childMats = child.GetComponent<MeshRenderer>().materials;
+            if (childMats.Length == 0) return;
+            foreach (Material mat in childMats)
+            {
+                mat.EnableKeyword("_EMISSION");
+                mat.SetColor("_EmissionColor", highlightColor);
+            }
+        }
+
+        Time.timeScale = 0f;
     }
 
     private void OnMouseExit()
     {
-        GetComponent<Renderer>().material.SetFloat("_OutlineThickness", 0f);
+        Material[] mats = GetComponent<MeshRenderer>().materials;
+        foreach (Material mat in mats)
+        {
+            mat.DisableKeyword("_EMISSION");
+        }
+
+        foreach (Transform child in transform)
+        {
+            Material[] childMats = child.GetComponent<MeshRenderer>().materials;
+            if (childMats.Length == 0) return;
+            foreach (Material mat in childMats)
+            {
+                mat.DisableKeyword("_EMISSION");
+            }
+        }
+
+        Time.timeScale = 1f;
     }
 }

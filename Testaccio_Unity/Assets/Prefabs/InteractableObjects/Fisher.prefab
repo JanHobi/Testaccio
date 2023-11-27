@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5420410927793490188}
   - component: {fileID: 1107973361665924186}
   - component: {fileID: 6935428323629702142}
+  - component: {fileID: 6132756943883842560}
   m_Layer: 0
   m_Name: Fisher
   m_TagString: Interactable
@@ -130,6 +131,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: 1211bb327410c154aadd4d795f1eab4d, type: 3}
+--- !u!114 &6132756943883842560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399182085501610574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe1243dd09366d458bcccff8daa6131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
 --- !u!1 &8129595508592548277
 GameObject:
   m_ObjectHideFlags: 0

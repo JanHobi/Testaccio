@@ -57,5 +57,5 @@ Material:
     - _Scale: 1
     m_Colors:
     - _Color: {r: 0.74901956, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 5.992159, g: 0.85073036, b: 0, a: 1}
+    - _FresnelColor: {r: 8.000001, g: 8.000001, b: 8.000001, a: 1}
   m_BuildTextureStacks: []

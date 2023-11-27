@@ -51,7 +51,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _OutlineThickness: 0.99
+    - _OutlineThickness: 1.31
     - _QueueControl: 0
     - _QueueOffset: 1
     - _Scale: 0.99
