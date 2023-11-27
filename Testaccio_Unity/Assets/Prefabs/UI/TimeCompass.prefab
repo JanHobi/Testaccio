@@ -491,8 +491,6 @@ GameObject:
   - component: {fileID: 7254963048304929735}
   - component: {fileID: 8605502367998963754}
   - component: {fileID: 6670898652507963517}
-  - component: {fileID: 1383836829580828463}
-  - component: {fileID: 8953822425735783571}
   m_Layer: 5
   m_Name: ActiveCircle
   m_TagString: Untagged
@@ -557,35 +555,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1383836829580828463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5539535225402785181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38536d932467a424fbe6d740255f85e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  knob: {fileID: 4282426084395935344}
-  circle: {fileID: 0}
-  rotationSpeed: 8
-  angle: 0
---- !u!114 &8953822425735783571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5539535225402785181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be33a2c9b19154b33982e7807f6cf1b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopCircling: 0
 --- !u!1 &5857577565516673008
 GameObject:
   m_ObjectHideFlags: 0

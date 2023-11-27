@@ -310,7 +310,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeCompass
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1383836829580828463, guid: b20ed28242d204b9a9f9e037f3bbdf9c, type: 3}
+    - {fileID: 8953822425735783571, guid: b20ed28242d204b9a9f9e037f3bbdf9c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
