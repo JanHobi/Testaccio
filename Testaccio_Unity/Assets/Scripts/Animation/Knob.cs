@@ -5,6 +5,7 @@ using UI;
 using UnityEditor.Build.Content;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Animation
 {
@@ -16,6 +17,7 @@ namespace Animation
     
         [SerializeField] private float rotationSpeed = 200;
         [HideInInspector] public float angle;
+        private float activeAnimSpeed;
         private Vector2 centerPos;
     
         private RectTransform circleRectTransform;
@@ -33,11 +35,13 @@ namespace Animation
         private void OnEnable()
         {
             CircleSizeChange.OnSizeChangeRequested += UpdateScale;
+            CircleSizeChange.OnSpeedChangeRequested += UpdateAnimSpeed;
         }
 
         private void OnDisable()
         {
             CircleSizeChange.OnSizeChangeRequested -= UpdateScale;
+            CircleSizeChange.OnSpeedChangeRequested -= UpdateAnimSpeed;
         }
 
         public void IntializeKnob(GameObject startingCircle, Animator animator)
@@ -72,17 +76,20 @@ namespace Animation
         private void Update()
         {
             ManipulateAnimator();
+            ChangeColor();
         }
         
         private void ManipulateAnimator()
         {
             if (myAnimator == null) return;
-
-            AnimatorStateInfo animState = myAnimator.GetCurrentAnimatorStateInfo(0);
-            float currentTime = RemapValues();
+            myAnimator.speed = activeAnimSpeed;
+            
+            //AnimatorStateInfo animState = myAnimator.GetCurrentAnimatorStateInfo(0);
+            //float currentTime = RemapValues();
+            
 
             // Set the animator's normalized time based on the calculated animationPosition
-            myAnimator.Play(animState.fullPathHash, 0, currentTime);
+            //myAnimator.Play(animState.fullPathHash, 0, currentTime);
             
         }
 
@@ -143,6 +150,21 @@ namespace Animation
             if (!selected) return;
             myCircle.transform.localScale = new Vector3(activeCircleSize, activeCircleSize, activeCircleSize);
             CalculateCircleRadius();
+            
+        }
+
+        private void UpdateAnimSpeed(float currentSpeed)
+        {
+            if (myAnimator == null) return;
+            activeAnimSpeed = currentSpeed;
+            Debug.Log("Animation Speed" + activeAnimSpeed);
+        }
+
+        private void ChangeColor()
+        {
+            if (selected) return;
+            //var color = gameObject.GetComponent<Image>().tintColor;
+           // color.a = 0.2f;
         }
     }
     }

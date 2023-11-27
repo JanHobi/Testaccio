@@ -10,10 +10,12 @@ namespace UI
     {
         [HideInInspector] public static float ActiveCircleSize ;
 
-        [SerializeField] private float[] allCircleSizes = new float[4];
-        
+        [SerializeField] private List<float> allCircleSizes = new List<float>();
+
 
         public static event Action<float> OnSizeChangeRequested; 
+        public static event Action<float> OnSpeedChangeRequested; 
+
 
         // Start is called before the first frame update
         void Start()
@@ -26,12 +28,16 @@ namespace UI
         // Activate the specific button filling and set activeCircleSize
         private void ChangeCircleSize(int index)
         {
-            if (index >= 0 && index <= allCircleSizes.Length)
+            if (index >= 0 && index <= allCircleSizes.Count)
             {
                 ActiveCircleSize = allCircleSizes[index]; // Set the new Size of the Circle
             }
 
             OnSizeChangeRequested?.Invoke(ActiveCircleSize);
+
+            List<float> reversed = allCircleSizes.ToList();
+            reversed.Reverse();
+            OnSpeedChangeRequested?.Invoke(reversed[index]);
         }
 
         public void Size1()
