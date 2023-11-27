@@ -20,6 +20,6 @@ public class SmallAnimations : MonoBehaviour
     {
         Debug.Log("BridgeClose");
         isTransitioning = true;
-        gameObjectToAnimate.transform.DOLocalRotate(new Vector3(-30, 0, 0), 0.7f).SetEase(Ease.OutBounce).OnComplete(() => isTransitioning = false);
+        gameObjectToAnimate.transform.DOLocalRotate(new Vector3(-22, 0, 0), 0.7f).SetEase(Ease.OutBounce).OnComplete(() => isTransitioning = false);
     }
 }
