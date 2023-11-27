@@ -27,7 +27,7 @@ public class ObjectHighlight : MonoBehaviour
             }
         }
 
-        Time.timeScale = 0f;
+        Time.timeScale = 0.35f;
     }
 
     private void OnMouseExit()
