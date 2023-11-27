@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using Calculations;
 using UI;
+using UnityEngine.UI;
 using UnityEditor.Build.Content;
 using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Animation
 {
@@ -149,9 +149,24 @@ namespace Animation
 
         private void ChangeColor()
         {
-            if (selected) return;
-            //var color = gameObject.GetComponent<Image>().tintColor;
-           // color.a = 0.2f;
+            Image image = gameObject.GetComponent<Image>();
+            
+            if (selected)
+            {
+                float selectedAlpha = 1f;
+                Color imageColor = image.color;
+                imageColor.a = selectedAlpha;
+                image.color = imageColor;
+            }
+            else
+            {
+                float selectedAlpha = 0.1f;
+                Color imageColor = image.color;
+                imageColor.a = selectedAlpha;
+                image.color = imageColor;
+            }
+
+           
         }
     }
     }
