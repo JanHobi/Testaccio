@@ -61,19 +61,6 @@ namespace Managers
                                     Knob selectedKnob = InteractablesAndKnobs[hittedObject];
                                     if (selectedKnob != null) SelectKnob(selectedKnob);
                                 }
-                                
-                                // Store the found Animator in the public variable
-                                //selectedAnimator = animator;
-
-                                // Call the Get function
-                                //animationManager.GetSelectedAnimator();
-
-                                // Apply the before stored circle size of this object
-                                //animationManager.ApplyStoredCircleSizes();
-
-                                // Jump the knob to the position of the selected animator's timeline
-                                //KnobMove.JumpToAnimator(selectedAnimator);
-
                             }
                             else
                             {
