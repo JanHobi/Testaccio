@@ -84,14 +84,6 @@ namespace Animation
         {
             if (myAnimator == null) return;
             myAnimator.speed = activeAnimSpeed;
-            
-            //AnimatorStateInfo animState = myAnimator.GetCurrentAnimatorStateInfo(0);
-            //float currentTime = RemapValues();
-            
-
-            // Set the animator's normalized time based on the calculated animationPosition
-            //myAnimator.Play(animState.fullPathHash, 0, currentTime);
-            
         }
         
         private void CalculateKnobRadius()
