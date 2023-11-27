@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Workspace" id="{52cb2278-375e-455f-871a-a6c8ca233dc1}">
 		<property name="builtBanksOutputDirectory">
-			<value>../../Testaccio_Unity/Assets/Sound</value>
+			<value>../../Testaccio_Unity/Assets/Sound/Desktop</value>
 		</property>
 		<relationship name="masterEventFolder">
 			<destination>{ffa1612c-88f4-44ce-a587-980c540f79fe}</destination>
