@@ -58,6 +58,7 @@ namespace Animation
             
             CalculateCircleRadius();
             CalculateKnobRadius();
+            UpdateAnimSpeed(1);
 
             AnimatorStateInfo animState = myAnimator.GetCurrentAnimatorStateInfo(0);
             float animationPosition = animState.normalizedTime;
