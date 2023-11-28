@@ -142,9 +142,10 @@ namespace Animation
 
         private void UpdateAnimSpeed(float currentSpeed)
         {
-            if (myAnimator == null) return;
+            if (!selected) return;
             activeAnimSpeed = currentSpeed;
             Debug.Log("Animation Speed" + activeAnimSpeed);
+
         }
 
         private void ChangeColor()
@@ -165,8 +166,6 @@ namespace Animation
                 imageColor.a = selectedAlpha;
                 image.color = imageColor;
             }
-
-           
         }
     }
     }

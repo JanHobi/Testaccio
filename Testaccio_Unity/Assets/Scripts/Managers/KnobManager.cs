@@ -46,12 +46,13 @@ namespace Managers
                                     // Give every interactable object a Knob
                                     Knob newKnob = Instantiate(knobPrefab, timeCompass.transform);
                                     
+                                    SelectKnob(newKnob);
+                                    
                                     newKnob.IntializeKnob(startingCircle, animator);
                                     
                                     // add this knob to the all knobs list
                                     InteractablesAndKnobs.Add(hittedObject, newKnob);
-
-                                    SelectKnob(newKnob);
+                                    
 
                                     Debug.Log("added new line in dictionary: " + hittedObject + knobPrefab);
                                 }
