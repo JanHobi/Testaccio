@@ -6,17 +6,14 @@ using DG.Tweening;
 public class SmallAnimations : MonoBehaviour
 {
    [SerializeField] private GameObject gameObjectToAnimate;
-   bool isTransitioning = false;
 
     public void BridgeOpen()
     {
-        isTransitioning = true;
-        gameObjectToAnimate.transform.DOLocalRotate(new Vector3(70, 0, 0), 0.7f).SetEase(Ease.OutBounce).OnComplete(() => isTransitioning = false);
+        gameObjectToAnimate.transform.DOLocalRotate(new Vector3(70, 0, 0), 0.7f).SetEase(Ease.InExpo);
     }
 
     public void BridgeClose()
     {
-        isTransitioning = true;
-        gameObjectToAnimate.transform.DOLocalRotate(new Vector3(-22, 0, 0), 0.7f).SetEase(Ease.OutBounce).OnComplete(() => isTransitioning = false);
+        gameObjectToAnimate.transform.DOLocalRotate(new Vector3(-22, 0, 0), 0.7f).SetEase(Ease.OutBounce);
     }
 }
