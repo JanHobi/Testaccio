@@ -5,7 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class ObjectHighlight : MonoBehaviour
 {
-    [SerializeField] private Color highlightColor = Color.red;
+    private Color hoverColor = Color.gray;
+    private static Color clickedColor = Color.white;
 
     private void OnMouseEnter()
     {
@@ -13,7 +14,7 @@ public class ObjectHighlight : MonoBehaviour
         foreach (Material mat in mats)
         {
             mat.EnableKeyword("_EMISSION");
-            mat.SetColor("_EmissionColor", highlightColor);
+            mat.SetColor("_EmissionColor", hoverColor);
         }
 
         foreach (Transform child in transform)
@@ -23,7 +24,7 @@ public class ObjectHighlight : MonoBehaviour
             foreach (Material mat in childMats)
             {
                 mat.EnableKeyword("_EMISSION");
-                mat.SetColor("_EmissionColor", highlightColor);
+                mat.SetColor("_EmissionColor", hoverColor);
             }
         }
 
@@ -49,5 +50,45 @@ public class ObjectHighlight : MonoBehaviour
         }
 
         Time.timeScale = 1f;
+    }
+
+    public static void ChangeToClickedColor(GameObject obj)
+    {
+        Material[] mats = obj.GetComponent<MeshRenderer>().materials;
+        foreach (Material mat in mats)
+        {
+            mat.EnableKeyword("_EMISSION");
+            mat.SetColor("_EmissionColor", clickedColor);
+        }
+
+        foreach (Transform child in obj.transform)
+        {
+            Material[] childMats = child.GetComponent<MeshRenderer>().materials;
+            if (childMats.Length == 0) return;
+            foreach (Material mat in childMats)
+            {
+                mat.EnableKeyword("_EMISSION");
+                mat.SetColor("_EmissionColor", clickedColor);
+            }
+        }
+    }
+
+    public static void RemoveClickedColor(GameObject obj)
+    {
+        Material[] mats = obj.GetComponent<MeshRenderer>().materials;
+        foreach (Material mat in mats)
+        {
+            mat.DisableKeyword("_EMISSION");
+        }
+
+        foreach (Transform child in obj.transform)
+        {
+            Material[] childMats = child.GetComponent<MeshRenderer>().materials;
+            if (childMats.Length == 0) return;
+            foreach (Material mat in childMats)
+            {
+                mat.DisableKeyword("_EMISSION");
+            }
+        }
     }
 }

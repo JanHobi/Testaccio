@@ -12,13 +12,17 @@ namespace Managers
         [SerializeField] private Knob knobPrefab;
         [SerializeField] private GameObject timeCompass;
         [HideInInspector] public Dictionary<GameObject, Knob> InteractablesAndKnobs = new Dictionary<GameObject, Knob>();
+        private GameObject selectedObject;
         
 
         // Update is called once per frame
         void Update()
         {
             CheckClickedObject();
+            AddColorToSelectedObject();
         }
+
+      
 
         private void CheckClickedObject()
         {
@@ -41,6 +45,13 @@ namespace Managers
                             if (animator != null)
                             {
 
+                                // If I clicked on a new object, remove the color from the last clicked object
+                                if (hittedObject != selectedObject && selectedObject != null)
+                                    ObjectHighlight.RemoveClickedColor(selectedObject);
+                                
+                                // Add the clicked object to the variable
+                                selectedObject = hittedObject;
+
                                 if (!InteractablesAndKnobs.ContainsKey(hittedObject))
                                 {
                                     // Give every interactable object a Knob
@@ -52,7 +63,6 @@ namespace Managers
                                     
                                     // add this knob to the all knobs list
                                     InteractablesAndKnobs.Add(hittedObject, newKnob);
-                                    
 
                                     Debug.Log("added new line in dictionary: " + hittedObject + knobPrefab);
                                 }
@@ -83,6 +93,11 @@ namespace Managers
             }
             
             newKnob.Selected = true;
+        }
+        
+        private void AddColorToSelectedObject()
+        {
+            if (selectedObject != null) ObjectHighlight.ChangeToClickedColor(selectedObject);
         }
     }
 }
