@@ -12,7 +12,6 @@ public class DustTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bridge"))
         {
-            Debug.Log("Dust Triggered");
             Instantiate(dustParticles, dustPosition.transform.position, Quaternion.identity);
         }
     }
