@@ -38,22 +38,36 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FoamAmount: 2.88
+    - _BUILTIN_QueueControl: -1
+    - _BUILTIN_QueueOffset: 0
+    - _Depth_Fade: 0
+    - _FoamAmount: 3
     - _FoamCutOff: 0.95
-    - _FoamScale: 647.65
-    - _FoamSpeed: -0.5
+    - _FoamScale: 646.92
+    - _FoamSpeed: -0.16
+    - _Foam_Width: 0
+    - _Height: 0
+    - _Noise_Scale: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RefractionScale: 6.47
     - _RefractionStrength: 2.2
     - _ReftractionSpeed: 0.09
+    - _Smoothness: 0
     - _WaterDepth: 2.36
-    - _WaveHeight: 41.1
+    - _WaterScrollSpeed: 1.23
+    - _Water_Scroll_Speed: 0
+    - _WaveHeight: 0.0001
+    - _WaveNoiseSize: 0.62
     - _WaveScale: 54.3
     - _WaveSpeed: 0.01
     m_Colors:
+    - _Base_Color: {r: 0.12513345, g: 0.27995956, b: 0.7169812, a: 0}
+    - _DeepColor: {r: 0, g: 0, b: 0, a: 0}
     - _DeepWater: {r: 0.2770114, g: 0.567562, b: 0.7075472, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0.50980395}
+    - _Foam_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _ShallowColor: {r: 0, g: 0, b: 0, a: 0}
     - _ShallowWater: {r: 0.12522249, g: 0.30920684, b: 0.3962264, a: 0.7882353}
   m_BuildTextureStacks: []
 --- !u!114 &1990172471397874941
@@ -69,3 +83,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 7
+--- !u!114 &8220206710900230181
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
