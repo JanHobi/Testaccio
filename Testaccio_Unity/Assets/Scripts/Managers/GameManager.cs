@@ -54,8 +54,13 @@ namespace Managers
             switch (state)
             {
                 case GameState.Menu:
-                    SceneManager.LoadSceneAsync(0);
-                    StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName("MainMenu").buildIndex));
+
+                    if (SceneManager.GetActiveScene().name != "MainMenu")
+                    {
+                        SceneManager.LoadSceneAsync(0);
+                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName("MainMenu").buildIndex));
+                    }
+
                     break;
 
                 case GameState.InGame:
@@ -90,6 +95,7 @@ namespace Managers
             }
 
             currentGameState = state;
+            Debug.Log("GAMESTATE: " + currentGameState);
 
         }
     }
