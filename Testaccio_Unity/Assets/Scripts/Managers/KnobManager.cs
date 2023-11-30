@@ -79,7 +79,7 @@ namespace Managers
                         }
                         else
                         {
-                            Debug.Log("clicked on a non-interactable object");
+                            if (selectedObject == null) return;
                             ObjectHighlight.RemoveClickedColor(selectedObject);
                             selectedObject = null;
                         }

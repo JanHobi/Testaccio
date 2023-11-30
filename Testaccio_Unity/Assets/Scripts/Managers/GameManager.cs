@@ -18,9 +18,11 @@ public class GameManager : MonoBehaviour
         Menu,
         InGame,
         GamePaused,
+        GameResume,
         GameOver,
         GameWon,
         Credits,
+        Quit
     }
 
     /// <summary>
@@ -44,6 +46,9 @@ public class GameManager : MonoBehaviour
 
         // load selected scene
         SetState(currentGameState);
+        
+        // Load Menu at beginning
+        //SetState(GameState.Menu);
 
     }
 
@@ -57,14 +62,21 @@ public class GameManager : MonoBehaviour
         switch (state)
         {
             case GameState.Menu:
-                
+                SceneManager.LoadSceneAsync(0);
+                StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName("MainMenu").buildIndex));
                 break;
 
             case GameState.InGame:
-
+                SceneManager.LoadSceneAsync(1);
+                StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName("DomiDev_2").buildIndex));
                 break;
+            
             case GameState.GamePaused:
-                
+                Time.timeScale = 0;
+                break;
+            
+            case GameState.GameResume:
+                Time.timeScale = 1;
                 break;
 
             case GameState.GameOver:
@@ -75,6 +87,9 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Credits:
                 
+                break;
+            case GameState.Quit:
+                Application.Quit();
                 break;
         }
 
