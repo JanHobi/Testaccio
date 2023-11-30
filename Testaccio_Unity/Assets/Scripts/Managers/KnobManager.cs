@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Animation;
 using UI;
@@ -13,7 +14,16 @@ namespace Managers
         [SerializeField] private GameObject timeCompass;
         [HideInInspector] public Dictionary<GameObject, Knob> InteractablesAndKnobs = new Dictionary<GameObject, Knob>();
         private GameObject selectedObject;
-        
+
+
+        private void Start()
+        {
+            foreach (var interactable in interactableObjects)
+            {
+                interactable.GetComponent<Animator>().speed = 0;
+            }
+        }
+
 
         // Update is called once per frame
         void Update()
