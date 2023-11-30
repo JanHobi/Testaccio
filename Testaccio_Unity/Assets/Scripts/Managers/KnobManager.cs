@@ -63,8 +63,6 @@ namespace Managers
                                     
                                     // add this knob to the all knobs list
                                     InteractablesAndKnobs.Add(hittedObject, newKnob);
-
-                                    Debug.Log("added new line in dictionary: " + hittedObject + knobPrefab);
                                 }
 
                                 else
@@ -78,6 +76,12 @@ namespace Managers
                                 // The object is interactable, but doesn't have an Animator component
                                 Debug.Log("Clicked on an interactable object without an Animator component");
                             }
+                        }
+                        else
+                        {
+                            Debug.Log("clicked on a non-interactable object");
+                            ObjectHighlight.RemoveClickedColor(selectedObject);
+                            selectedObject = null;
                         }
                     }
                 }
