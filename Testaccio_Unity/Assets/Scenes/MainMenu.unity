@@ -1783,6 +1783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGameState: 0
+  inGameScene: DomiDev_2
 --- !u!4 &2111435721
 Transform:
   m_ObjectHideFlags: 0

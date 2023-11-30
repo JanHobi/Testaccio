@@ -61,7 +61,7 @@ namespace Managers
                 case GameState.InGame:
                     if (SceneManager.GetActiveScene().name == "MainMenu")
                     {
-                        SceneManager.LoadSceneAsync(1);
+                        SceneManager.LoadSceneAsync(inGameScene);
                         StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName(inGameScene).buildIndex));
                     }
                     else
