@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 
 namespace UI
@@ -23,12 +24,7 @@ namespace UI
         {
             GameManager.instance.SetState(GameManager.GameState.Quit);
         }
-        
-        public void ResumeGame()
-        {
-            GameManager.instance.SetState(GameManager.GameState.GameResume);
-        }
-        
+
         public void PauseGame()
         {
             GameManager.instance.SetState(GameManager.GameState.GamePaused);
