@@ -9,6 +9,7 @@ namespace Managers
         public static GameManager instance;
 
         public GameState currentGameState;
+        [SerializeField] private string inGameScene;
     
         /// <summary>
         /// Possible gamestates.
@@ -45,17 +46,9 @@ namespace Managers
 
             // load selected scene
             SetState(currentGameState);
-        
-            // Load Menu at beginning
-            //SetState(GameState.Menu);
 
         }
-
-        /// <summary>
-        /// The best possible way to implement this would be
-        /// to actually make the game start at this point if needed.
-        /// this way we could skip stuff.
-        /// </summary>
+        
         public void SetState(GameState state)
         {
             switch (state)
@@ -69,7 +62,7 @@ namespace Managers
                     if (SceneManager.GetActiveScene().name == "MainMenu")
                     {
                         SceneManager.LoadSceneAsync(1);
-                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName("DomiDev_2").buildIndex));
+                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName(inGameScene).buildIndex));
                     }
                     else
                     {
