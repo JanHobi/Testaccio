@@ -1238,6 +1238,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4572059803623555780, guid: c73b0e3804bd92242b34904d36ed4327,
+        type: 3}
+      propertyPath: clickColor.a
+      value: 0.56078434
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572059803623555780, guid: c73b0e3804bd92242b34904d36ed4327,
+        type: 3}
+      propertyPath: clickColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572059803623555780, guid: c73b0e3804bd92242b34904d36ed4327,
+        type: 3}
+      propertyPath: clickColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572059803623555780, guid: c73b0e3804bd92242b34904d36ed4327,
+        type: 3}
+      propertyPath: clickColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572059803623555780, guid: c73b0e3804bd92242b34904d36ed4327,
+        type: 3}
+      propertyPath: hoverColor.a
+      value: 0.69411767
+      objectReference: {fileID: 0}
     - target: {fileID: 5903875749343506790, guid: c73b0e3804bd92242b34904d36ed4327,
         type: 3}
       propertyPath: m_Name
