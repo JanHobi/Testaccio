@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using Animation;
 using UI;
 using UnityEngine;
+using Visual;
 
 namespace Managers
 {
@@ -13,7 +15,22 @@ namespace Managers
         [SerializeField] private GameObject timeCompass;
         [HideInInspector] public Dictionary<GameObject, Knob> InteractablesAndKnobs = new Dictionary<GameObject, Knob>();
         private GameObject selectedObject;
-        
+
+
+        private void Start()
+        {
+            foreach (var interactable in interactableObjects)
+            {
+                // Stop all interactable animations that are visible in the Camera View 
+                if (Camera.main == null) return;
+                Vector3 viewPos = Camera.main.WorldToViewportPoint(interactable.transform.position);
+                if (viewPos.x is >= 0 and <= 1 && viewPos.y is >= 0 and <= 1 && viewPos.z > 0)
+                {
+                    interactable.GetComponent<Animator>().speed = 0;
+                }
+            }
+        }
+
 
         // Update is called once per frame
         void Update()
@@ -26,64 +43,60 @@ namespace Managers
 
         private void CheckClickedObject()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (!Input.GetMouseButtonDown(0)) return;
+            if (Camera.main == null) return;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
             {
-                if (Camera.main != null)
+                // Check if hit object is in the interactable List
+                GameObject hittedObject = hit.transform.gameObject;
+                if (interactableObjects.Contains(hittedObject))
                 {
-                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                    RaycastHit hit;
-
-                    if (Physics.Raycast(ray, out hit))
-                    {
-                        // Check if hit object is in the interactable List
-                        GameObject hittedObject = hit.transform.gameObject;
-                        if (interactableObjects.Contains(hittedObject))
-                        {
-                            // Check if Object has Animator component
-                            Animator animator = hit.transform.GetComponent<Animator>();
+                    // Check if Object has Animator component
+                    Animator animator = hit.transform.GetComponent<Animator>();
                            
-                            if (animator != null)
-                            {
+                    if (animator != null)
+                    {
 
-                                // If I clicked on a new object, remove the color from the last clicked object
-                                if (hittedObject != selectedObject && selectedObject != null)
-                                    ObjectHighlight.RemoveClickedColor(selectedObject);
+                        // If I clicked on a new object, remove the color from the last clicked object
+                        if (hittedObject != selectedObject && selectedObject != null)
+                            ObjectHighlight.RemoveClickedColor(selectedObject);
                                 
-                                // Add the clicked object to the variable
-                                selectedObject = hittedObject;
+                        // Add the clicked object to the variable
+                        selectedObject = hittedObject;
 
-                                if (!InteractablesAndKnobs.ContainsKey(hittedObject))
-                                {
-                                    // Give every interactable object a Knob
-                                    Knob newKnob = Instantiate(knobPrefab, timeCompass.transform);
+                        if (!InteractablesAndKnobs.ContainsKey(hittedObject))
+                        {
+                            // Give every interactable object a Knob
+                            Knob newKnob = Instantiate(knobPrefab, timeCompass.transform);
                                     
-                                    SelectKnob(newKnob);
+                            SelectKnob(newKnob);
                                     
-                                    newKnob.IntializeKnob(startingCircle, animator);
+                            newKnob.IntializeKnob(startingCircle, animator);
                                     
-                                    // add this knob to the all knobs list
-                                    InteractablesAndKnobs.Add(hittedObject, newKnob);
-                                }
-
-                                else
-                                {
-                                    Knob selectedKnob = InteractablesAndKnobs[hittedObject];
-                                    if (selectedKnob != null) SelectKnob(selectedKnob);
-                                }
-                            }
-                            else
-                            {
-                                // The object is interactable, but doesn't have an Animator component
-                                Debug.Log("Clicked on an interactable object without an Animator component");
-                            }
+                            // add this knob to the all knobs list
+                            InteractablesAndKnobs.Add(hittedObject, newKnob);
                         }
+
                         else
                         {
-                            if (selectedObject == null) return;
-                            ObjectHighlight.RemoveClickedColor(selectedObject);
-                            selectedObject = null;
+                            Knob selectedKnob = InteractablesAndKnobs[hittedObject];
+                            if (selectedKnob != null) SelectKnob(selectedKnob);
                         }
                     }
+                    else
+                    {
+                        // The object is interactable, but doesn't have an Animator component
+                        Debug.Log("Clicked on an interactable object without an Animator component");
+                    }
+                }
+                else
+                {
+                    if (selectedObject == null) return;
+                    ObjectHighlight.RemoveClickedColor(selectedObject);
+                    selectedObject = null;
                 }
             }
         }
