@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5815239480867188846}
   - component: {fileID: 6883084331359893169}
   - component: {fileID: 2714158815281455553}
+  - component: {fileID: 6407410774913493034}
   m_Layer: 0
   m_Name: Shark
   m_TagString: Interactable
@@ -141,4 +142,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe1243dd09366d458bcccff8daa6131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
+--- !u!114 &6407410774913493034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263852356946395138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019f68c2db42646a384cc27fbdcd8391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ship: {fileID: 0}
