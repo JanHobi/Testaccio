@@ -25,6 +25,8 @@ namespace Animation
             {
                 // If he's in the water, remove parenting again
                 passengerPrefab.transform.SetParent(null);
+                
+                // *** Insert call to swimming Animation here ***
             }
         }
     }
