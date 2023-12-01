@@ -21,7 +21,13 @@ namespace Managers
         {
             foreach (var interactable in interactableObjects)
             {
-                interactable.GetComponent<Animator>().speed = 0;
+                // Stop all interactable animations that are visible in the Camera View 
+                if (Camera.main == null) return;
+                Vector3 viewPos = Camera.main.WorldToViewportPoint(interactable.transform.position);
+                if (viewPos.x is >= 0 and <= 1 && viewPos.y is >= 0 and <= 1 && viewPos.z > 0)
+                {
+                    interactable.GetComponent<Animator>().speed = 0;
+                }
             }
         }
 
