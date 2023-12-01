@@ -9,10 +9,9 @@ namespace Animation
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject == ship)
-            {
-               Destroy(gameObject);
-            }
+            if (collision.gameObject != ship) return;
+            Debug.Log("Shark McSharkface was killed :(");
+            Destroy(gameObject);
         }
     }
 }
