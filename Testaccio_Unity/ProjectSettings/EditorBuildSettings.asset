@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Scenes/Old/MainMenu.unity
+    path: Assets/Scenes/Old/MainMenu_Old.unity
     guid: b5e238ee6b918af49ab6a75d0b4e0258
   - enabled: 0
     path: Assets/Scenes/Old/Level_1.unity
@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Old/TestSceneJan_Old.unity
     guid: ea3c7d8828086754db20854926fd20d2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: b43c3b16c341646b38a660bc25b9a97f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DomiDev_2.unity
     guid: 5cbdba94af5c74f179928e02cd85eb74
   - enabled: 1
