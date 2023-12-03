@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4db48cf43c532b24eaef62f864d3e689
+guid: 9c5c2edf494da184c907c7b5abf35f09
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,43 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Body
-    second: {fileID: 2100000, guid: 119c66c97ba49b8418b3163be28c8159, type: 2}
+      name: Fish
+    second: {fileID: 2100000, guid: e099c7d133772dc45aa994fa4d77f6bd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Body_Detail
-    second: {fileID: 2100000, guid: cdc4858b72b0e05438195dfb840a947e, type: 2}
+      name: Fish_Detail
+    second: {fileID: 2100000, guid: 8865ae3d189f32345b8b7638a3511c54, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Light_Back
-    second: {fileID: 2100000, guid: e69734ce67bcd7d4baad60a5e5cb43ab, type: 2}
+      name: Fish_Eye
+    second: {fileID: 2100000, guid: f2a3b33591b38a848a4345c993755365, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Light_Front
-    second: {fileID: 2100000, guid: 803f3d18ccfcaa04c96ad7ebd1b4799e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Plate
-    second: {fileID: 2100000, guid: 81d4a52dcbc23d2458a23424ded7cda7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wheels
-    second: {fileID: 2100000, guid: 9795cba5541b68640a4388d8e2ace511, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wheels_Detail
-    second: {fileID: 2100000, guid: 541e60e2d0248084e89f0662670ebe53, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Window
-    second: {fileID: 2100000, guid: b8ee9136444c0bb49a1eba7d22fcfd5c, type: 2}
+      name: Fish_Eye2
+    second: {fileID: 2100000, guid: 1fd61cbdac9836b479578870f1446f20, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

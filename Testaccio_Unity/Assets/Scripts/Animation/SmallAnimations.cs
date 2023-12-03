@@ -9,7 +9,7 @@ public class SmallAnimations : MonoBehaviour
 
     public void BridgeOpen()
     {
-        gameObjectToAnimate.transform.DOLocalRotate(new Vector3(70, 0, 0), 0.7f).SetEase(Ease.InExpo);
+        gameObjectToAnimate.transform.DOLocalRotate(new Vector3(80, 0, 0), 0.7f).SetEase(Ease.InExpo);
     }
 
     public void BridgeClose()

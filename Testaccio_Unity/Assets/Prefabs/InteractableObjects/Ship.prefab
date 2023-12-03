@@ -9,8 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2427975333237166351}
-  - component: {fileID: 1695855936672350819}
-  - component: {fileID: 8822187173380647042}
+  - component: {fileID: 2097642802118369067}
   m_Layer: 0
   m_Name: BoatPassangerSpawn
   m_TagString: Untagged
@@ -33,20 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6869782647282691487}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1695855936672350819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937012822379553939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49d19e6c707f5df4d8b5cc5534343070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boatPassenger: {fileID: 0}
---- !u!23 &8822187173380647042
+--- !u!23 &2097642802118369067
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -379,27 +365,27 @@ PrefabInstance:
     - target: {fileID: 424326095962096486, guid: 7ab477b7049cf1b43b9833b0e8b54ea8,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.81914973
+      value: 0.7660424
       objectReference: {fileID: 0}
     - target: {fileID: 424326095962096486, guid: 7ab477b7049cf1b43b9833b0e8b54ea8,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5735748
+      value: 0.6427858
       objectReference: {fileID: 0}
     - target: {fileID: 424326095962096486, guid: 7ab477b7049cf1b43b9833b0e8b54ea8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.001930093
+      value: 0.0018049607
       objectReference: {fileID: 0}
     - target: {fileID: 424326095962096486, guid: 7ab477b7049cf1b43b9833b0e8b54ea8,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0013514655
+      value: -0.0015145417
       objectReference: {fileID: 0}
     - target: {fileID: 424326095962096486, guid: 7ab477b7049cf1b43b9833b0e8b54ea8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 70
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 424326095962096486, guid: 7ab477b7049cf1b43b9833b0e8b54ea8,
         type: 3}
