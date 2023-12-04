@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 383171833924671740}
   - component: {fileID: 8549594282983748266}
   - component: {fileID: 7911862989264745477}
+  - component: {fileID: 5411550313927143244}
   m_Layer: 0
   m_Name: Hook
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 366333092208233962}
   serializedVersion: 2
   m_LocalRotation: {x: -0.07753877, y: 0.91353774, z: -0.20771834, w: 0.34101272}
-  m_LocalPosition: {x: -0.009, y: 2.475, z: 0.103}
+  m_LocalPosition: {x: 0.009, y: 1.436, z: -0.059}
   m_LocalScale: {x: 0.19916092, y: 0.19916098, z: 0.19916092}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -121,6 +122,19 @@ MonoBehaviour:
   passengerPrefab: {fileID: 8953379437286608988, guid: 3a1e459a3efc25049992221d3372c1a3,
     type: 3}
   water: {fileID: 0}
+--- !u!114 &5411550313927143244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366333092208233962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df6272e9ab2d6a4da5901cbfad6774e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectToAnimate: {fileID: 366333092208233962}
 --- !u!1 &3399182085501610574
 GameObject:
   m_ObjectHideFlags: 0

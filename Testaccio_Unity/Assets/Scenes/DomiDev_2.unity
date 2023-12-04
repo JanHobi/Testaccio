@@ -296,10 +296,15 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 616993281}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5411550313927143244, guid: f6ebcfffde6c24d4caab0239d5a6afbf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3399182085501610574, guid: f6ebcfffde6c24d4caab0239d5a6afbf,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 178489443}
   m_SourcePrefab: {fileID: 100100000, guid: f6ebcfffde6c24d4caab0239d5a6afbf, type: 3}
 --- !u!1 &175225702
 GameObject:
@@ -347,6 +352,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 75402464}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &178489443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178489441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df6272e9ab2d6a4da5901cbfad6774e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectToAnimate: {fileID: 393105471}
 --- !u!1 &240162772
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +378,7 @@ GameObject:
   - component: {fileID: 240162774}
   - component: {fileID: 240162773}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: PauseCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -732,6 +750,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5441888858296057267, guid: d5fa0e0ace1c15645aac5f12764b572f,
     type: 3}
   m_PrefabInstance: {fileID: 373575822}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &393105471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 366333092208233962, guid: f6ebcfffde6c24d4caab0239d5a6afbf,
+    type: 3}
+  m_PrefabInstance: {fileID: 75402464}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &422172487
 PrefabInstance:
@@ -1646,6 +1670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scene Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4028353285039993192, guid: c7e24cd49b56bae41a0dec0b7d8f933c,
+        type: 3}
+      propertyPath: fadeSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6988134157096763196, guid: c7e24cd49b56bae41a0dec0b7d8f933c,
         type: 3}
