@@ -26,8 +26,7 @@ public class SharkAccidents : MonoBehaviour
 
         if (other.gameObject.CompareTag("Passenger"))
         {
-            Debug.Log("Passenger was eaten by shark");
-            //add effects here?
+            animator.SetTrigger("accidentPassenger");
         }
     }
 

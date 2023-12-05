@@ -11,6 +11,7 @@ TagManager:
   - Ship
   - Passenger
   - WaterTrigger
+  - Shark
   layers:
   - Default
   - TransparentFX
