@@ -9,7 +9,7 @@ namespace Managers
 {
     public class KnobManager : MonoBehaviour
     {
-        [SerializeField] private List<GameObject> interactableObjects;
+        public List<GameObject> interactableObjects;
         [SerializeField] private GameObject startingCircle;
         [SerializeField] private Knob knobPrefab;
         [SerializeField] private GameObject timeCompass;
