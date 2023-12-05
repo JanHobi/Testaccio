@@ -86,9 +86,9 @@ GameObject:
   - component: {fileID: 2852671006253837752}
   - component: {fileID: 7610057317692851190}
   - component: {fileID: 1674324880360925161}
-  - component: {fileID: 6936155149274198549}
   - component: {fileID: 3298862944995553788}
   - component: {fileID: 1569313732617045795}
+  - component: {fileID: 7795958295318077569}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Interactable
@@ -187,28 +187,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!64 &6936155149274198549
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3017736412738817349}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4493585093827132993, guid: 135403c576510ad458e1e137c0867f5e, type: 3}
 --- !u!114 &3298862944995553788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +212,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe1243dd09366d458bcccff8daa6131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &7795958295318077569
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3017736412738817349}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 6.6999993
+  m_Height: 23.902643
+  m_Direction: 0
+  m_Center: {x: -0.7924557, y: 4.300001, z: 0.00000003096667}
 --- !u!1 &5532387640040012164
 GameObject:
   m_ObjectHideFlags: 0
