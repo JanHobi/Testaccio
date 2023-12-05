@@ -191,11 +191,6 @@ PrefabInstance:
       propertyPath: taxi
       value: 
       objectReference: {fileID: 2020756687}
-    - target: {fileID: 8549594282983748266, guid: f6ebcfffde6c24d4caab0239d5a6afbf,
-        type: 3}
-      propertyPath: m_Radius
-      value: 3.39
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
