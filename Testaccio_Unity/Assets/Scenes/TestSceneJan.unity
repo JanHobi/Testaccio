@@ -1115,16 +1115,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Taxi
       objectReference: {fileID: 0}
-    - target: {fileID: 1547773320939271169, guid: c73b0e3804bd92242b34904d36ed4327,
-        type: 3}
-      propertyPath: m_TagString
-      value: Taxi
-      objectReference: {fileID: 0}
-    - target: {fileID: 3317855571090784440, guid: c73b0e3804bd92242b34904d36ed4327,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4228512748908936661, guid: c73b0e3804bd92242b34904d36ed4327,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1174,16 +1164,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6390671953146178003, guid: c73b0e3804bd92242b34904d36ed4327,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 6390671953146178003, guid: c73b0e3804bd92242b34904d36ed4327,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 12.23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1734,17 +1714,17 @@ PrefabInstance:
     - target: {fileID: 1849093894532662667, guid: 09fc27441b97cd64c8934bf1a5a13b8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 151.2
+      value: 134.1
       objectReference: {fileID: 0}
     - target: {fileID: 1849093894532662667, guid: 09fc27441b97cd64c8934bf1a5a13b8e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.97
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1849093894532662667, guid: 09fc27441b97cd64c8934bf1a5a13b8e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 109
+      value: 119.7
       objectReference: {fileID: 0}
     - target: {fileID: 1849093894532662667, guid: 09fc27441b97cd64c8934bf1a5a13b8e,
         type: 3}

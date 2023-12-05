@@ -1,25 +1,28 @@
 using System;
 using UnityEngine;
 
-namespace Animation
-{
-    public class SharkAccidents : MonoBehaviour
-    {
-        [SerializeField] private GameObject ship;
-        [SerializeField] private GameObject passengerPrefab;
 
-        private void OnCollisionEnter(Collision collision)
+public class SharkAccidents : MonoBehaviour
+{
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Ship"))
         {
-            if (collision.gameObject == ship)
-            {
-                Debug.Log("Shark McSharkface was killed :(");
-                Destroy(gameObject);
-            }
-            else if (collision.gameObject == passengerPrefab)
-            {
-                Debug.Log("Passenger was eaten by shark");
-                Destroy(passengerPrefab); 
-            }
+            Debug.Log("Shark McSharkface was killed :(");
+            animator.SetTrigger("accidentShip");
+        }
+
+        if (other.gameObject.CompareTag("Passenger"))
+        {
+            Debug.Log("Passenger was eaten by shark");
+            //add effects here?
         }
     }
 }

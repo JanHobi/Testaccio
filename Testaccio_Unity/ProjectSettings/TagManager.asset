@@ -8,6 +8,8 @@ TagManager:
   - Bridge
   - Ground
   - Taxi
+  - Ship
+  - Passenger
   layers:
   - Default
   - TransparentFX
