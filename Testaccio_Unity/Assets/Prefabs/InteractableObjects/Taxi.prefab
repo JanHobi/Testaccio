@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4572059803623555780}
   m_Layer: 0
   m_Name: Taxi
-  m_TagString: Interactable
+  m_TagString: Taxi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -192,7 +192,7 @@ Transform:
   m_GameObject: {fileID: 2759642325716444741}
   serializedVersion: 2
   m_LocalRotation: {x: 0.68886346, y: 0.15909219, z: 0.15903665, w: 0.6891039}
-  m_LocalPosition: {x: 0.94, y: -0.0767, z: 8.86}
+  m_LocalPosition: {x: 0.54, y: -0.0767, z: 12.23}
   m_LocalScale: {x: 0.02297266, y: 0.022972666, z: 0.022972662}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -393,8 +393,8 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0.465}
-  m_Size: {x: 0.9, y: 0.9, z: 0.93}
+  m_Offset: {x: 0, y: 0, z: 0.27}
+  m_Size: {x: 0.8, y: 0.8, z: 0.54}
   m_FadeFactor: 1
 --- !u!23 &4402596089099640049
 MeshRenderer:

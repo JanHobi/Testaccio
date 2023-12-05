@@ -7,9 +7,9 @@ TagManager:
   - Interactable
   - Bridge
   - Ground
+  - Taxi
+  - Ship
   - Passenger
-  - Water
-  - WaterTrigger
   layers:
   - Default
   - TransparentFX

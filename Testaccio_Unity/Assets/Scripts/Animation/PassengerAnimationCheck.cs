@@ -17,5 +17,10 @@ public class PassengerAnimationCheck : MonoBehaviour
         {
             animator.SetTrigger("successBoat");
         }
+
+        if (other.gameObject.CompareTag("Taxi"))
+        {
+            animator.SetTrigger("accidentTaxi");
+        }
     }
 }
