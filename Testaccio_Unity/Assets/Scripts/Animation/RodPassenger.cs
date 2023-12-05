@@ -1,33 +1,49 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Animation
 {
     public class RodPassenger : MonoBehaviour
     {
-        [SerializeField] private GameObject passengerPrefab;
-        [SerializeField] private GameObject water;
-        private Transform hook;
+        private GameObject water;
+        [SerializeField] private SpawnPassenger taxi;
+        [SerializeField] private GameObject emptyPassenger;
+         private Transform hook;
+        private bool caught;
+        private Transform selectedPassenger;
+        private GameObject emptyPassengerInstance;
 
         private void Start()
         {
-            hook = transform;
+            water = GameObject.FindGameObjectWithTag("WaterTrigger");
         }
 
-        private void OnCollisionEnter(Collision collision)
+        private void Update()
         {
-            if (collision.gameObject == passengerPrefab)
+            if (!caught) return;
+            hook = transform;
+            emptyPassengerInstance.transform.position = hook.position;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (taxi.allPassengers.Contains(other.gameObject))
             {
-                Debug.Log("Fisher catches Passenger");
-                passengerPrefab.transform.SetParent(transform);
+                selectedPassenger = other.transform;
+                Destroy(other);
+                emptyPassengerInstance = Instantiate(emptyPassenger, null);
+                caught = true;
             }
-            else if (collision.gameObject == water)
+            if (other.gameObject == water)
             {
-                // If he's in the water, remove parenting again
-                passengerPrefab.transform.SetParent(null);
-                
-                // *** Insert call to swimming Animation here ***
+                Debug.Log("hit water");
+                caught = false;
             }
+            
+           
+           
         }
     }
 }

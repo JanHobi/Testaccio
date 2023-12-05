@@ -5,10 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/fisher.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/fisher.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Fisher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Fisher.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Others/Passenger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Others/Passenger.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/RodPassenger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/RodPassenger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/SmallAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/SmallAnimations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/SpawnPassenger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/SpawnPassenger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,9 @@
       <workItem from="1700995003444" duration="606000" />
       <workItem from="1701168329738" duration="16007000" />
       <workItem from="1701334431772" duration="9711000" />
-      <workItem from="1701438855780" duration="7019000" />
+      <workItem from="1701438855780" duration="7116000" />
+      <workItem from="1701705351904" duration="777000" />
+      <workItem from="1701767973945" duration="10019000" />
     </task>
     <servers />
   </component>

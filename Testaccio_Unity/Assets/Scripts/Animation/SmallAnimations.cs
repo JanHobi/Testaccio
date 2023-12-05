@@ -27,5 +27,10 @@ namespace Animation
             gameObjectToAnimate.transform.DOLocalMove(new Vector3(5.8f, 1.65f, 5.4f), 1).SetEase(Ease.InOutQuint);
         }
         
+        public void TakeRodBack()
+        {
+            gameObjectToAnimate.transform.DOLocalMove(new Vector3(0.01f, 1.436f, -0.06f), 1).SetEase(Ease.InOutQuint);
+        }
+        
     }
 }

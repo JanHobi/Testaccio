@@ -1,14 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnPassenger : MonoBehaviour
+namespace Animation
 {
-    public GameObject passengerPrefab;
-    public GameObject spawnPoint;
-
-    public void InstantiatePassenger()
+    public class SpawnPassenger : MonoBehaviour
     {
-        Instantiate(passengerPrefab, spawnPoint.transform.position, Quaternion.identity);
+        public GameObject passengerPrefab;
+        public GameObject spawnPoint;
+        [HideInInspector] public List<GameObject> allPassengers = new List<GameObject>();
+
+        public void InstantiatePassenger()
+        {
+            GameObject instance =  Instantiate(passengerPrefab, spawnPoint.transform.position, Quaternion.identity);
+            allPassengers.Add(instance);
+        }
     }
 }

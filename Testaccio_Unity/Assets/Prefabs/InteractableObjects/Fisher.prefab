@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 383171833924671740}
   - component: {fileID: 8549594282983748266}
   - component: {fileID: 7911862989264745477}
-  - component: {fileID: 5411550313927143244}
   m_Layer: 0
   m_Name: Hook
   m_TagString: Untagged
@@ -105,8 +104,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 2.287675
+  m_Center: {x: 0.25999996, y: 0.00000020143752, z: 0.01}
 --- !u!114 &7911862989264745477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,19 +121,6 @@ MonoBehaviour:
   passengerPrefab: {fileID: 8953379437286608988, guid: 3a1e459a3efc25049992221d3372c1a3,
     type: 3}
   water: {fileID: 0}
---- !u!114 &5411550313927143244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366333092208233962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8df6272e9ab2d6a4da5901cbfad6774e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObjectToAnimate: {fileID: 366333092208233962}
 --- !u!1 &3399182085501610574
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +135,7 @@ GameObject:
   - component: {fileID: 1107973361665924186}
   - component: {fileID: 6935428323629702142}
   - component: {fileID: 6132756943883842560}
+  - component: {fileID: 1313774343641832692}
   m_Layer: 0
   m_Name: Fisher
   m_TagString: Interactable
@@ -278,6 +265,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe1243dd09366d458bcccff8daa6131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1313774343641832692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399182085501610574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df6272e9ab2d6a4da5901cbfad6774e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectToAnimate: {fileID: 366333092208233962}
 --- !u!1 &8129595508592548277
 GameObject:
   m_ObjectHideFlags: 0
