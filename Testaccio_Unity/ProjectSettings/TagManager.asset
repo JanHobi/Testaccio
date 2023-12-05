@@ -10,6 +10,7 @@ TagManager:
   - Taxi
   - Ship
   - Passenger
+  - WaterTrigger
   layers:
   - Default
   - TransparentFX

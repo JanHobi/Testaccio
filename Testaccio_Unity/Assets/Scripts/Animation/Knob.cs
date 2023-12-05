@@ -143,8 +143,6 @@ namespace Animation
         {
             if (!selected) return;
             activeAnimSpeed = currentSpeed;
-            Debug.Log("Animation Speed" + activeAnimSpeed);
-
         }
 
         private void ChangeColor()
