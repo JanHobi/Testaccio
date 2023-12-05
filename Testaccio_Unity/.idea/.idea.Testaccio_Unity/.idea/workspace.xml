@@ -2,14 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/fisher.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/fisher.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Fisher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Fisher.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Shark.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Shark/SharkAccidentShip.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Shark/SharkAccidentShip.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Taxi/PassangerAccidentTaxi.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Taxi/PassangerAccidentTaxi.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Taxi/PassengerMoveToOutside.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Taxi/PassengerMoveToOutside.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Shark.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Shark.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Taxi/Passenger.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Taxi/Passenger.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Taxi/PassengerMoveToStand.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Taxi/PassengerMoveToMarket.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Taxi/PassengerMoveToStand.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Taxi/PassengerMoveToMarket.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Taxi/PassengerMovetToBridge.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Taxi/PassengerMovetToBridge.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/shark.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/shark.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Land.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Land.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Shark.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Shark.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Ship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Ship.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Taxi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Taxi.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Others/Passenger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Others/Passenger.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/RodPassenger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/RodPassenger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/SmallAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/SmallAnimations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/SpawnPassenger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/SpawnPassenger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestSceneJan.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestSceneJan.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/PassengerAnimationCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/PassengerAnimationCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/SharkAccidents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/SharkAccidents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +114,7 @@
       <workItem from="1701334431772" duration="9711000" />
       <workItem from="1701438855780" duration="7116000" />
       <workItem from="1701705351904" duration="777000" />
-      <workItem from="1701767973945" duration="10019000" />
+      <workItem from="1701767973945" duration="10306000" />
     </task>
     <servers />
   </component>
