@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4323103061095410049}
   - component: {fileID: 6416750456346833146}
   - component: {fileID: 2606337696881197936}
+  - component: {fileID: 8812755061988453589}
   m_Layer: 0
   m_Name: Passenger
   m_TagString: Interactable
@@ -114,7 +115,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!95 &4323103061095410049
 Animator:
   serializedVersion: 5
@@ -171,3 +172,15 @@ CapsuleCollider:
   m_Height: 1.2564988
   m_Direction: 1
   m_Center: {x: -0.000000029802322, y: 0.6227058, z: -0.0061856806}
+--- !u!114 &8812755061988453589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8953379437286608988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7a93d2de73ab494da3574b25c7142bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
