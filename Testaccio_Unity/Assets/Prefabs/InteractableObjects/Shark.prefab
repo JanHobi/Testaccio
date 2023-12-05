@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019f68c2db42646a384cc27fbdcd8391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sharkPrefab: {fileID: 5263852356946395138}
 --- !u!54 &1349770247570536405
 Rigidbody:
   m_ObjectHideFlags: 0

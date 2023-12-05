@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class SharkAccidents : MonoBehaviour
 {
+    [SerializeField] private GameObject sharkPrefab;
     private Animator animator;
+    private bool isDead = false;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
     }
-    
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Ship"))
+        if (other.gameObject.CompareTag("Ship") && !isDead)
         {
-            Debug.Log("Shark McSharkface was killed :(");
             animator.SetTrigger("accidentShip");
+            isDead = true;
         }
 
         if (other.gameObject.CompareTag("Passenger"))
@@ -24,5 +26,10 @@ public class SharkAccidents : MonoBehaviour
             Debug.Log("Passenger was eaten by shark");
             //add effects here?
         }
+    }
+
+    private void SpawnNextShark()
+    {
+        Instantiate(sharkPrefab, transform.position, Quaternion.identity);
     }
 }
