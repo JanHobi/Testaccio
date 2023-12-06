@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7257780830887329389}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 326.04706, y: -126.83818, z: 612.6779}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -48,4 +48,13 @@ MonoBehaviour:
   - Holidays
   - Hungry Shark
   - Market
-  selectedTasks: []
+  - Mamma Mia
+  - Jan isch chrank
+  - Domi war bouldern
+  - Bald Weihnachten
+  - Chill
+  - Hallo
+  numberOfTasksShown: 3
+  uiTaskPrefab: {fileID: 2728520236122314578, guid: df78b9e2369e74d0b88413eeaac7ab20,
+    type: 3}
+  taskParent: {fileID: 0}
