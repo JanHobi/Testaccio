@@ -51,17 +51,26 @@ namespace Managers
             bool allTasksCompleted = SelectedTasks.All(task => task.Value == true);
 
             if (!allTasksCompleted) return;
-            // All tasks are completed
             Debug.Log("All tasks completed!");
-            NewTasks();
+            
+            // Wait some seconds before getting new tasks, so that the animation can finish
+            Invoke(nameof(NewTasks), 3);
         }
 
-        public Dictionary<string, bool> CurrentTasks()
+        public void SetTaskToDone(string taskKey)
         {
-            return SelectedTasks;
+            // Check if the task exists in the dictionary
+            if (SelectedTasks.ContainsKey(taskKey))
+            {
+                // Set the value of the specified task to true
+                SelectedTasks[taskKey] = true;
+            }
+            else
+            {
+                Debug.LogWarning($"Task with key '{taskKey}' not found.");
+            }
         }
-
-        [ContextMenu("Spawn New Tasks")]
+        
         public void NewTasks()
         {
             // Clear existing UI elements
@@ -81,6 +90,16 @@ namespace Managers
             {
                Destroy(child.gameObject);
             }
+        }
+        
+        public void SetAllTasksToDone()
+        {
+            foreach (var key in SelectedTasks.Keys.ToList())
+            {
+                SelectedTasks[key] = true;
+            }
+            
+            CheckTasksCompletion();
         }
 
         private Dictionary<string, bool> GetTasksFromPool()
