@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6991951996658517861}
   - component: {fileID: 7311963292733332427}
+  - component: {fileID: 134896390614821189}
   m_Layer: 0
   m_Name: TaskManager
   m_TagString: Untagged
@@ -59,3 +60,17 @@ MonoBehaviour:
   uiTaskPrefab: {fileID: 2728520236122314578, guid: df78b9e2369e74d0b88413eeaac7ab20,
     type: 3}
   taskParent: {fileID: 0}
+--- !u!114 &134896390614821189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7257780830887329389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e66941dbbbd84e4b84f4e409cb86196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeForce: 10
+  shakeLength: 2

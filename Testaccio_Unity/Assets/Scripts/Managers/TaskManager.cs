@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Animation;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using TMPro;
+
 
 
 namespace Managers
@@ -16,6 +18,7 @@ namespace Managers
          private float spacing = 30;
         [SerializeField] private TMP_Text uiTaskPrefab;
         [SerializeField] private Transform taskParent;
+        private TaskAnimations taskAnimations;
       
 
        
@@ -37,40 +40,56 @@ namespace Managers
         private void Awake()
         {
             _instance = this;
+
+            taskAnimations = GetComponent<TaskAnimations>();
         }
-        
-       
 
         void Start()
         {
             NewTasks();
         }
 
-        public void CheckTasksCompletion()
+        private void CheckTasksCompletion()
         {
             bool allTasksCompleted = SelectedTasks.All(task => task.Value == true);
 
             if (!allTasksCompleted) return;
             Debug.Log("All tasks completed!");
-            
+
             // Wait some seconds before getting new tasks, so that the animation can finish
             Invoke(nameof(NewTasks), 3);
         }
 
         public void SetTaskToDone(string taskKey)
         {
-            // Check if the task exists in the dictionary
             if (SelectedTasks.ContainsKey(taskKey))
             {
-                // Set the value of the specified task to true
                 SelectedTasks[taskKey] = true;
+                
+                // Check if it has a UI element
+                TMP_Text uiText = FindUITextByTaskKey(taskKey);
+
+                if (uiText != null)
+                {
+                  taskAnimations.TaskDoneAnimation(uiText);
+                }
+                
+                // Check if all Tasks are done now
+                CheckTasksCompletion();
             }
             else
             {
                 Debug.LogWarning($"Task with key '{taskKey}' not found.");
             }
         }
-        
+
+        private TMP_Text FindUITextByTaskKey(string taskKey)
+        {
+            // Find the TMP Object that has this Key stored. Or simpler: Find the UI-Text of a given Task
+            return (from Transform child in taskParent select child.GetComponent<TMP_Text>())
+                .FirstOrDefault(uiText => uiText != null && uiText.text == taskKey);
+        }
+
         public void NewTasks()
         {
             // Clear existing UI elements
@@ -92,16 +111,6 @@ namespace Managers
             }
         }
         
-        public void SetAllTasksToDone()
-        {
-            foreach (var key in SelectedTasks.Keys.ToList())
-            {
-                SelectedTasks[key] = true;
-            }
-            
-            CheckTasksCompletion();
-        }
-
         private Dictionary<string, bool> GetTasksFromPool()
         {
             if (numberOfTasksShown > allTasks.Count)
@@ -111,7 +120,7 @@ namespace Managers
             
             for (int i = 0; i < numberOfTasksShown; i++)
             {
-                int randomIndex = Random.Range(0, numberOfTasksShown);
+                int randomIndex = Random.Range(0, numberOfTasksShown-1);
                 string selectedTask = allTasks[randomIndex];
                 
                 // Add to dictionary
@@ -125,7 +134,6 @@ namespace Managers
         
         private void ShowTasksAsUI()
         {
-           
             float yPosOffset = 0f;
             
             foreach (var tasks in SelectedTasks.Keys)
@@ -139,5 +147,18 @@ namespace Managers
                 yPosOffset += spacing;
             }
         }
+        
+        public void SetAllTasksToDone()
+        {
+            // Only for Debugging and Testing
+            foreach (var key in SelectedTasks.Keys.ToList())
+            {
+                SelectedTasks[key] = true;
+                SetTaskToDone(key);
+            }
+            
+            CheckTasksCompletion();
+        }
+
     }
 }

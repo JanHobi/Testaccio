@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
+
 namespace Managers
 {
     [CustomEditor((typeof(TaskManager)))]
@@ -19,7 +20,7 @@ namespace Managers
             {
                 taskManager.SetAllTasksToDone();
             }
-            GUILayout.Space(10);
+            GUILayout.Space(5);
         }
     }
 }
