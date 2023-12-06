@@ -5,14 +5,13 @@ using UnityEngine;
 public class DustTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject dustParticles;
-    [SerializeField] private GameObject dustPosition;
 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Bridge"))
         {
-            Instantiate(dustParticles, dustPosition.transform.position, Quaternion.identity);
+            Instantiate(dustParticles, transform.position, Quaternion.identity);
         }
     }
 }
