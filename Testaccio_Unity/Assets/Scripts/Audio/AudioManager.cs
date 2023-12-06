@@ -9,8 +9,8 @@ namespace Audio
     public class AudioManager : MonoBehaviour
     {
         private static AudioManager _instance;
-        private FMOD.Studio.EventInstance menuMusic = RuntimeManager.CreateInstance("event/menuMusic");
-        private FMOD.Studio.EventInstance gameMusic = RuntimeManager.CreateInstance("event/gameMusic");
+        private FMOD.Studio.EventInstance menuMusic;
+        private FMOD.Studio.EventInstance gameMusic;
         
         public static AudioManager Instance
         {
@@ -28,15 +28,18 @@ namespace Audio
         private void Awake()
         {
             _instance = this;
+            
+            //menuMusic = RuntimeManager.CreateInstance("event/menuMusic");
+            //gameMusic = RuntimeManager.CreateInstance("event/gameMusic");
         }
 
         public void PlayMenuMusic()
         {
-            menuMusic.start();
+            //menuMusic.start();
         }
         public void PlayGameMusic()
         {
-            gameMusic.start();
+           // gameMusic.start();
         }
     }
 }
