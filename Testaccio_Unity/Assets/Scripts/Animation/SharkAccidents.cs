@@ -1,39 +1,40 @@
-using System;
 using Managers;
 using UnityEngine;
 
-
-public class SharkAccidents : MonoBehaviour
+namespace Animation
 {
-    [SerializeField] private GameObject sharkPrefab;
-    private Animator animator;
-    private bool isDead = false;
-    private KnobManager knobManager;
-
-    private void Start()
+    public class SharkAccidents : MonoBehaviour
     {
-        animator = GetComponent<Animator>();
-        knobManager = FindObjectOfType<KnobManager>();
-    }
+        [SerializeField] private GameObject sharkPrefab;
+        private Animator animator;
+        private bool isDead = false;
+        private KnobManager knobManager;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Ship") && !isDead)
+        private void Start()
         {
-            animator.SetTrigger("accidentShip");
-            isDead = true;
-            TaskManager.Instance.SetTaskToDone("Shark Death");
+            animator = GetComponent<Animator>();
+            knobManager = FindObjectOfType<KnobManager>();
         }
 
-        if (other.gameObject.CompareTag("Passenger"))
+        private void OnTriggerEnter(Collider other)
         {
-            animator.SetTrigger("accidentPassenger");
-        }
-    }
+            if (other.gameObject.CompareTag("Ship") && !isDead)
+            {
+                animator.SetTrigger("accidentShip");
+                isDead = true;
+                TaskManager.Instance.SetTaskToDone("Shark Death");
+            }
 
-    private void SpawnNextShark()
-    {
-        GameObject sharkInstance = Instantiate(sharkPrefab, transform.position, Quaternion.identity);
-        knobManager.interactableObjects.Add(sharkInstance);
+            if (other.gameObject.CompareTag("Passenger"))
+            {
+                animator.SetTrigger("accidentPassenger");
+            }
+        }
+
+        private void SpawnNextShark()
+        {
+            GameObject sharkInstance = Instantiate(sharkPrefab, transform.position, Quaternion.identity);
+            knobManager.interactableObjects.Add(sharkInstance);
+        }
     }
 }
