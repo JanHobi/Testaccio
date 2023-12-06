@@ -45,15 +45,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allTasks:
-  - Holidays
+  - Shark Death
   - Hungry Shark
-  - Market
-  - Mamma Mia
-  - Jan isch chrank
-  - Domi war bouldern
-  - Bald Weihnachten
-  - Chill
-  - Hallo
+  - Fish to Market
+  - Car Accident
+  - Missed Boat
+  - Holidays
+  - Catch a Passenger
+  - Nothing to sell
+  - Catch a Boat
   numberOfTasksShown: 3
   uiTaskPrefab: {fileID: 2728520236122314578, guid: df78b9e2369e74d0b88413eeaac7ab20,
     type: 3}
