@@ -22,6 +22,7 @@ public class SharkAccidents : MonoBehaviour
         {
             animator.SetTrigger("accidentShip");
             isDead = true;
+            TaskManager.Instance.SetTaskToDone("Shark Death");
         }
 
         if (other.gameObject.CompareTag("Passenger"))

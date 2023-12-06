@@ -57,9 +57,18 @@ namespace Managers
             Invoke(nameof(NewTasks), 3);
         }
 
-        public Dictionary<string, bool> CurrentTasks()
+        public void SetTaskToDone(string taskKey)
         {
-            return SelectedTasks;
+            // Check if the task exists in the dictionary
+            if (SelectedTasks.ContainsKey(taskKey))
+            {
+                // Set the value of the specified task to true
+                SelectedTasks[taskKey] = true;
+            }
+            else
+            {
+                Debug.LogWarning($"Task with key '{taskKey}' not found.");
+            }
         }
         
         public void NewTasks()
@@ -83,7 +92,7 @@ namespace Managers
             }
         }
         
-        public void SetTasksToDone()
+        public void SetAllTasksToDone()
         {
             foreach (var key in SelectedTasks.Keys.ToList())
             {

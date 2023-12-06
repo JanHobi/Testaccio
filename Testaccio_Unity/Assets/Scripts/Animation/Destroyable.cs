@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Managers;
 using UnityEngine;
 
 public class Destroyable : MonoBehaviour
@@ -9,6 +10,7 @@ public class Destroyable : MonoBehaviour
         if (other.gameObject.CompareTag("Bridge"))
         {
             DestroyMe();
+            TaskManager.Instance.SetTaskToDone("Heavy Bridge");
         }
 
     }

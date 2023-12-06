@@ -54,6 +54,7 @@ MonoBehaviour:
   - Catch a Passenger
   - Nothing to sell
   - Catch a Boat
+  - Heavy Bridge
   numberOfTasksShown: 3
   uiTaskPrefab: {fileID: 2728520236122314578, guid: df78b9e2369e74d0b88413eeaac7ab20,
     type: 3}

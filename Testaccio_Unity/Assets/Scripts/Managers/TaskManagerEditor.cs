@@ -15,9 +15,9 @@ namespace Managers
             // Button
             GUILayout.Space(10);
 
-            if (GUILayout.Button("Tasks Done"))
+            if (GUILayout.Button("Skip Tasks"))
             {
-                taskManager.SetTasksToDone();
+                taskManager.SetAllTasksToDone();
             }
             GUILayout.Space(10);
         }
