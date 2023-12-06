@@ -51,9 +51,10 @@ namespace Managers
             bool allTasksCompleted = SelectedTasks.All(task => task.Value == true);
 
             if (!allTasksCompleted) return;
-            // All tasks are completed
             Debug.Log("All tasks completed!");
-            NewTasks();
+            
+            // Wait some seconds before getting new tasks, so that the animation can finish
+            Invoke(nameof(NewTasks), 3);
         }
 
         public Dictionary<string, bool> CurrentTasks()
