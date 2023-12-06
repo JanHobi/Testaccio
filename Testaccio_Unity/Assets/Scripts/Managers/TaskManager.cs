@@ -60,8 +60,7 @@ namespace Managers
         {
             return SelectedTasks;
         }
-
-        [ContextMenu("Spawn New Tasks")]
+        
         public void NewTasks()
         {
             // Clear existing UI elements
@@ -81,6 +80,16 @@ namespace Managers
             {
                Destroy(child.gameObject);
             }
+        }
+        
+        public void SetTasksToDone()
+        {
+            foreach (var key in SelectedTasks.Keys.ToList())
+            {
+                SelectedTasks[key] = true;
+            }
+            
+            CheckTasksCompletion();
         }
 
         private Dictionary<string, bool> GetTasksFromPool()
