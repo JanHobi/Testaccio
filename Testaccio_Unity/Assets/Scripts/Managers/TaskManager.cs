@@ -50,11 +50,10 @@ namespace Managers
         {
             bool allTasksCompleted = SelectedTasks.All(task => task.Value == true);
 
-            if (allTasksCompleted)
-            {
-                // All tasks are completed
-                Debug.Log("All tasks completed!");
-            }
+            if (!allTasksCompleted) return;
+            // All tasks are completed
+            Debug.Log("All tasks completed!");
+            NewTasks();
         }
 
         public Dictionary<string, bool> CurrentTasks()
