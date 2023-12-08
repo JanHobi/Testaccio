@@ -9,18 +9,22 @@ namespace Visual
 {
     public class CloudGenerator : MonoBehaviour
     {
-        [SerializeField] private GameObject cloudPrefab;
+        [SerializeField] private Material cloudMaterial;
         [SerializeField] private int numberOfClouds;
         [SerializeField] private float cloudScale;
         [SerializeField] private float minMoveSpeed;
         [SerializeField] private float maxMoveSpeed;
+        [SerializeField] private float minSingleScale;
+        [SerializeField] private float maxSingleScale;
         [SerializeField] private float cloudHeight;
         [SerializeField] private float noiseStartX;
         [SerializeField] private float noiseEndX;
         [SerializeField] private float noiseStartZ;
         [SerializeField] private float noiseEndZ;
+        [SerializeField] private int numberOfSpheresPerCloud;
 
         private bool emptySky;
+        
         private List<GameObject> allClouds = new List<GameObject>();
         
         void Start()
@@ -32,7 +36,6 @@ namespace Visual
         private void Update()
         {
             RemoveOldAndSpawnNewClouds();
-            
         }
         
         void GenerateClouds()
@@ -45,26 +48,40 @@ namespace Visual
 
         private void SpawnCloud()
         {
-            Vector3 randomPosition = GenerateRandomPosition();
+            Vector3[] spherePositions = GenerateSpherePositions();
 
+            GameObject cloudInstance = new GameObject("Cloud");
+            
+            foreach (var randomPos in spherePositions)
+            {
+                // Create sphere
+                GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                // Make it a child of instance
+                sphere.transform.parent = cloudInstance.transform;
+                // Put to defined random Pos
+                sphere.transform.position = randomPos;
+                sphere.GetComponent<Renderer>().material = cloudMaterial;
+            }
+            
+            Vector3 randomPosition = RandomCloudPosition();
+
+            // Use Perlin Nose
             float perlinX = randomPosition.x / cloudScale;
             float perlinZ = randomPosition.z / cloudScale;
-
             float perlinValue = Mathf.PerlinNoise(perlinX, perlinZ);
 
             // Adjust the cloud height based on the perlin value
             randomPosition.y += perlinValue;
 
+            cloudInstance.transform.position = randomPosition;
+
             // Add random scaling to the cloud
-            float randomScale = Random.Range(10f, 30f); // Adjust the range as needed
+            float randomScale = Random.Range(minSingleScale, maxSingleScale); // Adjust the range as needed
 
             Vector3 randomScaleVector = new Vector3(randomScale, randomScale, randomScale);
-                
+            
             // Set the rotation to a 90-degree rotation around the X-axis
-            Quaternion rotation = Quaternion.Euler(90f, 0f, 0f);
-
-            // Instantiate
-            GameObject cloudInstance = Instantiate(cloudPrefab, randomPosition, rotation);
+            //Quaternion rotation = Quaternion.Euler(90f, 0f, 0f);
 
             // Add random scaling
             cloudInstance.transform.localScale = randomScaleVector;
@@ -79,7 +96,22 @@ namespace Visual
             // Add to List for later use
             allClouds.Add(cloudInstance);
         }
-        
+
+        private Vector3[] GenerateSpherePositions()
+        {
+            // Generate random center Points for the Spheres
+            Vector3[] positions = new Vector3[numberOfSpheresPerCloud];
+
+            for (int i = 0; i < positions.Length; i++)
+            {
+                positions[i] = new Vector3(Random.Range(-0.5f, 0.5f)
+                    , Random.Range(-0.5f, 0.5f)
+                    , Random.Range(-0.5f, 0.5f));
+            }
+
+            return positions;
+        }
+
         private void RemoveOldAndSpawnNewClouds()
         {
             // Create a seperate List for the clouds that need to be removed. Cannot delete objs out of a list while looping through it...
@@ -101,7 +133,7 @@ namespace Visual
             }
         }
 
-        private Vector3 GenerateRandomPosition()
+        private Vector3 RandomCloudPosition()
         {
             if (emptySky)
             {
