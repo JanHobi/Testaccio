@@ -56,10 +56,14 @@ namespace Visual
             {
                 // Create sphere
                 GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                // Random Size
+                float randomSize = Random.Range(0.4f, 1.3f); 
+                sphere.transform.localScale = new Vector3(randomSize, randomSize, randomSize);
                 // Make it a child of instance
                 sphere.transform.parent = cloudInstance.transform;
                 // Put to defined random Pos
                 sphere.transform.position = randomPos;
+                // Material
                 sphere.GetComponent<Renderer>().material = cloudMaterial;
             }
             
@@ -121,7 +125,12 @@ namespace Visual
             {
                 var cloud = allClouds[index];
                 if (!(cloud.transform.position.x > noiseEndX)) continue;
+                
+                // Add this cloud to List of removable clouds
                 cloudsToRemove.Add(cloud);
+                // Now only spawn outside the screen
+                emptySky = false;
+                // Spawn a new one
                 SpawnCloud();
             }
 

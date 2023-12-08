@@ -2430,7 +2430,7 @@ PrefabInstance:
     - target: {fileID: 3503028215809375658, guid: 60a8fe692be8542ff90dd69af0985f3d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 828
       objectReference: {fileID: 0}
     - target: {fileID: 3503028215809375658, guid: 60a8fe692be8542ff90dd69af0985f3d,
         type: 3}
@@ -2481,46 +2481,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CloudGenerator
-      objectReference: {fileID: 0}
-    - target: {fileID: 6613381120572946007, guid: 60a8fe692be8542ff90dd69af0985f3d,
-        type: 3}
-      propertyPath: cloudHeight
-      value: 99.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6613381120572946007, guid: 60a8fe692be8542ff90dd69af0985f3d,
-        type: 3}
-      propertyPath: noiseStartZ
-      value: -300
-      objectReference: {fileID: 0}
-    - target: {fileID: 6613381120572946007, guid: 60a8fe692be8542ff90dd69af0985f3d,
-        type: 3}
-      propertyPath: maxMoveSpeed
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6613381120572946007, guid: 60a8fe692be8542ff90dd69af0985f3d,
-        type: 3}
-      propertyPath: minMoveSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6613381120572946007, guid: 60a8fe692be8542ff90dd69af0985f3d,
-        type: 3}
-      propertyPath: cloudMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: b58351ab5862e41618110866c6985279, type: 2}
-    - target: {fileID: 6613381120572946007, guid: 60a8fe692be8542ff90dd69af0985f3d,
-        type: 3}
-      propertyPath: maxSingleScale
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 6613381120572946007, guid: 60a8fe692be8542ff90dd69af0985f3d,
-        type: 3}
-      propertyPath: minSingleScale
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6613381120572946007, guid: 60a8fe692be8542ff90dd69af0985f3d,
-        type: 3}
-      propertyPath: numberOfSpheresPerCloud
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
