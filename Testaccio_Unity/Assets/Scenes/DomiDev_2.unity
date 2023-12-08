@@ -332,11 +332,13 @@ MonoBehaviour:
     type: 3}
   numberOfClouds: 50
   cloudScale: 10
-  cloudHeight: 72.7
+  minMoveSpeed: 20
+  maxMoveSpeed: 70
+  cloudHeight: 85.2
   noiseStartX: -800
   noiseEndX: 800
-  noiseStartY: -60
-  noiseEndY: 1000
+  noiseStartZ: -200
+  noiseEndZ: 1000
 --- !u!4 &139591894
 Transform:
   m_ObjectHideFlags: 0
@@ -346,7 +348,7 @@ Transform:
   m_GameObject: {fileID: 139591892}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1200.3678, y: 694.7819, z: 694.42114}
+  m_LocalPosition: {x: 24, y: 694.7819, z: -271}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

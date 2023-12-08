@@ -17,24 +17,16 @@ namespace Visual
         [SerializeField] private float cloudHeight;
         [SerializeField] private float noiseStartX;
         [SerializeField] private float noiseEndX;
-        [SerializeField] private float noiseStartY;
-        [SerializeField] private float noiseEndY;
+        [SerializeField] private float noiseStartZ;
+        [SerializeField] private float noiseEndZ;
         
         private List<GameObject> allClouds = new List<GameObject>();
-
-
+        
         void Start()
         {
             GenerateClouds();
         }
-
-        private void Update()
-        {
-            MoveClouds();
-        }
-
-       
-
+        
         void GenerateClouds()
         {
             for (int i = 0; i < numberOfClouds; i++)
@@ -42,7 +34,7 @@ namespace Visual
                 Vector3 randomPosition = new Vector3(
                     Random.Range(noiseStartX, noiseEndX),
                     cloudHeight,
-                    Random.Range(noiseStartY, noiseEndY)
+                    Random.Range(noiseStartZ, noiseEndZ)
                 );
 
                 float perlinX = randomPosition.x / cloudScale;
@@ -67,16 +59,15 @@ namespace Visual
                 // Add random scaling
                 cloudInstance.transform.localScale = randomScaleVector;
                 
-                allClouds.Add(cloudInstance);
-            }
-        }
-        
-        private void MoveClouds()
-        {
-            foreach (var cloud in allClouds)
-            {
+                // Give it a random Move speed and then let the other script handle the movement
                 float randomMoveSpeed = Random.Range(minMoveSpeed, maxMoveSpeed);
-                cloud.transform.position -= new Vector3(1, 0, 0) * randomMoveSpeed;
+                
+                // Give them all a Move script and hand over a value to it. Divide with the Size of the Cloud --> larger ones are slower
+                cloudInstance.AddComponent<MoveCloud>()
+                    .SetMoveSpeed(randomMoveSpeed/randomScale);
+                
+                // Add to List for later use
+                allClouds.Add(cloudInstance);
             }
         }
     }

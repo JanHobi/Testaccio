@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveCloud : MonoBehaviour
+namespace Visual
 {
-    // Start is called before the first frame update
-    void Start()
+    public class MoveCloud : MonoBehaviour
     {
-        
-    }
+        private float moveSpeed;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void SetMoveSpeed(float speed)
+        {
+            moveSpeed = speed;
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            // Move the cloud in the negative X direction
+            transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+        }
+
+       
     }
 }
