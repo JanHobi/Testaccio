@@ -18,6 +18,7 @@ namespace Animation
         private void Start()
         {
             water = GameObject.FindGameObjectWithTag("WaterTrigger");
+            taxi = FindObjectOfType<SpawnPassenger>();
         }
 
         private void Update()
@@ -41,9 +42,6 @@ namespace Animation
                 Debug.Log("hit water");
                 caught = false;
             }
-            
-           
-           
         }
     }
 }
