@@ -77,6 +77,7 @@ namespace Visual
             // Adjust the cloud height based on the perlin value
             randomPosition.y += perlinValue;
 
+            // Set to position
             cloudInstance.transform.position = randomPosition;
 
             // Add random scaling to the cloud
@@ -84,9 +85,6 @@ namespace Visual
 
             Vector3 randomScaleVector = new Vector3(randomScale, randomScale, randomScale);
             
-            // Set the rotation to a 90-degree rotation around the X-axis
-            //Quaternion rotation = Quaternion.Euler(90f, 0f, 0f);
-
             // Add random scaling
             cloudInstance.transform.localScale = randomScaleVector;
                 
@@ -137,6 +135,7 @@ namespace Visual
             // Remove the selected clouds
             foreach (GameObject fluffy in cloudsToRemove)
             {
+                fluffy.GetComponent<MoveCloud>().DOKill();
                 allClouds.Remove(fluffy);
                 Destroy(fluffy);
             }
