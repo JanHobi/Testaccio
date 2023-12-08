@@ -12,6 +12,11 @@ TagManager:
   - Passenger
   - WaterTrigger
   - Shark
+  - Fish
+  - Market
+  - Hook
+  - BridgeAccident
+  - Fisher
   layers:
   - Default
   - TransparentFX

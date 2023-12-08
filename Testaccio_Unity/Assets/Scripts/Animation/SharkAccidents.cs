@@ -29,6 +29,11 @@ namespace Animation
             {
                 animator.SetTrigger("accidentPassenger");
             }
+            
+            if (other.gameObject.CompareTag("Hook"))
+            {
+                animator.SetTrigger("accidentPassenger");
+            }
         }
 
         private void SpawnNextShark()
