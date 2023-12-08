@@ -47,8 +47,8 @@ MonoBehaviour:
   cloudMaterial: {fileID: 2100000, guid: b58351ab5862e41618110866c6985279, type: 2}
   numberOfClouds: 50
   cloudScale: 10
-  minMoveSpeed: 700
-  maxMoveSpeed: 900
+  minMoveSpeed: 60
+  maxMoveSpeed: 150
   minSingleScale: 10
   maxSingleScale: 40
   cloudHeight: 99.8
