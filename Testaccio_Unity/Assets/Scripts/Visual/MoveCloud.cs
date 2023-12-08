@@ -15,7 +15,7 @@ namespace Visual
         void Update()
         {
             // Move the cloud in the negative X direction
-            transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         }
 
        
