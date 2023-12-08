@@ -44,14 +44,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b1423592323542aeb24c714ef284356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cloudPrefab: {fileID: 1403762643628836822, guid: cde4df07165d24c209a992ed8254ae02,
-    type: 3}
+  cloudMaterial: {fileID: 2100000, guid: b58351ab5862e41618110866c6985279, type: 2}
   numberOfClouds: 50
   cloudScale: 10
   minMoveSpeed: 20
-  maxMoveSpeed: 70
-  cloudHeight: 85.2
+  maxMoveSpeed: 100
+  minSingleScale: 10
+  maxSingleScale: 40
+  cloudHeight: 99.8
   noiseStartX: -800
   noiseEndX: 800
-  noiseStartZ: -200
+  noiseStartZ: -300
   noiseEndZ: 1000
+  numberOfSpheresPerCloud: 6
