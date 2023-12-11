@@ -1,3 +1,4 @@
+using Audio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,7 +10,7 @@ namespace Managers
         public static GameManager instance;
 
         public GameState currentGameState;
-        [SerializeField] private string inGameScene;
+        [SerializeField] private string levelScene;
     
         /// <summary>
         /// Possible gamestates.
@@ -21,7 +22,6 @@ namespace Managers
             GamePaused,
             GameOver,
             GameWon,
-            Credits,
             Quit
         }
 
@@ -54,20 +54,20 @@ namespace Managers
             switch (state)
             {
                 case GameState.Menu:
-
-                    if (SceneManager.GetActiveScene().name != "MainMenu")
-                    {
-                        SceneManager.LoadSceneAsync(0);
-                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName("MainMenu").buildIndex));
-                    }
-
+                    
+                    AudioManager.Instance.PlayMenuMusic();
+                    SceneManager.LoadSceneAsync(0);
+                    StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName("MainMenu").buildIndex));
+                    
                     break;
 
                 case GameState.InGame:
+                    
                     if (SceneManager.GetActiveScene().name == "MainMenu")
                     {
-                        SceneManager.LoadSceneAsync(inGameScene);
-                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName(inGameScene).buildIndex));
+                        SceneManager.LoadSceneAsync(levelScene);
+                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName(levelScene).buildIndex));
+                        AudioManager.Instance.PlayGameMusic();
                     }
                     else
                     {
@@ -84,10 +84,7 @@ namespace Managers
                 
                     break;
                 case GameState.GameWon:
-                
-                    break;
-                case GameState.Credits:
-                
+
                     break;
                 case GameState.Quit:
                     Application.Quit();

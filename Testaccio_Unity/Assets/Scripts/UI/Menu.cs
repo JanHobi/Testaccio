@@ -7,17 +7,12 @@ namespace UI
     {
         public void SwitchToMenu()
         {
-            GameManager.instance.SetState(GameManager.GameState.Menu);
+           // GameManager.instance.SetState(GameManager.GameState.Menu);
         }
 
         public void SwitchToGame()
         {
             GameManager.instance.SetState(GameManager.GameState.InGame);
-        }
-
-        public void SwitchToCredits()
-        {
-            GameManager.instance.SetState(GameManager.GameState.Credits);
         }
 
         public void QuitGame()
