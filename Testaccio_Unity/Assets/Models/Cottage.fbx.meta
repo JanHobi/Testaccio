@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: 241c2505f5a50fb4ca4a8d4e1829afb5
+guid: ddfcbd80ab5b34d42aad034e6dfde58c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cottage_Door
-    second: {fileID: 2100000, guid: 58487a376a1e39d48a6b4fcb537550ff, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cottage_Handle
-    second: {fileID: 2100000, guid: 2ab0ba12d73e5324bac1ebbe4e4dd014, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cottage_Main
-    second: {fileID: 2100000, guid: 900d324cfa78bc149995769467c7ef8d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cottage_Roof
-    second: {fileID: 2100000, guid: 7dfe7479087ab4d469ca0f8680dfcc28, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

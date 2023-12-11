@@ -20,7 +20,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: _FresnelColor
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -46,16 +46,17 @@ Material:
     - _FoamScale: 646.92
     - _FoamSpeed: -0.16
     - _Foam_Width: 0
+    - _FresnelPower: 4.75
     - _Height: 0
     - _Metallic: 0.3
     - _Noise_Scale: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RefractionScale: 6.47
-    - _RefractionStrength: 2.2
-    - _ReftractionSpeed: 0.09
+    - _RefractionScale: 9.63
+    - _RefractionStrength: 0.25
+    - _ReftractionSpeed: 0.08
     - _Smoothness: 0.66
-    - _WaterDepth: 2.36
+    - _WaterDepth: 16.37
     - _WaterScrollSpeed: 1.23
     - _Water_Scroll_Speed: 0
     - _WaveHeight: 0.0001
@@ -65,11 +66,12 @@ Material:
     m_Colors:
     - _Base_Color: {r: 0.12513345, g: 0.27995956, b: 0.7169812, a: 0}
     - _DeepColor: {r: 0, g: 0, b: 0, a: 0}
-    - _DeepWater: {r: 0.05918476, g: 0.17642693, b: 0.3584906, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.50980395}
+    - _DeepWater: {r: 0.12775901, g: 0.19893599, b: 0.31132078, a: 1}
+    - _FoamColor: {r: 0.7490197, g: 0.7490197, b: 0.7490197, a: 0.50980395}
     - _Foam_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShallowColor: {r: 0, g: 0, b: 0, a: 0}
-    - _ShallowWater: {r: 0.050980397, g: 0.1158911, b: 0.32941177, a: 0.7882353}
+    - _ShallowWater: {r: 0.04463333, g: 0.07957493, b: 0.16037738, a: 0.7882353}
   m_BuildTextureStacks: []
 --- !u!114 &1990172471397874941
 MonoBehaviour:
