@@ -2,8 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Asset/{18e20f28-d070-48c1-ac37-737b008a6333}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Bank/{44c838f4-b3cc-4566-9c08-439b2ec32102}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/BankFolder/{fd995c79-ea56-4662-817a-3e94cff0ac32}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/EffectPresetFolder/{4ed3268d-078e-44fa-85c1-ca84aeef7e1d}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/EncodingSetting/{745e8a4f-01f8-4fd9-974a-789ed2655a11}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/EventFolder/{ffa1612c-88f4-44ce-a587-980c540f79fe}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Master.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Mixer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/ParameterPresetFolder/{54c8acd2-127c-4607-8082-c990c8daf2e5}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Platform/{2bb8ab7e-76c0-4263-a07a-5947919573f2}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/ProfilerFolder/{1dca9fd7-626e-48da-8767-95a470d6165e}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Return/{9161e0a1-af59-4bcc-a9c2-71db2f9391f8}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/SandboxFolder/{fe517ae1-1501-4ee8-958b-835d68490595}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/SnapshotGroup/{d7dc2dbb-227b-4ee3-8cd2-0785350ee712}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Tags.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Testaccio_FMOD.fspro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platform_ios.mm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platform_ios.mm.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CircleSizeChange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CircleSizeChange.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/Desktop/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/Desktop/Desktop/Master.strings.bank" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

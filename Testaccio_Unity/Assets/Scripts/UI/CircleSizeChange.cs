@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Animation;
+using Audio;
 using UnityEngine;
 
 namespace UI
@@ -42,6 +43,7 @@ namespace UI
 
         public void Size1()
         {
+            AudioManager.Instance.ChangeMusicSpeed(-1);
             ChangeCircleSize(0);
         }
         public void Size2()
@@ -54,6 +56,7 @@ namespace UI
         }
         public void Size4()
         {
+            AudioManager.Instance.ChangeMusicSpeed(1);
             ChangeCircleSize(3);
         }
     }
