@@ -13,6 +13,7 @@ namespace Audio
         private static AudioManager _instance;
         private FMOD.Studio.EventInstance menuMusic;
         private FMOD.Studio.EventInstance gameMusic;
+        private FMOD.Studio.EventInstance harborBackgroundNoise;
         
         public static AudioManager Instance
         {
@@ -41,6 +42,7 @@ namespace Audio
 
             menuMusic = RuntimeManager.CreateInstance("event:/MenuMusic");
             gameMusic = RuntimeManager.CreateInstance("event:/InGameMusic");
+            harborBackgroundNoise = RuntimeManager.CreateInstance("event:/HarborBackgroundNoise");
         }
 
         public void PlayMenuMusic()
@@ -67,12 +69,15 @@ namespace Audio
             }
         }
 
-        private void Update()
+        public void PlayBackgroundSounds()
         {
-            // Log the current value of the "Speed" parameter
-            float currentSpeedValue;
-            gameMusic.getParameterByName("MusicSpeed", out currentSpeedValue);
-            Debug.Log(message: $"Current Music Speed: {currentSpeedValue}");
+            harborBackgroundNoise.start();
+        }
+        
+        public void StopBackgroundSounds()
+        {
+            harborBackgroundNoise.stop(STOP_MODE.IMMEDIATE);
+            harborBackgroundNoise.release();
         }
     }
 }
