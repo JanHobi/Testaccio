@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Animation;
+using Audio;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using TMPro;
@@ -83,6 +84,8 @@ namespace Managers
                 {
                   taskAnimations.TaskDoneAnimation(uiText);
                 }
+                
+                AudioManager.Instance.PlayUISound(2);
                 
                 // Check if all Tasks are done now
                 CheckTasksCompletion();
