@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -16,9 +17,21 @@ namespace Managers
             // Button
             GUILayout.Space(10);
 
-            if (GUILayout.Button("Skip Tasks"))
+            if (GUILayout.Button("Skip All Tasks"))
             {
                 taskManager.SetAllTasksToDone();
+            }
+            GUILayout.Space(5);
+            
+            if (GUILayout.Button("Skip Task"))
+            {
+                // Get the first selected task (if any)
+                var selectedTask = taskManager.SelectedTasks.FirstOrDefault(task => !task.Value);
+
+                if (selectedTask.Key != null)
+                {
+                    taskManager.SetTaskToDone(selectedTask.Key);
+                }
             }
             GUILayout.Space(5);
         }

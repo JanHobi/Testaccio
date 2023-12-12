@@ -22,7 +22,7 @@ namespace Animation
             {
                 animator.SetTrigger("accidentShip");
                 isDead = true;
-                TaskManager.Instance.SetTaskToDone("Shark Death");
+                TaskManager.Instance.SetTaskToDone("Not big enough for both of us");
             }
 
             if (other.gameObject.CompareTag("Passenger"))

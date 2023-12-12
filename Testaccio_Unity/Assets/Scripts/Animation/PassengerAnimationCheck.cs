@@ -19,7 +19,7 @@ public class PassengerAnimationCheck : MonoBehaviour
             animator.SetTrigger("successBoat");
             
             // Task Done
-            TaskManager.Instance.SetTaskToDone("Holiday");
+            TaskManager.Instance.SetTaskToDone("Holidays");
         }
 
         if (other.gameObject.CompareTag("Taxi"))
@@ -27,15 +27,16 @@ public class PassengerAnimationCheck : MonoBehaviour
             animator.SetTrigger("accidentTaxi");
             
             // Task Done
-            TaskManager.Instance.SetTaskToDone("Car Accident");
+            TaskManager.Instance.SetTaskToDone("Taxi to Heaven");
         }   
 
         if (other.gameObject.CompareTag("Shark"))
         {
-            Destroy(gameObject, 0.5f);
-            
             // Task Done
-            TaskManager.Instance.SetTaskToDone("Hungry Shark");
+            TaskManager.Instance.SetTaskToDone("Here for the Goodies");
+            
+            Destroy(gameObject, 0.5f);
+
         }
     }
 }

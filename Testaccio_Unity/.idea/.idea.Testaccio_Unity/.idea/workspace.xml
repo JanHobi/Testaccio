@@ -2,34 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Asset/{18e20f28-d070-48c1-ac37-737b008a6333}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Bank/{44c838f4-b3cc-4566-9c08-439b2ec32102}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/BankFolder/{fd995c79-ea56-4662-817a-3e94cff0ac32}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/EffectPresetFolder/{4ed3268d-078e-44fa-85c1-ca84aeef7e1d}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/EncodingSetting/{745e8a4f-01f8-4fd9-974a-789ed2655a11}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/EventFolder/{ffa1612c-88f4-44ce-a587-980c540f79fe}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Master.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Mixer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/ParameterPresetFolder/{54c8acd2-127c-4607-8082-c990c8daf2e5}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Platform/{2bb8ab7e-76c0-4263-a07a-5947919573f2}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/ProfilerFolder/{1dca9fd7-626e-48da-8767-95a470d6165e}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Return/{9161e0a1-af59-4bcc-a9c2-71db2f9391f8}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/SandboxFolder/{fe517ae1-1501-4ee8-958b-835d68490595}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/SnapshotGroup/{d7dc2dbb-227b-4ee3-8cd2-0785350ee712}.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Tags.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Metadata/Workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Testaccio_FMOD/Testaccio_FMOD/Testaccio_FMOD.fspro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platform_ios.mm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platform_ios.mm.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BridgeAnimationCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BridgeAnimationCheck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FisherAnimationCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FisherAnimationCheck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MarketAnimationCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MarketAnimationCheck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/TaskManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/TaskManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Tasks/TasksParent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Tasks/TasksParent.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Tasks/uiTaskPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Tasks/uiTaskPrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CircleSizeChange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CircleSizeChange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/Desktop/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/Desktop/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/PassengerAnimationCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/PassengerAnimationCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/SharkAccidents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/SharkAccidents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/TaskAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/TaskAnimations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManagerEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RodConnection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RodConnection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneFader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneFader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShakeObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShakeObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaypointMover.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaypointMover.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpawnFisher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpawnFisher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TaxiShake.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TaxiShake.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/TaskAnimations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/MarketAnimationCheck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f646c7a159d243a7909d5204af0f0c56469200/41/379d2025/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2022.3.11f1/Unity.app/Contents/CGIncludes/UnityCG.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/Knob.cs" root0="FORCE_HIGHLIGHTING" />
@@ -125,6 +126,7 @@
       <workItem from="1701767973945" duration="10306000" />
       <workItem from="1702037431022" duration="3551000" />
       <workItem from="1702043014074" duration="8400000" />
+      <workItem from="1702371580702" duration="5664000" />
     </task>
     <servers />
   </component>

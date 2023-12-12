@@ -13,7 +13,7 @@ namespace Managers
     public class TaskManager : MonoBehaviour
     {
         [SerializeField] private List<string> allTasks = new List<string>();
-        private Dictionary<string, bool> SelectedTasks = new Dictionary<string, bool>();
+        public Dictionary<string, bool> SelectedTasks = new Dictionary<string, bool>();
         [SerializeField] private int numberOfTasksShown;
          private float spacing = 30;
         [SerializeField] private TMP_Text uiTaskPrefab;
@@ -64,7 +64,7 @@ namespace Managers
             }
 
             // Wait some seconds before getting new tasks, so that the animation can finish
-            Invoke(nameof(NewTasks), 3);
+            Invoke(nameof(NewTasks), 6);
         }
 
         public void SetTaskToDone(string taskKey)
@@ -163,7 +163,6 @@ namespace Managers
             // Only for Debugging and Testing
             foreach (var key in SelectedTasks.Keys.ToList())
             {
-                SelectedTasks[key] = true;
                 SetTaskToDone(key);
             }
             
