@@ -155,6 +155,8 @@ namespace Managers
                 newtext.rectTransform.anchoredPosition = new Vector2(position.x, position.y -yPosOffset);
 
                 yPosOffset += spacing;
+
+                taskAnimations.MoveToStartPos(newtext);
             }
         }
         

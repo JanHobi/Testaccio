@@ -38,5 +38,10 @@ namespace Animation
                 uiText.rectTransform.DOMove(new Vector3(3000, uiText.rectTransform.position.y, 0), 1).SetEase((Ease.InOutQuint));
             }
         }
+
+        public void MoveToStartPos(TMP_Text uiText)
+        {
+            uiText.rectTransform.DOMove(new Vector3(2830, uiText.rectTransform.position.y, 0), 0.5f).SetEase((Ease.InOutQuint));
+        }
     }
 }
