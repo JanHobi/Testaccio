@@ -23,25 +23,32 @@ namespace Animation
 
         private void MoveTaskIntoScreen(TMP_Text uiText)
         {
-            uiText.rectTransform.DOMove(new Vector3(950, uiText.rectTransform.position.y, 0), 1f).SetEase((Ease.InOutQuint))
-                .OnComplete(() => StrikeThrough(uiText));
+            uiText.rectTransform.DOAnchorPos(new Vector2(-30, uiText.rectTransform.anchoredPosition.y), 0.5f).OnComplete(() => StrikeThrough(uiText))
+                .SetEase(Ease.InOutQuint);
         }
 
         private void StrikeThrough(TMP_Text uiText)
         {
-            uiText.fontStyle = FontStyles.Strikethrough;
-            StartCoroutine(routine: WaitAndMoveAway()); 
-            
+            StartCoroutine(WaitAndStrikeThrough());
+            IEnumerator WaitAndStrikeThrough()
+            {
+                yield return new WaitForSeconds(0.5f);
+                uiText.fontStyle = FontStyles.Strikethrough;
+                StartCoroutine(routine: WaitAndMoveAway()); 
+            }
             IEnumerator WaitAndMoveAway()
             {
                 yield return new WaitForSeconds(2);
-                uiText.rectTransform.DOMove(new Vector3(3000, uiText.rectTransform.position.y, 0), 1).SetEase((Ease.InOutQuint));
+              
+                uiText.rectTransform.DOAnchorPos(new Vector2(2020, uiText.rectTransform.anchoredPosition.y), 0.5f)
+                    .SetEase(Ease.InOutQuint);
             }
         }
 
         public void MoveToStartPos(TMP_Text uiText)
         {
-            uiText.rectTransform.DOMove(new Vector3(2830, uiText.rectTransform.position.y, 0), 0.5f).SetEase((Ease.InOutQuint));
+            uiText.rectTransform.DOAnchorPos(new Vector2(1850, uiText.rectTransform.anchoredPosition.y), 0.5f)
+                .SetEase(Ease.InOutQuint);
         }
     }
 }
