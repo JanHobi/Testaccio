@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using FMOD;
+using FMOD.Studio;
 using FMODUnity;
 using Debug = UnityEngine.Debug;
 using STOP_MODE = FMOD.Studio.STOP_MODE;
@@ -14,7 +16,11 @@ namespace Audio
         private FMOD.Studio.EventInstance menuMusic;
         private FMOD.Studio.EventInstance gameMusic;
         private FMOD.Studio.EventInstance harborBackgroundNoise;
-        
+        private FMOD.Studio.EventInstance hover;
+        private FMOD.Studio.EventInstance click;
+        private FMOD.Studio.EventInstance tastDone;
+        private List<EventInstance> uiSounds = new List<EventInstance>();
+
         public static AudioManager Instance
         {
             get
@@ -40,9 +46,18 @@ namespace Audio
             
             DontDestroyOnLoad(_instance);
 
+            // Create All instances
             menuMusic = RuntimeManager.CreateInstance("event:/MenuMusic");
             gameMusic = RuntimeManager.CreateInstance("event:/InGameMusic");
-            harborBackgroundNoise = RuntimeManager.CreateInstance("event:/HarborBackgroundNoise");
+            harborBackgroundNoise = RuntimeManager.CreateInstance("event:/Sound/HarborBackgroundNoise");
+            hover = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonHover");
+            click = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonClick");
+            tastDone = RuntimeManager.CreateInstance("event:/Sound/UI/TaskDone");
+            
+            // UI Sounds List
+            uiSounds.Add(hover);
+            uiSounds.Add(click);
+            uiSounds.Add(tastDone);
         }
 
         public void PlayMenuMusic()
@@ -78,6 +93,11 @@ namespace Audio
         {
             harborBackgroundNoise.stop(STOP_MODE.IMMEDIATE);
             harborBackgroundNoise.release();
+        }
+
+        public void PlayUISound(int index)
+        {
+            uiSounds[index].start();
         }
     }
 }

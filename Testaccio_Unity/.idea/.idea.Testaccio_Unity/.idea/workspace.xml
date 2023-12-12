@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Fmod/Testaccio/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/../Fmod/Testaccio/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Sound.bank" beforeDir="false" afterPath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Sound.bank" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/TaskAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/TaskAnimations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/RuntimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/RuntimeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Ship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Ship.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/RodPassenger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/KnobManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/ShipSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/TaskAnimations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -100,7 +108,7 @@
       <workItem from="1701767973945" duration="10306000" />
       <workItem from="1702037431022" duration="3551000" />
       <workItem from="1702043014074" duration="8400000" />
-      <workItem from="1702371580702" duration="8077000" />
+      <workItem from="1702371580702" duration="15850000" />
     </task>
     <servers />
   </component>
