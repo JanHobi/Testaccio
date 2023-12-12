@@ -3,33 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BridgeAnimationCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BridgeAnimationCheck.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisherAnimationCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FisherAnimationCheck.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MarketAnimationCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MarketAnimationCheck.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/TaskManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/TaskManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Tasks/TasksParent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Tasks/TasksParent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Tasks/uiTaskPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Tasks/uiTaskPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/PassengerAnimationCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/PassengerAnimationCheck.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/SharkAccidents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/SharkAccidents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/TaskAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/TaskAnimations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TaskManagerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RodConnection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RodConnection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneFader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneFader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShakeObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShakeObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaypointMover.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaypointMover.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnFisher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnFisher.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TaxiShake.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TaxiShake.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +100,7 @@
       <workItem from="1701767973945" duration="10306000" />
       <workItem from="1702037431022" duration="3551000" />
       <workItem from="1702043014074" duration="8400000" />
-      <workItem from="1702371580702" duration="5664000" />
+      <workItem from="1702371580702" duration="8077000" />
     </task>
     <servers />
   </component>

@@ -68,6 +68,7 @@ namespace Managers
                         SceneManager.LoadSceneAsync(levelScene);
                         StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName(levelScene).buildIndex));
                         AudioManager.Instance.PlayGameMusic();
+                        AudioManager.Instance.PlayBackgroundSounds();
                     }
                     else
                     {

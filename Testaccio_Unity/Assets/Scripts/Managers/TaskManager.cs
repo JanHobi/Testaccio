@@ -64,7 +64,7 @@ namespace Managers
             }
 
             // Wait some seconds before getting new tasks, so that the animation can finish
-            Invoke(nameof(NewTasks), 6);
+            Invoke(nameof(NewTasks), 4.5f);
         }
 
         public void SetTaskToDone(string taskKey)
@@ -155,6 +155,8 @@ namespace Managers
                 newtext.rectTransform.anchoredPosition = new Vector2(position.x, position.y -yPosOffset);
 
                 yPosOffset += spacing;
+
+                taskAnimations.MoveToStartPos(newtext);
             }
         }
         
