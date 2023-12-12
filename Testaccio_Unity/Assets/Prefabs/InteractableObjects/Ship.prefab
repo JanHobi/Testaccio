@@ -358,7 +358,7 @@ MonoBehaviour:
       Data2: 1320557142
       Data3: 1774118049
       Data4: 433518203
-    Path: event:/FerryMotor
+    Path: event:/Sound/FerryMotor
   Event: 
   PlayEvent: 1
   StopEvent: 2

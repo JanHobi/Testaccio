@@ -42,7 +42,7 @@ namespace Audio
 
             menuMusic = RuntimeManager.CreateInstance("event:/MenuMusic");
             gameMusic = RuntimeManager.CreateInstance("event:/InGameMusic");
-            harborBackgroundNoise = RuntimeManager.CreateInstance("event:/HarborBackgroundNoise");
+            harborBackgroundNoise = RuntimeManager.CreateInstance("event:/Sound/HarborBackgroundNoise");
         }
 
         public void PlayMenuMusic()
@@ -78,6 +78,11 @@ namespace Audio
         {
             harborBackgroundNoise.stop(STOP_MODE.IMMEDIATE);
             harborBackgroundNoise.release();
+        }
+
+        public void PlayUISound(FMOD.Studio.EventInstance sound)
+        {
+            
         }
     }
 }
