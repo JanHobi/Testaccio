@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 6271907626866725631}
   - component: {fileID: 6454024504689843173}
   - component: {fileID: 1219727627118382232}
+  - component: {fileID: 6049265127027950440}
   m_Layer: 0
   m_Name: Taxi
   m_TagString: Taxi
@@ -225,6 +226,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfe1243dd09366d458bcccff8daa6131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6049265127027950440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3009420023505774037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338143b79515343dab32b8884dfcd4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3402191873943472082

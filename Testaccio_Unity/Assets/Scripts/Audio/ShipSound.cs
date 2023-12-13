@@ -14,16 +14,15 @@ namespace Audio
         private void Start()
         {
             ferryMotor = RuntimeManager.CreateInstance("event:/Sound/FerryMotor");
-            ferryMotor.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+            ferryMotor.set3DAttributes(gameObject.To3DAttributes());
             
-                ferryMotor.start(); 
-                RuntimeManager.PlayOneShot("event:/Sound/FerryHonk", gameObject.transform.position);
-                //StartCoroutine(WaitForHonk());
+                ferryMotor.start();
+                StartCoroutine(WaitForHonk());
         }
 
         private IEnumerator WaitForHonk()
       {
-          float randomWaitTime = Random.Range(2, 5);
+          float randomWaitTime = Random.Range(10, 20);
           yield return new WaitForSeconds(randomWaitTime);
         
           RuntimeManager.PlayOneShot("event:/Sound/FerryHonk", gameObject.transform.position);
