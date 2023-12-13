@@ -59,7 +59,7 @@ Material:
     - _WaterDepth: 16.37
     - _WaterScrollSpeed: 1.23
     - _Water_Scroll_Speed: 0
-    - _WaveHeight: 0.0001
+    - _WaveHeight: 0.0002
     - _WaveNoiseSize: 0.32
     - _WaveScale: 54.3
     - _WaveSpeed: 0.01

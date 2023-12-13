@@ -111,19 +111,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1956246834950397144}
           m_TargetAssemblyTypeName: MoveUI, Assembly-CSharp
-          m_MethodName: ScaleArrowUp
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1956246834950397144}
-          m_TargetAssemblyTypeName: MoveUI, Assembly-CSharp
-          m_MethodName: IdleArrow
+          m_MethodName: ArrowEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -139,7 +127,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1956246834950397144}
           m_TargetAssemblyTypeName: MoveUI, Assembly-CSharp
-          m_MethodName: ScaleArrowDown
+          m_MethodName: ArrowExit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -260,19 +248,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1956246834950397144}
           m_TargetAssemblyTypeName: MoveUI, Assembly-CSharp
-          m_MethodName: ScaleArrowUp
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1956246834950397144}
-          m_TargetAssemblyTypeName: MoveUI, Assembly-CSharp
-          m_MethodName: IdleArrow
+          m_MethodName: ArrowEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -288,7 +264,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1956246834950397144}
           m_TargetAssemblyTypeName: MoveUI, Assembly-CSharp
-          m_MethodName: ScaleArrowDown
+          m_MethodName: ArrowExit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -360,8 +336,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.92941177}
-  m_RaycastTarget: 1
+  m_Color: {r: 0.101960786, g: 0.101960786, b: 0.101960786, a: 0.92156863}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -449,7 +425,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -574,6 +550,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3155875008786451819, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
         type: 3}
+      propertyPath: m_Color.a
+      value: 0.6862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155875008786451819, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -616,6 +597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3590590891983876114, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.6862745
       objectReference: {fileID: 0}
     - target: {fileID: 3590590891983876114, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
         type: 3}
@@ -637,6 +623,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeCompass
       objectReference: {fileID: 0}
+    - target: {fileID: 4758351911435897650, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.3764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758351911435897650, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758351911435897650, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758351911435897650, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432734958870315308, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.6862745
+      objectReference: {fileID: 0}
     - target: {fileID: 7432734958870315308, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
         type: 3}
       propertyPath: m_Color.b
@@ -648,6 +659,26 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7432734958870315308, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483036950052539796, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.3764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483036950052539796, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483036950052539796, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483036950052539796, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
         type: 3}
       propertyPath: m_Color.r
       value: 1
@@ -680,6 +711,26 @@ PrefabInstance:
     - target: {fileID: 8289106944150280862, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
         type: 3}
       propertyPath: m_Colors.m_HighlightedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668650562758904663, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.3764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668650562758904663, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668650562758904663, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668650562758904663, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8683633906190331802, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
