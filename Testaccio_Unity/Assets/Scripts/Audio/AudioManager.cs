@@ -37,7 +37,6 @@ namespace Audio
             DontDestroyOnLoad(Instance);
 
             // Create All instances
-            
             hover = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonHover");
             click = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonClick");
             tastDone = RuntimeManager.CreateInstance("event:/Sound/UI/TaskDone");
@@ -53,7 +52,7 @@ namespace Audio
             menuMusic = RuntimeManager.CreateInstance("event:/MenuMusic");
 
             gameMusic.stop(STOP_MODE.ALLOWFADEOUT);
-            gameMusic.release();
+            //gameMusic.release();
             menuMusic.start();
         }
         public void PlayGameMusic()
@@ -61,7 +60,7 @@ namespace Audio
             gameMusic = RuntimeManager.CreateInstance("event:/InGameMusic");
             
             menuMusic.stop(STOP_MODE.ALLOWFADEOUT);
-            menuMusic.release();
+           // menuMusic.release();
             gameMusic.start();
         }
 

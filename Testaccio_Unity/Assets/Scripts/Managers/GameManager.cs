@@ -54,16 +54,15 @@ namespace Managers
             {
                 case GameState.Menu:
 
-                    if (SceneManager.GetActiveScene().name != "MainMenu")
-                    {
-                        Time.timeScale = 1;
-                        //StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName(menuScene).buildIndex));
-                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 0));
-                        AudioManager.Instance.PlayMenuMusic();
-                        AudioManager.Instance.StopBackgroundSounds();
-                    }
-                   
+                    AudioManager.Instance.PlayMenuMusic();
+                    AudioManager.Instance.StopBackgroundSounds();
                     
+                    if (SceneManager.GetActiveScene().name == "MainMenu") return;
+                    
+                        Time.timeScale = 1;
+                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 0));
+
+
                     break;
 
                 case GameState.InGame:
@@ -71,7 +70,6 @@ namespace Managers
                     if (SceneManager.GetActiveScene().name == "MainMenu")
                     {
                         StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 1));
-                        //StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, targetScene.buildIndex));
                         AudioManager.Instance.PlayGameMusic();
                         AudioManager.Instance.PlayBackgroundSounds();
                             
