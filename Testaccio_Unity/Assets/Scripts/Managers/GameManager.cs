@@ -1,4 +1,6 @@
+using System;
 using Audio;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
@@ -31,7 +33,6 @@ namespace Managers
         /// </summary>
         private void Awake()
         {
-
             // singleton
             if (instance == null) instance = this;
             else
@@ -42,12 +43,14 @@ namespace Managers
 
             // let's keep this manager for ever and ever and ever and ever...
             DontDestroyOnLoad(instance);
+        }
 
+        private void Start()
+        {
             // load selected scene
             SetState(currentGameState);
-
         }
-        
+
         public void SetState(GameState state)
         {
             switch (state)
