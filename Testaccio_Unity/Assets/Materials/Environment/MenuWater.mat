@@ -44,9 +44,9 @@ Material:
     - _FoamAmount: 3
     - _FoamCutOff: 0.95
     - _FoamScale: 646.92
-    - _FoamSpeed: 6.32
+    - _FoamSpeed: 9.32
     - _Foam_Width: 0
-    - _FresnelPower: 6.48
+    - _FresnelPower: 4.53
     - _Height: 0
     - _Metallic: 0.3
     - _Noise_Scale: 0
@@ -66,10 +66,10 @@ Material:
     m_Colors:
     - _Base_Color: {r: 0.12513345, g: 0.27995956, b: 0.7169812, a: 0}
     - _DeepColor: {r: 0, g: 0, b: 0, a: 0}
-    - _DeepWater: {r: 0.33459416, g: 0.6099937, b: 0.6886792, a: 1}
-    - _FoamColor: {r: 0.7490197, g: 0.7490197, b: 0.7490197, a: 0.50980395}
+    - _DeepWater: {r: 0, g: 0.8740158, b: 1, a: 1}
+    - _FoamColor: {r: 1.3041188, g: 1.3041188, b: 1.3041188, a: 1}
     - _Foam_Color: {r: 0, g: 0, b: 0, a: 0}
-    - _FresnelColor: {r: 0.33333337, g: 0.48434487, b: 0.7647059, a: 1}
+    - _FresnelColor: {r: 0, g: 0.35321093, b: 1, a: 1}
     - _ShallowColor: {r: 0, g: 0, b: 0, a: 0}
     - _ShallowWater: {r: 0.49782842, g: 0.5234783, b: 0.6037736, a: 1}
   m_BuildTextureStacks: []
