@@ -1,4 +1,5 @@
 using UnityEngine;
+using FMODUnity;
 
 namespace UI
 {
@@ -15,6 +16,7 @@ namespace UI
 
         public void HoverIn()
         {
+            RuntimeManager.PlayOneShot("event:/Sound/UI/ButtonHover");
             transform.localScale *= (float) 1.1;
         }
 
