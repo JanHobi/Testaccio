@@ -18,7 +18,8 @@ namespace Audio
         private FMOD.Studio.EventInstance harborBackgroundNoise;
         private FMOD.Studio.EventInstance hover;
         private FMOD.Studio.EventInstance click;
-        private FMOD.Studio.EventInstance tastDone;
+        private FMOD.Studio.EventInstance taskDone;
+        private EventInstance seagulls;
         private List<EventInstance> uiSounds = new List<EventInstance>();
 
         public static AudioManager Instance;
@@ -39,12 +40,13 @@ namespace Audio
             // Create All instances
             hover = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonHover");
             click = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonClick");
-            tastDone = RuntimeManager.CreateInstance("event:/Sound/UI/TaskDone");
+            taskDone = RuntimeManager.CreateInstance("event:/Sound/UI/TaskDone");
+           
             
             // UI Sounds List
             uiSounds.Add(hover);
             uiSounds.Add(click);
-            uiSounds.Add(tastDone);
+            uiSounds.Add(taskDone);
         }
 
         public void PlayMenuMusic()
@@ -80,7 +82,9 @@ namespace Audio
         public void PlayBackgroundSounds()
         {
             harborBackgroundNoise = RuntimeManager.CreateInstance("event:/Sound/HarborBackgroundNoise");
+            seagulls = RuntimeManager.CreateInstance("event:/Sound/Seagulls");
             harborBackgroundNoise.start();
+            seagulls.start();
         }
         
         public void StopBackgroundSounds()
