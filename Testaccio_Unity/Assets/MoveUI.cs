@@ -43,13 +43,13 @@ public class MoveUI : MonoBehaviour
 
     public void ArrowEnter()
     {
-        arrowDown.rectTransform.DOAnchorPosY(-19f, 0.2f).SetEase(Ease.OutBack);
+        arrowDown.rectTransform.DOAnchorPosY(-25f, 0.2f).SetEase(Ease.OutBack);
         arrowUp.rectTransform.DOAnchorPosY(10f, 0.2f).SetEase(Ease.OutBack);
     }
 
     public void ArrowExit()
     {
-        arrowDown.rectTransform.DOAnchorPosY(0f, 0.2f).SetEase(Ease.OutBack);
-        arrowUp.rectTransform.DOAnchorPosY(-9f, 0.2f).SetEase(Ease.OutBack);
+        arrowDown.rectTransform.DOAnchorPosY(-15f, 0.2f).SetEase(Ease.OutBack);
+        arrowUp.rectTransform.DOAnchorPosY(0f, 0.2f).SetEase(Ease.OutBack);
     }    
 }

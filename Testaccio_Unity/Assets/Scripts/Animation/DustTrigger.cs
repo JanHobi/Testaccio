@@ -9,7 +9,7 @@ public class DustTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Bridge"))
+        if (other.gameObject.CompareTag("BridgeAccident"))
         {
             Instantiate(dustParticles, transform.position, Quaternion.identity);
         }
