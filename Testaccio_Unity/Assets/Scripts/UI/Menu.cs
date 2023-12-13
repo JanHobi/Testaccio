@@ -30,8 +30,13 @@ namespace UI
             PlaySound();
             GameManager.instance.SetState(GameManager.GameState.GamePaused);
         }
+
+        public void SwitchToCredits()
+        {
+            PlaySound();
+        }
         
-        private void PlaySound()
+        public void PlaySound()
         {
             RuntimeManager.PlayOneShot("event:/Sound/UI/ButtonClick");
         }

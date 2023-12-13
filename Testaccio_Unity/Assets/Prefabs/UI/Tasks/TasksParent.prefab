@@ -46,8 +46,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2728520236122314578, guid: df78b9e2369e74d0b88413eeaac7ab20,
         type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1865037866867498286, guid: c86418aa86a3157418547c40a5d70975,
+        type: 2}
+    - target: {fileID: 2728520236122314578, guid: df78b9e2369e74d0b88413eeaac7ab20,
+        type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728520236122314578, guid: df78b9e2369e74d0b88413eeaac7ab20,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7420269604422783059, guid: df78b9e2369e74d0b88413eeaac7ab20,
         type: 3}
