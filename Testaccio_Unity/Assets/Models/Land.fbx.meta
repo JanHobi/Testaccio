@@ -3,7 +3,27 @@ guid: 6967af9c3ee03824abd7fe14837455eb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground
+    second: {fileID: 2100000, guid: 9afb437c98138564a9b89b68b3cccc3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground_Detail
+    second: {fileID: 2100000, guid: c1de490c06670574bb21b1d1b6be9a20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground_Railing
+    second: {fileID: 2100000, guid: db1166bdb8ba1d541b545aff58a11858, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street
+    second: {fileID: 2100000, guid: fd35728f4b0b2ea499827d97c6a1b7bf, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
