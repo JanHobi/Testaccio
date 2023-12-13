@@ -20,6 +20,7 @@ namespace Managers
         [SerializeField] private TMP_Text uiTaskPrefab;
         [SerializeField] private Transform taskParent;
         private TaskAnimations taskAnimations;
+        [HideInInspector] public bool gameFinished = false;
       
 
        
@@ -60,10 +61,8 @@ namespace Managers
             if (allTasks.Count <= 0)
             {
                 Debug.Log("All tasks completed!");
-                // Game finished
-                GameManager.instance.currentGameState = GameManager.GameState.GameWon;
+                gameFinished = true;
             }
-
             // Wait some seconds before getting new tasks, so that the animation can finish
             Invoke(nameof(NewTasks), 4.5f);
         }

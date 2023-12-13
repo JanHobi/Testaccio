@@ -1,5 +1,8 @@
+using System;
 using System.Collections;
+using System.Threading.Tasks;
 using DG.Tweening;
+using Managers;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +10,14 @@ namespace Animation
 {
     public class TaskAnimations : MonoBehaviour
     {
+        
+        private GameFinish gameFinish;
+
+        private void Start()
+        {
+            gameFinish = GetComponent<GameFinish>();
+        }
+
         public void TaskDoneAnimation(TMP_Text uiText)
         {
             uiText.rectTransform.DOShakeRotation(0.1f, 1.5f, 100, 50)
@@ -41,7 +52,7 @@ namespace Animation
                 yield return new WaitForSeconds(2);
               
                 uiText.rectTransform.DOAnchorPos(new Vector2(2020, uiText.rectTransform.anchoredPosition.y), 0.5f)
-                    .SetEase(Ease.InOutQuint);
+                    .SetEase(Ease.InOutQuint).OnComplete(gameFinish.ShowEndScreen);
             }
         }
 

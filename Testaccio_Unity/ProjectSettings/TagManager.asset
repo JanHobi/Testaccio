@@ -17,6 +17,7 @@ TagManager:
   - Hook
   - BridgeAccident
   - Fisher
+  - RemoveAtEnd
   layers:
   - Default
   - TransparentFX
