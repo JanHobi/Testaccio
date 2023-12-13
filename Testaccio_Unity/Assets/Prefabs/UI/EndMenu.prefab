@@ -176,7 +176,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8706893034861196593}
         m_TargetAssemblyTypeName: UI.Menu, Assembly-CSharp
-        m_MethodName: PauseGame
+        m_MethodName: SwitchToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
