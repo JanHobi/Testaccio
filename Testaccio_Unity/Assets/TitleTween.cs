@@ -49,7 +49,7 @@ public class TitleTween : MonoBehaviour
 
             title.transform.DOShakePosition(0.5f, 5f, 20, 90f, false, false).OnComplete(() => 
             {  
-                accidents.rectTransform.DOAnchorPosY(60, 0.5f).SetEase(Ease.InBack);
+                accidents.rectTransform.DOAnchorPosY(45, 0.5f).SetEase(Ease.InBack);
 
                 edition.rectTransform.DOScale(1.3f, 0.25f).SetEase(Ease.InQuad);
 
