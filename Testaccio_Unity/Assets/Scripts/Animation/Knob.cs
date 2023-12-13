@@ -68,6 +68,7 @@ namespace Animation
         // Update is called once per frame
         void FixedUpdate()
         {
+            centerPos = myCircle.transform.position;
             CalculateRotationSpeed();
             TranslateToRadians();
             MoveKnob();

@@ -389,6 +389,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 75402464}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &75402466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5097348627558794942, guid: f6ebcfffde6c24d4caab0239d5a6afbf,
+    type: 3}
+  m_PrefabInstance: {fileID: 75402464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &175225702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1246,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 901870456}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &901870458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3009420023505774037, guid: c73b0e3804bd92242b34904d36ed4327,
+    type: 3}
+  m_PrefabInstance: {fileID: 901870456}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &952968066 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8494125240690915358, guid: 651107ad6c9472846a9849a2a2c82427,
@@ -1328,6 +1340,12 @@ PrefabInstance:
 --- !u!4 &977214459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4935909728237585057, guid: 09fc27441b97cd64c8934bf1a5a13b8e,
+    type: 3}
+  m_PrefabInstance: {fileID: 977214458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &977214460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8496039567491131526, guid: 09fc27441b97cd64c8934bf1a5a13b8e,
     type: 3}
   m_PrefabInstance: {fileID: 977214458}
   m_PrefabAsset: {fileID: 0}
@@ -1557,6 +1575,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1069050468}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1069050470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8094127202254034273, guid: 93bf2ecc2bbeed7459b64c41666137c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1069050468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1077661993 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2240674703248470382, guid: 0be0745b7cd0847f09003480cdd6988e,
@@ -1768,10 +1792,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 75402466}
+  - {fileID: 977214460}
+  - {fileID: 1069050470}
+  - {fileID: 901870458}
   - {fileID: 260969917}
   startingCircle: {fileID: 1077661993}
   knobPrefab: {fileID: 5549109066441771107, guid: 70051eac4bb5cd0448d56d39d770e66c,
