@@ -24,10 +24,10 @@ namespace Animation
 
             if (other.gameObject.CompareTag("Passenger"))
             {
-                marketFish.SetActive(false);
-            
+                if (!marketFish.activeSelf) return;
                 // Task Done
                 TaskManager.Instance.SetTaskToDone("Comfort Dinner");
+                marketFish.SetActive(false);
             }
         }
     }
