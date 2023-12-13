@@ -24,7 +24,6 @@ public class PassengerAnimationCheck : MonoBehaviour
 
         if (other.gameObject.CompareTag("Taxi"))
         {
-            Debug.Log("Taxi hit passenger");
             animator.SetTrigger("accidentTaxi");
             
             // Task Done
