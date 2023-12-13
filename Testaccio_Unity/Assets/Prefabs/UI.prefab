@@ -216,6 +216,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CirclesCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4547320444037476562, guid: 0be0745b7cd0847f09003480cdd6988e,
+        type: 3}
+      propertyPath: m_TagString
+      value: RemoveAtEnd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -340,6 +345,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TaskCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5986327820643081972, guid: 0caa32919d3004753b63070f7afac963,
+        type: 3}
+      propertyPath: m_TagString
+      value: RemoveAtEnd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -459,10 +469,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2613703626480325341, guid: bd9e4e0e46654524ab5eb64073b170a7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -779
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501828829763909998, guid: bd9e4e0e46654524ab5eb64073b170a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: EndMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 5123441967799981374, guid: bd9e4e0e46654524ab5eb64073b170a7,
         type: 3}
       propertyPath: m_Name
       value: OverallCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906058581922992917, guid: bd9e4e0e46654524ab5eb64073b170a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: RemoveAtEnd
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
