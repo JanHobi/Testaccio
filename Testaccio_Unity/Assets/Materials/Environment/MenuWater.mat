@@ -46,7 +46,7 @@ Material:
     - _FoamScale: 646.92
     - _FoamSpeed: 9.32
     - _Foam_Width: 0
-    - _FresnelPower: 4.53
+    - _FresnelPower: 12.01
     - _Height: 0
     - _Metallic: 0.3
     - _Noise_Scale: 0
@@ -59,19 +59,19 @@ Material:
     - _WaterDepth: 16.37
     - _WaterScrollSpeed: 1.23
     - _Water_Scroll_Speed: 0
-    - _WaveHeight: 0.0002
+    - _WaveHeight: 0.0001
     - _WaveNoiseSize: 0.32
     - _WaveScale: 54.3
     - _WaveSpeed: 0.01
     m_Colors:
     - _Base_Color: {r: 0.12513345, g: 0.27995956, b: 0.7169812, a: 0}
     - _DeepColor: {r: 0, g: 0, b: 0, a: 0}
-    - _DeepWater: {r: 0, g: 0.8740158, b: 1, a: 1}
+    - _DeepWater: {r: 0, g: 0.34961152, b: 1, a: 1}
     - _FoamColor: {r: 1.3041188, g: 1.3041188, b: 1.3041188, a: 1}
     - _Foam_Color: {r: 0, g: 0, b: 0, a: 0}
     - _FresnelColor: {r: 0, g: 0.35321093, b: 1, a: 1}
     - _ShallowColor: {r: 0, g: 0, b: 0, a: 0}
-    - _ShallowWater: {r: 0.49782842, g: 0.5234783, b: 0.6037736, a: 1}
+    - _ShallowWater: {r: 0.31189927, g: 0.3327351, b: 0.4056604, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1990172471397874941
 MonoBehaviour:
