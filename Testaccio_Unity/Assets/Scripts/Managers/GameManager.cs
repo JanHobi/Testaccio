@@ -1,6 +1,7 @@
 using Audio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Timeline;
 
 namespace Managers
 {
@@ -10,8 +11,7 @@ namespace Managers
         public static GameManager instance;
 
         public GameState currentGameState;
-        [SerializeField] private string levelScene;
-    
+
         /// <summary>
         /// Possible gamestates.
         /// </summary>
@@ -20,7 +20,6 @@ namespace Managers
             Menu,
             InGame,
             GamePaused,
-            GameOver,
             GameWon,
             Quit
         }
@@ -54,38 +53,42 @@ namespace Managers
             switch (state)
             {
                 case GameState.Menu:
-                    
-                    AudioManager.Instance.PlayMenuMusic();
-                    SceneManager.LoadSceneAsync(0);
-                    StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName("MainMenu").buildIndex));
+
+                    if (SceneManager.GetActiveScene().name != "MainMenu")
+                    {
+                        Time.timeScale = 1;
+                        //StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName(menuScene).buildIndex));
+                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 0));
+                        AudioManager.Instance.PlayMenuMusic();
+                        AudioManager.Instance.StopBackgroundSounds();
+                    }
+                   
                     
                     break;
 
                 case GameState.InGame:
-                    
+
                     if (SceneManager.GetActiveScene().name == "MainMenu")
                     {
-                        SceneManager.LoadSceneAsync(levelScene);
-                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, SceneManager.GetSceneByName(levelScene).buildIndex));
+                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 1));
+                        //StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, targetScene.buildIndex));
                         AudioManager.Instance.PlayGameMusic();
                         AudioManager.Instance.PlayBackgroundSounds();
+                            
+                        
                     }
                     else
                     {
                         Time.timeScale = 1;
                     }
-                
                     break;
             
                 case GameState.GamePaused:
                     Time.timeScale = 0;
                     break;
-
-                case GameState.GameOver:
                 
-                    break;
                 case GameState.GameWon:
-
+                    Time.timeScale = 1;
                     break;
                 case GameState.Quit:
                     Application.Quit();

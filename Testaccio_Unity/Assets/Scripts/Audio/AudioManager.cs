@@ -12,7 +12,7 @@ namespace Audio
 {
     public class AudioManager : MonoBehaviour
     {
-        private static AudioManager _instance;
+        //private static AudioManager _instance;
         private FMOD.Studio.EventInstance menuMusic;
         private FMOD.Studio.EventInstance gameMusic;
         private FMOD.Studio.EventInstance harborBackgroundNoise;
@@ -21,22 +21,12 @@ namespace Audio
         private FMOD.Studio.EventInstance tastDone;
         private List<EventInstance> uiSounds = new List<EventInstance>();
 
-        public static AudioManager Instance
-        {
-            get
-            {
-                if (_instance == null)
-                {
-                    Debug.Log("AudioManager is null!");
-                }
-
-                return _instance;
-            }
-        }
+        public static AudioManager Instance;
+     
 
         private void Awake()
         {
-            if (_instance == null) _instance = this;
+            if (Instance == null) Instance = this;
             else
             {
                 Debug.Log("Deleting a second instance of AudioManager");
@@ -44,12 +34,10 @@ namespace Audio
                 return;
             }
             
-            DontDestroyOnLoad(_instance);
+            DontDestroyOnLoad(Instance);
 
             // Create All instances
-            menuMusic = RuntimeManager.CreateInstance("event:/MenuMusic");
-            gameMusic = RuntimeManager.CreateInstance("event:/InGameMusic");
-            harborBackgroundNoise = RuntimeManager.CreateInstance("event:/Sound/HarborBackgroundNoise");
+            
             hover = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonHover");
             click = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonClick");
             tastDone = RuntimeManager.CreateInstance("event:/Sound/UI/TaskDone");
@@ -62,12 +50,18 @@ namespace Audio
 
         public void PlayMenuMusic()
         {
+            menuMusic = RuntimeManager.CreateInstance("event:/MenuMusic");
+
             gameMusic.stop(STOP_MODE.ALLOWFADEOUT);
+            gameMusic.release();
             menuMusic.start();
         }
         public void PlayGameMusic()
         {
+            gameMusic = RuntimeManager.CreateInstance("event:/InGameMusic");
+            
             menuMusic.stop(STOP_MODE.ALLOWFADEOUT);
+            menuMusic.release();
             gameMusic.start();
         }
 
@@ -86,6 +80,7 @@ namespace Audio
 
         public void PlayBackgroundSounds()
         {
+            harborBackgroundNoise = RuntimeManager.CreateInstance("event:/Sound/HarborBackgroundNoise");
             harborBackgroundNoise.start();
         }
         
