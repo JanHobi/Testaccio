@@ -3,101 +3,58 @@ using UnityEngine;
 
 namespace Visual
 {
-    [RequireComponent(typeof(MeshRenderer))]
+    [RequireComponent(typeof(Outline))]
     public class ObjectHighlight : MonoBehaviour
     { 
-        private Color hoverColor;
-        private static Color clickedColor;
+        private static bool isClicked = false;
 
-        private void Start()
+        private void Update()
         {
-            clickedColor = new Color(0.6f , 0.6f, 0.6f , 0.1f);
-            hoverColor = new Color(0.1f,0.1f,0.1f, 0.1f);
+            Debug.Log(isClicked);
         }
 
         private void OnMouseEnter()
         {
-            Material[] mats = GetComponent<MeshRenderer>().materials;
-            foreach (Material mat in mats)
-            {
-                mat.EnableKeyword("_EMISSION");
-                mat.SetColor("_EmissionColor", hoverColor);
-                AudioManager.Instance.PlayObjectHoverSound();
-            }
-
-            foreach (Transform child in transform)
-            {
-                Material[] childMats = child.GetComponent<MeshRenderer>().materials;
-                if (childMats.Length == 0) return;
-                foreach (Material mat in childMats)
-                {
-                    mat.EnableKeyword("_EMISSION");
-                    mat.SetColor("_EmissionColor", hoverColor);
-                }
-            }
+            var outline = gameObject.GetComponent<Outline>();
+            outline.OutlineWidth = 6f;
 
             Time.timeScale = 0.35f;
         }
 
         private void OnMouseExit()
         {
-            Material[] mats = GetComponent<MeshRenderer>().materials;
-            foreach (Material mat in mats)
-            {
-                mat.DisableKeyword("_EMISSION");
-            }
-
-            foreach (Transform child in transform)
-            {
-                Material[] childMats = child.GetComponent<MeshRenderer>().materials;
-                if (childMats.Length == 0) return;
-                foreach (Material mat in childMats)
-                {
-                    mat.DisableKeyword("_EMISSION");
-                }
-            }
-
             Time.timeScale = 1f;
+
+            if (!isClicked)
+            {
+                var outline = gameObject.GetComponent<Outline>();
+                outline.OutlineWidth = 0f;
+                outline.OutlineColor = Color.white;
+            }
+
+            if (isClicked) return;
         }
 
         public static void ChangeToClickedColor(GameObject obj)
         {
-            Material[] mats = obj.GetComponent<MeshRenderer>().materials;
-            foreach (Material mat in mats)
+            if (!isClicked)
             {
-                mat.EnableKeyword("_EMISSION");
-                mat.SetColor("_EmissionColor", clickedColor);
-            }
+                isClicked = true;
 
-            foreach (Transform child in obj.transform)
-            {
-                Material[] childMats = child.GetComponent<MeshRenderer>().materials;
-                if (childMats.Length == 0) return;
-                foreach (Material mat in childMats)
-                {
-                    mat.EnableKeyword("_EMISSION");
-                    mat.SetColor("_EmissionColor", clickedColor);
-                }
+                var outline = obj.GetComponent<Outline>();
+                outline.OutlineColor = Color.black;
+                
+                Time.timeScale = 1f;
             }
         }
 
         public static void RemoveClickedColor(GameObject obj)
         {
-            Material[] mats = obj.GetComponent<MeshRenderer>().materials;
-            foreach (Material mat in mats)
-            {
-                mat.DisableKeyword("_EMISSION");
-            }
+                isClicked = false;
 
-            foreach (Transform child in obj.transform)
-            {
-                Material[] childMats = child.GetComponent<MeshRenderer>().materials;
-                if (childMats.Length == 0) return;
-                foreach (Material mat in childMats)
-                {
-                    mat.DisableKeyword("_EMISSION");
-                }
-            }
+                var outline = obj.GetComponent<Outline>();
+                outline.OutlineWidth = 0f;
+                outline.OutlineColor = Color.white;
         }
     }
 }
