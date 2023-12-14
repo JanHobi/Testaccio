@@ -245,6 +245,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5803737720665555202}
     m_Modifications:
+    - target: {fileID: 886867077863861242, guid: 0caa32919d3004753b63070f7afac963,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1885
+      objectReference: {fileID: 0}
+    - target: {fileID: 2819597090222288218, guid: 0caa32919d3004753b63070f7afac963,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -699
+      objectReference: {fileID: 0}
     - target: {fileID: 5154922493416927022, guid: 0caa32919d3004753b63070f7afac963,
         type: 3}
       propertyPath: m_Pivot.x
@@ -350,12 +360,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: TaskCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 5986327820643081972, guid: 0caa32919d3004753b63070f7afac963,
-        type: 3}
-      propertyPath: m_TagString
-      value: RemoveAtEnd
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8376650129648032593, guid: 0caa32919d3004753b63070f7afac963, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -474,25 +480,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2613703626480325341, guid: bd9e4e0e46654524ab5eb64073b170a7,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -779
-      objectReference: {fileID: 0}
-    - target: {fileID: 3501828829763909998, guid: bd9e4e0e46654524ab5eb64073b170a7,
-        type: 3}
-      propertyPath: m_TagString
-      value: EndMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 5123441967799981374, guid: bd9e4e0e46654524ab5eb64073b170a7,
         type: 3}
       propertyPath: m_Name
       value: OverallCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5906058581922992917, guid: bd9e4e0e46654524ab5eb64073b170a7,
-        type: 3}
-      propertyPath: m_TagString
-      value: RemoveAtEnd
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

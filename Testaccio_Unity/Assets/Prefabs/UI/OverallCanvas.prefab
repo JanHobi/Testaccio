@@ -117,6 +117,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 4848516754157179331, guid: 651107ad6c9472846a9849a2a2c82427,
+        type: 3}
+      propertyPath: m_TagString
+      value: RemoveAtEnd
+      objectReference: {fileID: 0}
     - target: {fileID: 8494125240690915358, guid: 651107ad6c9472846a9849a2a2c82427,
         type: 3}
       propertyPath: m_Pivot.x
@@ -241,6 +246,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 364396032381318977, guid: 6bbc5cfca36bc454aafbec52ab0c18e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: EndMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 1284611245079026930, guid: 6bbc5cfca36bc454aafbec52ab0c18e9,
         type: 3}
       propertyPath: m_Pivot.x
@@ -324,7 +334,7 @@ PrefabInstance:
     - target: {fileID: 1284611245079026930, guid: 6bbc5cfca36bc454aafbec52ab0c18e9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -779
       objectReference: {fileID: 0}
     - target: {fileID: 1284611245079026930, guid: 6bbc5cfca36bc454aafbec52ab0c18e9,
         type: 3}

@@ -19,6 +19,7 @@ namespace Managers
          private float spacing = 30;
         [SerializeField] private TMP_Text uiTaskPrefab;
         [SerializeField] private Transform taskParent;
+        [SerializeField] private RectTransform background;
         private TaskAnimations taskAnimations;
         [HideInInspector] public bool gameFinished = false;
       
@@ -49,6 +50,7 @@ namespace Managers
         void Start()
         {
             NewTasks();
+            taskAnimations.MoveBackgroundToStartPos(background);
         }
 
         private void CheckTasksCompletion()
