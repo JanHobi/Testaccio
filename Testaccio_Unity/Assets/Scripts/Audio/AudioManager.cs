@@ -112,5 +112,10 @@ namespace Audio
         {
             uiSounds[index].start();
         }
+
+        public void PlayObjectHoverSound()
+        {
+            RuntimeManager.PlayOneShot("event:/Sound/UI/ObjectHover");
+        }
     }
 }
