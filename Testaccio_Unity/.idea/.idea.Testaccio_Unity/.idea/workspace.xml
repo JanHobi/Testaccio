@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Fmod/Testaccio/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/../Fmod/Testaccio/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Sound.bank" beforeDir="false" afterPath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Sound.bank" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Ship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Ship.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Taxi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Taxi.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Land.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Land.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/TaskManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/TaskManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DomiDev_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/FisherAnimationCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FisherAnimationCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/PassengerAnimationCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/PassengerAnimationCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +29,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Visual/MoveCloud.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/oceanSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/acbd8b1007dd4ea5a696ed148f45630394bc00/bc/ffaa49cb/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TaskManagerEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonHover.cs" root0="FORCE_HIGHLIGHTING" />
@@ -106,7 +115,8 @@
       <workItem from="1702037431022" duration="3551000" />
       <workItem from="1702043014074" duration="8400000" />
       <workItem from="1702371580702" duration="16092000" />
-      <workItem from="1702457879960" duration="15746000" />
+      <workItem from="1702457879960" duration="15842000" />
+      <workItem from="1702546480537" duration="1867000" />
     </task>
     <servers />
   </component>

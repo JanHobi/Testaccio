@@ -1,33 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
+using FMOD.Studio;
+using FMODUnity;
 using Managers;
 using UnityEngine;
 
-public class FisherAnimationCheck : MonoBehaviour
+namespace Animation
 {
-    private Animator animator;
-
-    private void Start()
+    public class FisherAnimationCheck : MonoBehaviour
     {
-        animator = GetComponent<Animator>();
-    }
+        private Animator animator;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Taxi"))
+        private void Start()
         {
-            animator.SetTrigger("accidentTaxi");
-            
-            // Task Done
-            TaskManager.Instance.SetTaskToDone("Car Accident");
-        }   
+            animator = GetComponent<Animator>();
+        }
 
-        if (other.gameObject.CompareTag("Shark"))
+        private void OnTriggerEnter(Collider other)
         {
-            animator.SetTrigger("accidentShark");
+            if (other.gameObject.CompareTag("Taxi"))
+            {
+                animator.SetTrigger("accidentTaxi");
             
-            // Task Done
-            TaskManager.Instance.SetTaskToDone("Hungry Shark");
+                // Task Done
+                TaskManager.Instance.SetTaskToDone("Car Accident");
+            
+                // Play Sound
+                RuntimeManager.PlayOneShot("event:/Accidents/WilhelmScream", gameObject.transform.position);
+            }   
+
+            if (other.gameObject.CompareTag("Shark"))
+            {
+                animator.SetTrigger("accidentShark");
+            
+                // Task Done
+                TaskManager.Instance.SetTaskToDone("Big Catch");
+            }
         }
     }
 }

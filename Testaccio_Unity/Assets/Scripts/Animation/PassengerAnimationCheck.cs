@@ -1,42 +1,48 @@
-using System.Collections;
-using System.Collections.Generic;
+using FMODUnity;
 using Managers;
 using UnityEngine;
 
-public class PassengerAnimationCheck : MonoBehaviour
+namespace Animation
 {
-    private Animator animator;
-
-    private void Start()
+    public class PassengerAnimationCheck : MonoBehaviour
     {
-        animator = GetComponent<Animator>();
-    }
+        private Animator animator;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Bridge"))
+        private void Start()
         {
-            animator.SetTrigger("successBoat");
-            
-            // Task Done
-            TaskManager.Instance.SetTaskToDone("Holidays");
+            animator = GetComponent<Animator>();
         }
 
-        if (other.gameObject.CompareTag("Taxi"))
+        private void OnTriggerEnter(Collider other)
         {
-            animator.SetTrigger("accidentTaxi");
+            if (other.gameObject.CompareTag("Bridge"))
+            {
+                animator.SetTrigger("successBoat");
             
-            // Task Done
-            TaskManager.Instance.SetTaskToDone("Taxi to Heaven");
-        }   
+                // Task Done
+                TaskManager.Instance.SetTaskToDone("Holidays");
+            }
 
-        if (other.gameObject.CompareTag("Shark"))
-        {
-            // Task Done
-            TaskManager.Instance.SetTaskToDone("Here for the Goodies");
+            if (other.gameObject.CompareTag("Taxi"))
+            {
+                animator.SetTrigger("accidentTaxi");
             
-            Destroy(gameObject, 0.5f);
+                // Task Done
+                TaskManager.Instance.SetTaskToDone("Taxi to Heaven");
+            }   
 
+            if (other.gameObject.CompareTag("Shark"))
+            {
+                // Task Done
+                TaskManager.Instance.SetTaskToDone("Here for the Goodies");
+
+                // Play Sound
+                Vector3 passengerPos = transform.position;
+                RuntimeManager.PlayOneShot("event:/Sound/Accidents/SharkEatsPerson", passengerPos);
+            
+                Destroy(gameObject, 0.5f);
+
+            }
         }
     }
 }
