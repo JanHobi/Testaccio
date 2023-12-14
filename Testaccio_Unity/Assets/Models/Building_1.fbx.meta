@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 6967af9c3ee03824abd7fe14837455eb
+guid: 2d71944b5c4451b49bd480d205e9b528
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Building
+    second: {fileID: 2100000, guid: 882efe845f2abfe49a9b6e135fa920b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Building_Windows
+    second: {fileID: 2100000, guid: 3e0a4848fb128e04394cbe717b4d1e96, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
