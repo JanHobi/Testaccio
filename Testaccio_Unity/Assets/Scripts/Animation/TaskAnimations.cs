@@ -34,7 +34,7 @@ namespace Animation
 
         private void MoveTaskIntoScreen(TMP_Text uiText)
         {
-            uiText.rectTransform.DOAnchorPos(new Vector2(-30, uiText.rectTransform.anchoredPosition.y), 0.5f).OnComplete(() => StrikeThrough(uiText))
+            uiText.rectTransform.DOAnchorPos(new Vector2(1900, uiText.rectTransform.anchoredPosition.y), 0.5f).OnComplete(() => StrikeThrough(uiText))
                 .SetEase(Ease.InOutQuint);
         }
 
@@ -51,15 +51,21 @@ namespace Animation
             {
                 yield return new WaitForSeconds(2);
               
-                uiText.rectTransform.DOAnchorPos(new Vector2(2020, uiText.rectTransform.anchoredPosition.y), 0.5f)
+                uiText.rectTransform.DOAnchorPos(new Vector2(3500, uiText.rectTransform.anchoredPosition.y), 0.5f)
                     .SetEase(Ease.InOutQuint).OnComplete(gameFinish.ShowEndScreen);
             }
         }
 
         public void MoveToStartPos(TMP_Text uiText)
         {
-            uiText.rectTransform.DOAnchorPos(new Vector2(1850, uiText.rectTransform.anchoredPosition.y), 0.5f)
-                .SetEase(Ease.InOutQuint);
+            uiText.rectTransform.DOAnchorPos(new Vector2(uiText.rectTransform.anchoredPosition.x, uiText.rectTransform.anchoredPosition.y + 200f), 0.5f)
+                .SetEase(Ease.OutBack);
+        }
+
+        public void MoveBackgroundToStartPos(RectTransform background)
+        {
+            background.DOAnchorPos(new Vector2(background.anchoredPosition.x, background.anchoredPosition.y + 200f), 0.5f)
+                .SetEase(Ease.OutBack);
         }
     }
 }

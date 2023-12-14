@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &35412680 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7771108659475769609, guid: 9e0729fb39c232443bee9c25fac09099,
+    type: 3}
+  m_PrefabInstance: {fileID: 2394580589015690213}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &51264594 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2714707674682313513, guid: 9e0729fb39c232443bee9c25fac09099,
@@ -426,9 +432,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
         type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 35412680}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
       propertyPath: taskParent
       value: 
       objectReference: {fileID: 260676855}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[0]
+      value: Not big enough for both of us
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[1]
+      value: Here for the Goodies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[2]
+      value: Comfort Dinner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[3]
+      value: Taxi to Heaven
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[4]
+      value: Holidays
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[5]
+      value: Nothing to sell
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[6]
+      value: Watch your Head
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[7]
+      value: Big Catch
+      objectReference: {fileID: 0}
     - target: {fileID: 4090483701323644719, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
         type: 3}
       propertyPath: m_Name
