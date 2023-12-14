@@ -117,5 +117,15 @@ namespace Audio
         {
             RuntimeManager.PlayOneShot("event:/Sound/UI/ObjectHover");
         }
+        
+        public void PlayObjectClickSound()
+        {
+            RuntimeManager.PlayOneShot("event:/Sound/UI/ObjectClick");
+        }
+        
+        public void PlayCircleClickSound()
+        {
+            RuntimeManager.PlayOneShot("event:/Sound/UI/CircleClick");
+        }
     }
 }

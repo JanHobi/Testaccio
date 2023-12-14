@@ -29,6 +29,8 @@ namespace UI
         // Activate the specific button filling and set activeCircleSize
         private void ChangeCircleSize(int index)
         {
+            AudioManager.Instance.PlayCircleClickSound();
+            
             if (index >= 0 && index <= allCircleSizes.Count)
             {
                 ActiveCircleSize = allCircleSizes[index]; // Set the new Size of the Circle

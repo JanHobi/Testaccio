@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Animation;
+using Audio;
 using UI;
 using UnityEngine;
 using Visual;
@@ -45,7 +46,8 @@ namespace Managers
                            
                     if (animator != null)
                     {
-
+                        AudioManager.Instance.PlayObjectClickSound();
+                        
                         // If I clicked on a new object, remove the color from the last clicked object
                         if (hittedObject != selectedObject && selectedObject != null)
                             ObjectHighlight.RemoveClickedColor(selectedObject);
