@@ -58,6 +58,7 @@ namespace Managers
                 case GameState.Menu:
 
                     AudioManager.Instance.PlayMenuMusic();
+                    AudioManager.Instance.PlayMenuBackgroundSounds();
                     AudioManager.Instance.StopInGameBackgroundSounds();
                     
                     if (SceneManager.GetActiveScene().name == "MainMenu") return;
@@ -74,9 +75,8 @@ namespace Managers
                     {
                         StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 1));
                         AudioManager.Instance.PlayGameMusic();
-                        AudioManager.Instance.PlayBackgroundSounds();
-                            
-                        
+                        AudioManager.Instance.StopMenuBackgroundSounds();
+                        AudioManager.Instance.PlayInGameBackgroundSounds();
                     }
                     else
                     {

@@ -20,6 +20,8 @@ namespace Audio
         private FMOD.Studio.EventInstance click;
         private FMOD.Studio.EventInstance taskDone;
         private EventInstance seagulls;
+        private EventInstance menuShip;
+        private EventInstance deepOceanWaves;
         private List<EventInstance> uiSounds = new List<EventInstance>();
 
         public static AudioManager Instance;
@@ -79,16 +81,27 @@ namespace Audio
             }
         }
 
-        public void PlayBackgroundSounds()
+        public void PlayMenuBackgroundSounds()
+        {
+            deepOceanWaves = RuntimeManager.CreateInstance("event:/Sound/OceanAmbiance");
+            seagulls = RuntimeManager.CreateInstance("event:/Sound/Seagulls");
+            
+            deepOceanWaves.start();
+            seagulls.start();
+        }
+
+        public void StopMenuBackgroundSounds()
+        {
+            deepOceanWaves.stop(STOP_MODE.ALLOWFADEOUT);
+            deepOceanWaves.release();
+        }
+
+        public void PlayInGameBackgroundSounds()
         {
             harborBackgroundNoise = RuntimeManager.CreateInstance("event:/Sound/HarborBackgroundNoise");
-            seagulls = RuntimeManager.CreateInstance("event:/Sound/Seagulls");
-           
             harborBackgroundNoise.start();
-            seagulls.start();
-
         }
-        
+
         public void StopInGameBackgroundSounds()
         {
             harborBackgroundNoise.stop(STOP_MODE.IMMEDIATE);

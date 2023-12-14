@@ -16,9 +16,9 @@ namespace Audio
             motorSound.start();
         }
 
-        private void OnCollisionEnter(Collision collision)
+        private void OnTriggerEnter(Collider other)
         {
-            if (!collision.gameObject.CompareTag("Passenger") && !collision.gameObject.CompareTag("Fisher")) return;
+            if (!other.gameObject.CompareTag("Passenger") && !other.gameObject.CompareTag("Fisher")) return;
             Debug.Log("Crash Sound");
             Vector3 taxiPos = gameObject.transform.position;
             RuntimeManager.PlayOneShot("event:/Sound/Accidents/CarCrash", taxiPos);

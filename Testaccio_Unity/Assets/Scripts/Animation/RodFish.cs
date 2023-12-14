@@ -28,14 +28,14 @@ namespace Animation
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.tag == "Fish")
+            if (other.gameObject.CompareTag("Fish"))
             {
                 fishInstance = Instantiate(fishPrefab, null);
                 fisherAnimator.SetTrigger("successFish");
                 caught = true;
             }
 
-            if (other.gameObject.tag == "Market")
+            if (other.gameObject.CompareTag("Market"))
             {
                 caught = false;
                 Destroy(fishInstance);
