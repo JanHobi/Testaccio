@@ -1,3 +1,4 @@
+using Audio;
 using UnityEngine;
 
 namespace Visual
@@ -21,6 +22,7 @@ namespace Visual
             {
                 mat.EnableKeyword("_EMISSION");
                 mat.SetColor("_EmissionColor", hoverColor);
+                AudioManager.Instance.PlayObjectHoverSound();
             }
 
             foreach (Transform child in transform)

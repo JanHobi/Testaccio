@@ -18,7 +18,7 @@ namespace Animation
             if (other.gameObject.CompareTag("Bridge"))
             {
                 animator.SetTrigger("successBoat");
-            
+                
                 // Task Done
                 TaskManager.Instance.SetTaskToDone("Holidays");
             }
@@ -29,6 +29,10 @@ namespace Animation
             
                 // Task Done
                 TaskManager.Instance.SetTaskToDone("Taxi to Heaven");
+                
+                // Sound
+                Vector3 passengerPos = transform.position;
+                RuntimeManager.PlayOneShot("event:/Sound/Accidents/WilhelmScream", passengerPos);
             }   
 
             if (other.gameObject.CompareTag("Shark"))
@@ -39,6 +43,7 @@ namespace Animation
                 // Play Sound
                 Vector3 passengerPos = transform.position;
                 RuntimeManager.PlayOneShot("event:/Sound/Accidents/SharkEatsPerson", passengerPos);
+                RuntimeManager.PlayOneShot("event:/Sound/Accidents/WilhelmScream", passengerPos);
             
                 Destroy(gameObject, 0.5f);
 

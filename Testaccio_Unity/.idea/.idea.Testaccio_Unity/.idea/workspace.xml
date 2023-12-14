@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="" />
+    <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Fmod/Testaccio/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/../Fmod/Testaccio/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Sound.bank" beforeDir="false" afterPath="$PROJECT_DIR$/../Fmod/Testaccio/Build/Desktop/Sound.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/ShipSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/TaskAnimations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/SharkMenuSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/ManipulateParticle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/MarketAnimationCheck.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,6 +60,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds/TestBuild_1.app/Contents/MacOS/Testaccio" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Builds/TestBuild_1.app/Contents/MacOS" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -104,7 +118,7 @@
       <workItem from="1702043014074" duration="8400000" />
       <workItem from="1702371580702" duration="16092000" />
       <workItem from="1702457879960" duration="15842000" />
-      <workItem from="1702546480537" duration="2254000" />
+      <workItem from="1702546480537" duration="6603000" />
     </task>
     <servers />
   </component>
