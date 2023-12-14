@@ -27,10 +27,15 @@ namespace Animation
 
         public void ThrowRod()
         {
-            gameObjectToAnimate.transform.DOLocalMove(new Vector3(-18.6f, 5.2f, -17.5f), 1).SetEase(Ease.InOutQuint);
             RuntimeManager.PlayOneShot("event:/Sounds/FisherCast", gameObjectToAnimate.transform.position);
+            gameObjectToAnimate.transform.DOLocalMove(new Vector3(-18.6f, 5.2f, -17.5f), 1).SetEase(Ease.InOutQuint)
+                .OnComplete(SmallBlubSound);
         }
-        
+
+        private void SmallBlubSound()
+        {
+            RuntimeManager.PlayOneShot("event:/Sound/HookIntoWater", gameObjectToAnimate.transform.position);
+        }
         public void TakeRodBack()
         {
             gameObjectToAnimate.transform.DOLocalMove(new Vector3(-0.84f, 9.35f, -0.81f), 1).SetEase(Ease.InOutQuint);

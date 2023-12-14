@@ -1,3 +1,4 @@
+using FMODUnity;
 using Managers;
 using UnityEngine;
 
@@ -22,6 +23,7 @@ namespace Animation
             {
                 animator.SetTrigger("accidentShip");
                 isDead = true;
+                RuntimeManager.PlayOneShot("event:/Sound/Accidents/SharkShipCrash", transform.position);
                 TaskManager.Instance.SetTaskToDone("Not big enough for both of us");
             }
 

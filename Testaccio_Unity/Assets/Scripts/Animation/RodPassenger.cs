@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 
 namespace Animation
@@ -34,11 +35,14 @@ namespace Animation
             {
                 selectedPassenger = other.transform;
                 Destroy(other);
+                RuntimeManager.PlayOneShot("event:/Sound/Accidents/PersonCaughtByFisher", transform.position);
+                
                 emptyPassengerInstance = Instantiate(emptyPassenger, null);
                 caught = true;
             }
             if (other.gameObject == water)
             {
+                RuntimeManager.PlayOneShot("event:/Sound/Accidents/PersonIntoWater", transform.position);
                 Debug.Log("hit water");
                 caught = false;
             }
