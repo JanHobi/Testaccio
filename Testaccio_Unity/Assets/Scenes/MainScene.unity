@@ -331,12 +331,6 @@ Light:
     type: 3}
   m_PrefabInstance: {fileID: 1220737385}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1242426653 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2657755007999263257, guid: 9e0729fb39c232443bee9c25fac09099,
-    type: 3}
-  m_PrefabInstance: {fileID: 2394580589015690213}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1272410148 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7721385403636058548, guid: a0e2089bd5584cc4ba2713310620668f,
@@ -446,46 +440,6 @@ PrefabInstance:
       propertyPath: taskParent
       value: 
       objectReference: {fileID: 260676855}
-    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
-        type: 3}
-      propertyPath: allTasks.Array.data[0]
-      value: Not big enough for both of us
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
-        type: 3}
-      propertyPath: allTasks.Array.data[1]
-      value: Here for the Goodies
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
-        type: 3}
-      propertyPath: allTasks.Array.data[2]
-      value: Comfort Dinner
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
-        type: 3}
-      propertyPath: allTasks.Array.data[3]
-      value: Taxi to Heaven
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
-        type: 3}
-      propertyPath: allTasks.Array.data[4]
-      value: Holidays
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
-        type: 3}
-      propertyPath: allTasks.Array.data[5]
-      value: Nothing to sell
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
-        type: 3}
-      propertyPath: allTasks.Array.data[6]
-      value: Watch your Head
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
-        type: 3}
-      propertyPath: allTasks.Array.data[7]
-      value: Big Catch
-      objectReference: {fileID: 0}
     - target: {fileID: 4090483701323644719, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
         type: 3}
       propertyPath: m_Name
@@ -728,76 +682,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 451135623}
-    - target: {fileID: 2657755007999263257, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088578077984281756, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088578077984281756, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088578077984281756, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
-      value: 
-      objectReference: {fileID: 1242426653}
-    - target: {fileID: 4088578077984281756, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088578077984281756, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088578077984281756, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5149193254661283219, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5149193254661283219, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5149193254661283219, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
-      value: 
-      objectReference: {fileID: 1242426653}
-    - target: {fileID: 5149193254661283219, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5149193254661283219, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 5149193254661283219, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5149193254661283219, guid: 9e0729fb39c232443bee9c25fac09099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 5803737720665555202, guid: 9e0729fb39c232443bee9c25fac09099,
         type: 3}
       propertyPath: m_LocalPosition.x
