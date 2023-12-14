@@ -18,10 +18,11 @@ namespace Audio
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (!collision.gameObject.CompareTag("Passenger")) return;
+            if (!collision.gameObject.CompareTag("Passenger") && !collision.gameObject.CompareTag("Fisher")) return;
             Debug.Log("Crash Sound");
             Vector3 taxiPos = gameObject.transform.position;
             RuntimeManager.PlayOneShot("event:/Sound/Accidents/CarCrash", taxiPos);
+
         }
 
         private void OnDisable()
