@@ -58,7 +58,7 @@ namespace Managers
                 case GameState.Menu:
 
                     AudioManager.Instance.PlayMenuMusic();
-                    AudioManager.Instance.StopBackgroundSounds();
+                    AudioManager.Instance.StopInGameBackgroundSounds();
                     
                     if (SceneManager.GetActiveScene().name == "MainMenu") return;
                     

@@ -53,10 +53,12 @@ MonoBehaviour:
   - Holidays
   - Nothing to sell
   - Watch your Head
+  - Big Catch
   numberOfTasksShown: 3
   uiTaskPrefab: {fileID: 2728520236122314578, guid: df78b9e2369e74d0b88413eeaac7ab20,
     type: 3}
   taskParent: {fileID: 0}
+  gameFinished: 0
 --- !u!114 &134896390614821189
 MonoBehaviour:
   m_ObjectHideFlags: 0

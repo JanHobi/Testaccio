@@ -83,11 +83,13 @@ namespace Audio
         {
             harborBackgroundNoise = RuntimeManager.CreateInstance("event:/Sound/HarborBackgroundNoise");
             seagulls = RuntimeManager.CreateInstance("event:/Sound/Seagulls");
+           
             harborBackgroundNoise.start();
             seagulls.start();
+
         }
         
-        public void StopBackgroundSounds()
+        public void StopInGameBackgroundSounds()
         {
             harborBackgroundNoise.stop(STOP_MODE.IMMEDIATE);
             harborBackgroundNoise.release();

@@ -396,6 +396,7 @@ GameObject:
   - component: {fileID: 624777646691633939}
   - component: {fileID: 6902412282293621534}
   - component: {fileID: 2748891805856477452}
+  - component: {fileID: 2654404847859185167}
   m_Layer: 0
   m_Name: Land
   m_TagString: Untagged
@@ -472,6 +473,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2654404847859185167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6387001542671850051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f4cac41e2c47678875c4d67aee951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8291783119437223631
 GameObject:
   m_ObjectHideFlags: 0
