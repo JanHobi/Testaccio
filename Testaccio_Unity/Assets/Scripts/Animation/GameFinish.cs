@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using DG.Tweening;
+using FMODUnity;
 using Managers;
 using UnityEngine;
 
@@ -25,6 +26,7 @@ namespace Animation
            
             GameManager.instance.SetState(GameManager.GameState.GameWon);
             endMenu.gameObject.SetActive(true);
+            RuntimeManager.PlayOneShot("event:/Sound/UI/GameFinish");
             endMenu.DOAnchorPos(new Vector2(0, 0), 2f).SetEase(Ease.InOutQuint);
             
             foreach (var obj in objectsToRemove)

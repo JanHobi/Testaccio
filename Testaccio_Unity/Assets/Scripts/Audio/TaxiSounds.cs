@@ -19,7 +19,6 @@ namespace Audio
         private void OnTriggerEnter(Collider other)
         {
             if (!other.gameObject.CompareTag("Passenger") && !other.gameObject.CompareTag("Fisher")) return;
-            Debug.Log("Crash Sound");
             Vector3 taxiPos = gameObject.transform.position;
             RuntimeManager.PlayOneShot("event:/Sound/Accidents/CarCrash", taxiPos);
 
