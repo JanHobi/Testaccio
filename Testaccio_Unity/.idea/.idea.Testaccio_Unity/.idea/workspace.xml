@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="49f08882-788a-4f4e-acfa-d56ad52e12b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Testaccio_Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/GameFinish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/GameFinish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/TaxiSounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/TaxiSounds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Taxi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractableObjects/Taxi.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/TaxiParticles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/TaxiParticles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Visual/ObjectHighlight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Visual/ObjectHighlight.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +119,7 @@
       <workItem from="1702371580702" duration="16092000" />
       <workItem from="1702457879960" duration="15842000" />
       <workItem from="1702546480537" duration="8985000" />
+      <workItem from="1702634625335" duration="1194000" />
     </task>
     <servers />
   </component>
