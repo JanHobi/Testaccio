@@ -24,7 +24,7 @@ namespace Animation
                 animator.SetTrigger("accidentShip");
                 isDead = true;
               
-                TaskManager.Instance.SetTaskToDone("Not big enough for both of us");
+                TaskManager.Instance.SetTaskToDone("Ocean Traffic Jam");
                 // Vignette
                 var position = transform.position;
                 AccidentVignette.ShowAccidentVignette(position);
