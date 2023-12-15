@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &663015061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3873338955653497865, guid: 39afbad0c36b189429371192cf918fb5,
+    type: 3}
+  m_PrefabInstance: {fileID: 8699120278788536729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1350961680
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,37 +529,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1666340848090920949, guid: a0e2089bd5584cc4ba2713310620668f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.71
-      objectReference: {fileID: 0}
     - target: {fileID: 2022270958690702783, guid: a0e2089bd5584cc4ba2713310620668f,
         type: 3}
       propertyPath: m_Name
       value: Interactables
       objectReference: {fileID: 0}
-    - target: {fileID: 4068683140046428054, guid: a0e2089bd5584cc4ba2713310620668f,
+    - target: {fileID: 7772575180097035372, guid: a0e2089bd5584cc4ba2713310620668f,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6308051283141043409, guid: a0e2089bd5584cc4ba2713310620668f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8432172112467324531, guid: a0e2089bd5584cc4ba2713310620668f,
-        type: 3}
-      propertyPath: m_Radius
-      value: 2.97
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5095738157102775791, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
-    m_RemovedGameObjects:
-    - {fileID: 7029289673347456229, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
-    - {fileID: 6168788939052267550, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
-    - {fileID: 8439660769560167531, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
+      propertyPath: fisherSpawn
+      value: 
+      objectReference: {fileID: 663015061}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
