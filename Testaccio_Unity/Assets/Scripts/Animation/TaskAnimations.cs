@@ -29,6 +29,12 @@ namespace Animation
             uiText.rectTransform.position = new Vector3(-600, 650, 0);
             uiText.fontSize = 60;
             uiText.alignment = TextAlignmentOptions.Center;
+            StartCoroutine(WaitBeforeMovingIn(uiText));
+        }
+
+        private IEnumerator WaitBeforeMovingIn(TMP_Text uiText)
+        {
+            yield return new WaitForSeconds(1f);
             MoveTaskIntoScreen(uiText);
         }
 

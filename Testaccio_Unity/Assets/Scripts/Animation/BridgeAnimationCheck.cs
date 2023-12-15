@@ -31,6 +31,9 @@ namespace Animation
                 var position = transform.position;
                 RuntimeManager.PlayOneShot("event:/Sound/BridgeDown", position);
                 RuntimeManager.PlayOneShot("event:/Sound/Accidents/WilhelmScream", position);
+                
+                // Vignette
+                AccidentVignette.ShowAccidentVignette(position);
 
                 Debug.Log("passenger death by bridge");
                 Destroy(other.gameObject);

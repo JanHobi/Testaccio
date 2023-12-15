@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Linq;
+using Calculations;
 using DG.Tweening;
 using DG.Tweening.Core;
 using Unity.VisualScripting;
@@ -44,29 +45,42 @@ namespace Animation
             if(!volumeProfile) throw new NullReferenceException(nameof(VolumeProfile));
         }
 
-        public static void ShowAccidentVignette(Vector2 centerPos)
+        public static void ShowAccidentVignette(Vector3 pos)
         {
             // Access the instance and call the function
             if (instance != null)
             {
-                instance.InternalShowAccidentVignette(centerPos);
+                instance.InternalShowAccidentVignette(pos);
             }
         }
 
-        private void InternalShowAccidentVignette(Vector2 centerPos)
+        private void InternalShowAccidentVignette(Vector3 pos)
         {
             if(!volumeProfile.TryGet(out vignette)) throw new NullReferenceException(nameof(vignette));
             
+           Vector2 centerPos = TranslateObjectPosToScreenPos(pos);
             
             DOTween.To(() => vignette.intensity.value, x => vignette.intensity.Override(x), intensityWhenActive, 0.2f)
                 .OnComplete(() => StartCoroutine(WaitRoutine()));
 
             DOTween.To(() => vignette.center.value, x => vignette.center.Override(x), centerPos, 0.1f);
+
+            vignette.smoothness.value = 0;
         }
-        
+
+        private Vector2 TranslateObjectPosToScreenPos(Vector3 pos)
+        {
+            if (Camera.main == null) return default;
+            Vector2 originalVignettePos = Camera.main.WorldToScreenPoint(pos);
+            float x = ExtensionMethods.Remap(originalVignettePos.x, 0, Screen.width, 0, 1 );
+            float y = ExtensionMethods.Remap(originalVignettePos.y, 0, Screen.height, 0, 1 );
+            Debug.Log("Vignette Center: " + x + y);
+            return new Vector2(x, y);
+        }
+
         IEnumerator WaitRoutine()
         {
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(0.6f);
             ResetVignette();
         }
 
@@ -78,6 +92,7 @@ namespace Animation
             // Use DoTween to animate back to the original values over time
             DOTween.To(() => vignette.intensity.value, x => vignette.intensity.Override(x), 0.3f, 0.3f);
             DOTween.To(() => vignette.center.value, x => vignette.center.Override(x), new Vector2(0.5f, 0.5f), 0.3f);
+            vignette.smoothness.value = 0.14f;
         }
     }
 }

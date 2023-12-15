@@ -27,6 +27,10 @@ namespace Animation
                 if (!marketFish.activeSelf) return;
                 // Task Done
                 TaskManager.Instance.SetTaskToDone("Comfort Dinner");
+                
+                // Vignette
+                AccidentVignette.ShowAccidentVignette(transform.position);
+                
                 marketFish.SetActive(false);
             }
         }

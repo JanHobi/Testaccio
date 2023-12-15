@@ -22,6 +22,9 @@ namespace Animation
             
                 // Task Done
                 TaskManager.Instance.SetTaskToDone("Taxi to Heaven");
+                
+                // Vignette
+                AccidentVignette.ShowAccidentVignette(transform.position);
             
                 // Play Sound
                 RuntimeManager.PlayOneShot("event:/Accidents/WilhelmScream", gameObject.transform.position);
