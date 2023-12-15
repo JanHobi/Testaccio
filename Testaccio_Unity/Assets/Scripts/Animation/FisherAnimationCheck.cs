@@ -33,6 +33,9 @@ namespace Animation
             if (other.gameObject.CompareTag("Shark"))
             {
                 animator.SetTrigger("accidentShark");
+                
+                // Vignette
+                AccidentVignette.ShowAccidentVignette(transform.position);
             
                 // Task Done
                 TaskManager.Instance.SetTaskToDone("Big Catch");

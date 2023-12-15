@@ -256,6 +256,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TaskManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7311963292733332427, guid: c9af2527288ae4951968f2fbb50bc985,
+        type: 3}
+      propertyPath: allTasks.Array.data[0]
+      value: Ocean Traffic Jam
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
