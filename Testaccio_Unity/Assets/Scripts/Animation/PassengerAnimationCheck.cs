@@ -1,3 +1,4 @@
+using Calculations;
 using FMODUnity;
 using Managers;
 using UnityEngine;
@@ -33,6 +34,14 @@ namespace Animation
                 // Sound
                 Vector3 passengerPos = transform.position;
                 RuntimeManager.PlayOneShot("event:/Sound/Accidents/WilhelmScream", passengerPos);
+                
+                // Vignette
+                if (Camera.main == null) return;
+                Vector2 originalVignettePos = Camera.main.WorldToScreenPoint(passengerPos);
+                float x = ExtensionMethods.Remap(originalVignettePos.x, 0, Screen.width, 0, 1 );
+                float y = ExtensionMethods.Remap(originalVignettePos.y, 0, Screen.height, 0, 1 );
+                Debug.Log("Vignette Center: " + x + y);
+                AccidentVignette.ShowAccidentVignette(new Vector2(x, y));
             }   
 
             if (other.gameObject.CompareTag("Shark"))

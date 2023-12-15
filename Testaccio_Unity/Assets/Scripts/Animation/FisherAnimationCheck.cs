@@ -21,7 +21,7 @@ namespace Animation
                 animator.SetTrigger("accidentTaxi");
             
                 // Task Done
-                TaskManager.Instance.SetTaskToDone("Car Accident");
+                TaskManager.Instance.SetTaskToDone("Taxi to Heaven");
             
                 // Play Sound
                 RuntimeManager.PlayOneShot("event:/Accidents/WilhelmScream", gameObject.transform.position);
