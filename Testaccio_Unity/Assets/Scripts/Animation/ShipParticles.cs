@@ -3,9 +3,10 @@ using UnityEngine;
 
 namespace Animation
 {
-    public class ManipulateParticle : MonoBehaviour
+    public class ShipParticles : MonoBehaviour
     {
-        private ParticleSystem shipSmokeSystem;
+        [SerializeField] private ParticleSystem shipSmokeSystem;
+       [SerializeField] private ParticleSystem bloodSystem;
         private Animator _animator;
         private bool isMoving = false;
 
@@ -20,6 +21,14 @@ namespace Animation
         {
             var forceOverLifetimeModule = shipSmokeSystem.forceOverLifetime;
             forceOverLifetimeModule.y = _animator.speed * 2f;
+        }
+        
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Shark"))
+            {
+                bloodSystem.Play();
+            }
         }
     }
 }

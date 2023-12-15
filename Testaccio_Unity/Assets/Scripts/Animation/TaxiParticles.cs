@@ -24,7 +24,6 @@ namespace Animation
         {
             if (other.CompareTag("Fisher") || other.CompareTag("Passenger"))
             {
-                Debug.Log("Collision");
                 bloodSystem.Play();
             }
         }
