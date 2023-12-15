@@ -1,5 +1,7 @@
 using Audio;
 using UnityEngine;
+using Managers;
+
 
 namespace Visual
 {
@@ -7,14 +9,23 @@ namespace Visual
     public class ObjectHighlight : MonoBehaviour
     { 
         private static bool isClicked = false;
+        private static bool isPaused = false;
+        private GameManager gameManager;
+
+        private void Start()
+        {
+            gameManager = GameManager.instance;
+        }
 
         private void Update()
         {
-//            Debug.Log(isClicked);
+            //Debug.Log(isClicked);
         }
 
         private void OnMouseEnter()
         {
+            if(gameManager.currentGameState == GameManager.GameState.GamePaused) return;
+
             var outline = gameObject.GetComponent<Outline>();
             outline.OutlineWidth = 6f;
 
@@ -23,6 +34,8 @@ namespace Visual
 
         private void OnMouseExit()
         {
+            if(gameManager.currentGameState == GameManager.GameState.GamePaused) return;
+
             Time.timeScale = 1f;
 
             if (!isClicked)
@@ -48,11 +61,11 @@ namespace Visual
 
         public static void RemoveClickedColor(GameObject obj)
         {
-                isClicked = false;
+            isClicked = false;
 
-                var outline = obj.GetComponent<Outline>();
-                outline.OutlineWidth = 0f;
-                outline.OutlineColor = Color.white;
+            var outline = obj.GetComponent<Outline>();
+            outline.OutlineWidth = 0f;
+            outline.OutlineColor = Color.white;
         }
     }
 }
