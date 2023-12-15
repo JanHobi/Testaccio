@@ -523,13 +523,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1666340848090920949, guid: a0e2089bd5584cc4ba2713310620668f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.71
+      objectReference: {fileID: 0}
     - target: {fileID: 2022270958690702783, guid: a0e2089bd5584cc4ba2713310620668f,
         type: 3}
       propertyPath: m_Name
       value: Interactables
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    - target: {fileID: 4068683140046428054, guid: a0e2089bd5584cc4ba2713310620668f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308051283141043409, guid: a0e2089bd5584cc4ba2713310620668f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432172112467324531, guid: a0e2089bd5584cc4ba2713310620668f,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.97
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5095738157102775791, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 7029289673347456229, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
+    - {fileID: 6168788939052267550, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
+    - {fileID: 8439660769560167531, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0e2089bd5584cc4ba2713310620668f, type: 3}
