@@ -32,6 +32,8 @@ namespace Managers
         {
             if (!Input.GetMouseButtonDown(0)) return;
             if (Camera.main == null) return;
+            if (GameManager.instance.currentGameState == GameManager.GameState.GamePaused) return;
+            
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 

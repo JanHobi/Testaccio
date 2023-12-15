@@ -10,7 +10,7 @@ namespace Visual
 
         private void Update()
         {
-            Debug.Log(isClicked);
+//            Debug.Log(isClicked);
         }
 
         private void OnMouseEnter()
@@ -37,15 +37,13 @@ namespace Visual
 
         public static void ChangeToClickedColor(GameObject obj)
         {
-            if (!isClicked)
-            {
-                isClicked = true;
+            if (isClicked) return;
+            isClicked = true;
 
-                var outline = obj.GetComponent<Outline>();
-                outline.OutlineColor = Color.black;
+            var outline = obj.GetComponent<Outline>();
+            outline.OutlineColor = Color.black;
                 
-                Time.timeScale = 1f;
-            }
+            Time.timeScale = 1f;
         }
 
         public static void RemoveClickedColor(GameObject obj)
