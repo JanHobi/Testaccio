@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6156685045746175004}
   - component: {fileID: 8868525042505676848}
   - component: {fileID: 4185408399219731569}
+  - component: {fileID: 7473970869160307582}
   m_Layer: 0
   m_Name: Eyelid_L
   m_TagString: Untagged
@@ -168,6 +169,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7473970869160307582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333636545869932380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65013662e2b7004bb350f916ae14ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invokeTime: 0.7
+  blinkTime: 0.5
+  eyeOriginalRotation: -35
 --- !u!1 &1558259903623926503
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +278,7 @@ GameObject:
   - component: {fileID: 8098896913256309133}
   - component: {fileID: 503132909080300209}
   - component: {fileID: 5208963630172982879}
+  - component: {fileID: 8977674532361533309}
   m_Layer: 0
   m_Name: Eyelid_R
   m_TagString: Untagged
@@ -334,6 +351,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8977674532361533309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816529193369538952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65013662e2b7004bb350f916ae14ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invokeTime: 0.7
+  blinkTime: 0.5
+  eyeOriginalRotation: -35
 --- !u!1 &2587251179059363927
 GameObject:
   m_ObjectHideFlags: 0

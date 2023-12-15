@@ -48654,10 +48654,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8176824357334213758, guid: fe9d64b576c48204d829e6ccd6a72784, type: 3}
+    - {fileID: 7662331529216587901, guid: fe9d64b576c48204d829e6ccd6a72784, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2264455581951489119, guid: fe9d64b576c48204d829e6ccd6a72784,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6001430779328211538}
+    - targetCorrespondingSourceObject: {fileID: 1502912172680479371, guid: fe9d64b576c48204d829e6ccd6a72784,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 332424292184305274}
   m_SourcePrefab: {fileID: 100100000, guid: fe9d64b576c48204d829e6ccd6a72784, type: 3}
 --- !u!4 &3943934928345105646 stripped
 Transform:
@@ -48665,6 +48675,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6564363424376880549}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4933055245230180858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2264455581951489119, guid: fe9d64b576c48204d829e6ccd6a72784,
+    type: 3}
+  m_PrefabInstance: {fileID: 6564363424376880549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6001430779328211538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4933055245230180858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65013662e2b7004bb350f916ae14ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invokeTime: 0.5
+  blinkTime: 1
+  eyeOriginalRotation: 0
+  eyeGoalRotation: 90
+--- !u!1 &5747199409686839086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1502912172680479371, guid: fe9d64b576c48204d829e6ccd6a72784,
+    type: 3}
+  m_PrefabInstance: {fileID: 6564363424376880549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &332424292184305274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5747199409686839086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65013662e2b7004bb350f916ae14ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invokeTime: 0.5
+  blinkTime: 1
+  eyeOriginalRotation: -90
+  eyeGoalRotation: 360
 --- !u!1001 &6750595672555016506
 PrefabInstance:
   m_ObjectHideFlags: 0
