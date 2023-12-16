@@ -6,7 +6,6 @@ public class DustTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject dustParticles;
 
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("BridgeAccident"))

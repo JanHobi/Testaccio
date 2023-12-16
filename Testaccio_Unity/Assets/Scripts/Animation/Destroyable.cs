@@ -9,7 +9,6 @@ namespace Animation
         {
             if (other.gameObject.CompareTag("Bridge"))
             {
-                DestroyMe();
                 TaskManager.Instance.SetTaskToDone("Heavy Bridge");
             }
 

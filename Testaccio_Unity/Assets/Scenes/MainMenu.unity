@@ -496,6 +496,7 @@ MonoBehaviour:
   invokeTime: 1
   blinkTime: 0.3
   eyeOriginalRotation: -40
+  eyeGoalRotation: 90
 --- !u!1 &187212901
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,6 +3530,7 @@ MonoBehaviour:
   invokeTime: 0.5
   blinkTime: 0.3
   eyeOriginalRotation: -40
+  eyeGoalRotation: 90
 --- !u!1 &1141696226
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,6 +3796,7 @@ MonoBehaviour:
   invokeTime: 0.5
   blinkTime: 0.3
   eyeOriginalRotation: -40
+  eyeGoalRotation: 90
 --- !u!1 &1326840764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,6 +3896,7 @@ MonoBehaviour:
   invokeTime: 0.9
   blinkTime: 0.3
   eyeOriginalRotation: -40
+  eyeGoalRotation: 90
 --- !u!1 &1335007442
 GameObject:
   m_ObjectHideFlags: 0
@@ -5079,6 +5083,7 @@ MonoBehaviour:
   invokeTime: 0.9
   blinkTime: 0.3
   eyeOriginalRotation: -40
+  eyeGoalRotation: 90
 --- !u!1 &1826970480
 GameObject:
   m_ObjectHideFlags: 0
@@ -5178,6 +5183,7 @@ MonoBehaviour:
   invokeTime: 1
   blinkTime: 0.3
   eyeOriginalRotation: -40
+  eyeGoalRotation: 90
 --- !u!1 &1830576906
 GameObject:
   m_ObjectHideFlags: 0
@@ -6429,6 +6435,7 @@ MonoBehaviour:
   invokeTime: 0.75
   blinkTime: 0.3
   eyeOriginalRotation: -40
+  eyeGoalRotation: 90
 --- !u!33 &6358256087520291248
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6751,6 +6758,7 @@ MonoBehaviour:
   invokeTime: 0.75
   blinkTime: 0.3
   eyeOriginalRotation: -40
+  eyeGoalRotation: 90
 --- !u!4 &8711418477049797166
 Transform:
   m_ObjectHideFlags: 0
