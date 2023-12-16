@@ -30954,6 +30954,62 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 0, z: 0.05}
   m_Size: {x: 7, y: 7, z: 0.1}
   m_FadeFactor: 1
+--- !u!1 &5988214999170168508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4733679751069984380}
+  - component: {fileID: 5379780765935504421}
+  m_Layer: 0
+  m_Name: DecalMarket_SoldOut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4733679751069984380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988214999170168508}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.2625967, y: -0.65653867, z: -0.65653867, w: -0.2625967}
+  m_LocalPosition: {x: -0.5339484, y: -0.57524204, z: 1.8127071}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5889579865050915162}
+  m_LocalEulerAnglesHint: {x: 0, y: -223.6, z: 0}
+--- !u!114 &5379780765935504421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988214999170168508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 14fca1aa3b4005d44b9a801b1ef5a273, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_DecalLayerMask: 1
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0.085}
+  m_Size: {x: 4, y: 4, z: 0.17}
+  m_FadeFactor: 1
 --- !u!1 &5990020013506879650
 GameObject:
   m_ObjectHideFlags: 0
@@ -48529,6 +48585,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 23a829453d327be4ab86301e35e5ccdd, type: 2}
+    - target: {fileID: 3067877598661318385, guid: fe9d64b576c48204d829e6ccd6a72784,
+        type: 3}
+      propertyPath: m_Name
+      value: DecalMarket_FreshFish
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067877598661318385, guid: fe9d64b576c48204d829e6ccd6a72784,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6385542868692967199, guid: fe9d64b576c48204d829e6ccd6a72784,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -48544,6 +48610,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6550544818911098967, guid: fe9d64b576c48204d829e6ccd6a72784,
+        type: 3}
+      propertyPath: marketSignSoldOut
+      value: 
+      objectReference: {fileID: 5988214999170168508}
+    - target: {fileID: 6550544818911098967, guid: fe9d64b576c48204d829e6ccd6a72784,
+        type: 3}
+      propertyPath: marketSignFreshFish
+      value: 
+      objectReference: {fileID: 8181360102819425108}
     - target: {fileID: 6754100590554562006, guid: fe9d64b576c48204d829e6ccd6a72784,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -48658,7 +48734,11 @@ PrefabInstance:
     - {fileID: 8176824357334213758, guid: fe9d64b576c48204d829e6ccd6a72784, type: 3}
     - {fileID: 7662331529216587901, guid: fe9d64b576c48204d829e6ccd6a72784, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 766368879846612223, guid: fe9d64b576c48204d829e6ccd6a72784,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4733679751069984380}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2264455581951489119, guid: fe9d64b576c48204d829e6ccd6a72784,
         type: 3}
@@ -48719,6 +48799,18 @@ MonoBehaviour:
   blinkTime: 1
   eyeOriginalRotation: -90
   eyeGoalRotation: 360
+--- !u!4 &5889579865050915162 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 766368879846612223, guid: fe9d64b576c48204d829e6ccd6a72784,
+    type: 3}
+  m_PrefabInstance: {fileID: 6564363424376880549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8181360102819425108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3067877598661318385, guid: fe9d64b576c48204d829e6ccd6a72784,
+    type: 3}
+  m_PrefabInstance: {fileID: 6564363424376880549}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6750595672555016506
 PrefabInstance:
   m_ObjectHideFlags: 0
