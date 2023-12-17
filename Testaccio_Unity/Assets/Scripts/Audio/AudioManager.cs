@@ -68,6 +68,15 @@ namespace Audio
             gameMusic.start();
         }
 
+        public void StopGameMusic()
+        {
+            gameMusic.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+        public void StopMenuMusic()
+        {
+            menuMusic.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+
         public void ChangeMusicSpeed(float value)
         {
             gameMusic.setParameterByName("MusicSpeed", value: value);
