@@ -77,6 +77,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Passenger
       objectReference: {fileID: 0}
+    - target: {fileID: 7473970869160307582, guid: 07284dae968040a4cb8f71f7f1d5e8cd,
+        type: 3}
+      propertyPath: eyeGoalRotation
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8977674532361533309, guid: 07284dae968040a4cb8f71f7f1d5e8cd,
+        type: 3}
+      propertyPath: eyeGoalRotation
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

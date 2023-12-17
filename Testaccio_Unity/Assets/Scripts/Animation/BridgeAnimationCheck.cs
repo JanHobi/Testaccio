@@ -34,9 +34,6 @@ namespace Animation
                 
                 // Vignette
                 AccidentVignette.ShowAccidentVignette(position);
-
-                Debug.Log("passenger death by bridge");
-                Destroy(other.gameObject);
             }
         }
 

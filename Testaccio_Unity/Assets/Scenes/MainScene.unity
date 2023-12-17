@@ -251,6 +251,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1707819902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &752702430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4356081793216434444, guid: 39afbad0c36b189429371192cf918fb5,
+    type: 3}
+  m_PrefabInstance: {fileID: 431523078}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1021434407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6308051283141043409, guid: a0e2089bd5584cc4ba2713310620668f,
@@ -523,6 +529,11 @@ PrefabInstance:
       propertyPath: fisherSpawn
       value: 
       objectReference: {fileID: 431523079}
+    - target: {fileID: 8319441524322857428, guid: a0e2089bd5584cc4ba2713310620668f,
+        type: 3}
+      propertyPath: gameObjectToAnimate
+      value: 
+      objectReference: {fileID: 752702430}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

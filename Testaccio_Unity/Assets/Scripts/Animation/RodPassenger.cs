@@ -33,8 +33,9 @@ namespace Animation
         {
             if (taxi.allPassengers.Contains(other.gameObject))
             {
+                Debug.Log("hit passenger");
                 selectedPassenger = other.transform;
-                Destroy(other);
+                Destroy(other.gameObject);
                 RuntimeManager.PlayOneShot("event:/Sound/Accidents/PersonCaughtByFisher", transform.position);
                 
                 emptyPassengerInstance = Instantiate(emptyPassenger, null);

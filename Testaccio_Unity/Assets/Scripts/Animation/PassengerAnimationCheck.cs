@@ -8,7 +8,7 @@ namespace Animation
     public class PassengerAnimationCheck : MonoBehaviour
     {
         private Animator animator;
-
+        
         private void Start()
         {
             animator = GetComponent<Animator>();
@@ -18,10 +18,16 @@ namespace Animation
         {
             if (other.gameObject.CompareTag("Bridge"))
             {
+                Debug.Log("On Board!");
                 animator.SetTrigger("successBoat");
                 
                 // Task Done
                 TaskManager.Instance.SetTaskToDone("Holidays");
+            }
+            
+            if (other.gameObject.CompareTag("BridgeAccident"))
+            {
+                animator.SetTrigger("accidentBridge");
             }
 
             if (other.gameObject.CompareTag("Taxi"))

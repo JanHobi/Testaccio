@@ -111,6 +111,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5803737720665555202}
     m_Modifications:
+    - target: {fileID: 279532830956166549, guid: 0be0745b7cd0847f09003480cdd6988e,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 279532830956166549, guid: 0be0745b7cd0847f09003480cdd6988e,
+        type: 3}
+      propertyPath: m_RaycastPadding.w
+      value: -7.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 279532830956166549, guid: 0be0745b7cd0847f09003480cdd6988e,
+        type: 3}
+      propertyPath: m_RaycastPadding.x
+      value: -8.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 279532830956166549, guid: 0be0745b7cd0847f09003480cdd6988e,
+        type: 3}
+      propertyPath: m_RaycastPadding.y
+      value: -18.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 279532830956166549, guid: 0be0745b7cd0847f09003480cdd6988e,
+        type: 3}
+      propertyPath: m_RaycastPadding.z
+      value: -8.97
+      objectReference: {fileID: 0}
     - target: {fileID: 2715127120387771132, guid: 0be0745b7cd0847f09003480cdd6988e,
         type: 3}
       propertyPath: m_SortingOrder

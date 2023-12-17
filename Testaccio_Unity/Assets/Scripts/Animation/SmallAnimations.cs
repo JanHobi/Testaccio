@@ -40,16 +40,5 @@ namespace Animation
         {
             gameObjectToAnimate.transform.DOLocalMove(new Vector3(-0.84f, 9.35f, -0.81f), 1).SetEase(Ease.InOutQuint);
         }
-
-        public void OpenCottageDoor()
-        {
-            gameObjectToAnimate.transform.DOLocalRotate(new Vector3(0, 90, 0), 0.7f).SetEase(Ease.InOutQuint);
-        }
-
-        public void CloseCottageDoor()
-        {
-            gameObjectToAnimate.transform.DOLocalRotate(new Vector3(0, 0, 0), 0.7f).SetEase(Ease.InOutQuint);
-        }
-        
     }
 }
