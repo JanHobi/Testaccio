@@ -57,7 +57,8 @@ namespace Managers
             switch (state)
             {
                 case GameState.Menu:
-
+                    AudioManager.Instance.StopGameMusic();
+                    AudioManager.Instance.StopMenuMusic();
                     AudioManager.Instance.PlayMenuMusic();
                     AudioManager.Instance.PlayMenuBackgroundSounds();
                     AudioManager.Instance.StopInGameBackgroundSounds();
@@ -75,9 +76,6 @@ namespace Managers
                     if (SceneManager.GetActiveScene().name == "IntroScene")
                     {
                         StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 2));
-                        AudioManager.Instance.PlayGameMusic();
-                        AudioManager.Instance.StopMenuBackgroundSounds();
-                        AudioManager.Instance.PlayInGameBackgroundSounds();
                     }
                     else
                     {
@@ -89,6 +87,11 @@ namespace Managers
 
                     if (SceneManager.GetActiveScene().name == "MainMenu")
                     {
+                        AudioManager.Instance.PlayGameMusic();
+                        AudioManager.Instance.StopMenuMusic();
+                        AudioManager.Instance.StopMenuBackgroundSounds();
+                        AudioManager.Instance.PlayInGameBackgroundSounds();
+                        
                         StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 1));
                     }
                     else
