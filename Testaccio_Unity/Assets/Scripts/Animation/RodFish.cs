@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Managers;
 
 namespace Animation
 {
@@ -33,6 +34,12 @@ namespace Animation
                 fishInstance = Instantiate(fishPrefab, null);
                 fisherAnimator.SetTrigger("successFish");
                 caught = true;
+
+                // Task Done
+                TaskManager.Instance.SetTaskToDone("Empty Belly");
+
+                // Vignette
+                AccidentVignette.ShowAccidentVignette(transform.position);
             }
 
             if (other.gameObject.CompareTag("Market"))

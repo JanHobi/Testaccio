@@ -21,6 +21,7 @@ namespace Managers
         [SerializeField] private Transform taskParent;
         [SerializeField] private RectTransform background;
         private TaskAnimations taskAnimations;
+        private GameFinish gameFinish;
         [HideInInspector] public bool gameFinished = false;
       
 
@@ -51,6 +52,7 @@ namespace Managers
         {
             NewTasks();
             taskAnimations.MoveBackgroundToStartPos(background);
+            gameFinish = GetComponent<GameFinish>();
         }
 
         private void CheckTasksCompletion()
@@ -60,10 +62,18 @@ namespace Managers
             if (!allTasksCompleted) return;
             
             // Check if ALL, like really ALL tasks are completed
-            if (allTasks.Count <= 0)
+            if (allTasks.Count <= 0 && GameManager.instance.currentGameState == GameManager.GameState.InGame)
             {
                 Debug.Log("All tasks completed!");
                 gameFinished = true;
+                gameFinish.ShowEndScreen();
+            }
+            
+            if (allTasks.Count <= 0 && GameManager.instance.currentGameState == GameManager.GameState.Intro)
+            {
+                Debug.Log("All intro tasks completed!");
+                gameFinished = true;
+                gameFinish.ShowIntroEndScreen();
             }
             // Wait some seconds before getting new tasks, so that the animation can finish
             Invoke(nameof(NewTasks), 4.5f);

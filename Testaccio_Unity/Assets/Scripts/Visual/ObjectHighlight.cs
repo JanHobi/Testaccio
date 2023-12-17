@@ -61,11 +61,11 @@ namespace Visual
 
         public static void RemoveClickedColor(GameObject obj)
         {
-            /*isClicked = false;
+            isClicked = false;
 
             var outline = obj.GetComponent<Outline>();
             outline.OutlineWidth = 0f;
-            outline.OutlineColor = Color.white;*/
+            outline.OutlineColor = Color.white;
         }
     }
 }

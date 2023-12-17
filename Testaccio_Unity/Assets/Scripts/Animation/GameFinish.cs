@@ -10,6 +10,7 @@ namespace Animation
     {
         private TaskManager taskManager;
         [SerializeField] private RectTransform endMenu;
+        [SerializeField] private RectTransform introEndMenu;
         private readonly List<GameObject> objectsToRemove = new List<GameObject>();
 
         void Start()
@@ -28,6 +29,20 @@ namespace Animation
             endMenu.gameObject.SetActive(true);
             RuntimeManager.PlayOneShot("event:/Sound/UI/GameFinish");
             endMenu.DOAnchorPos(new Vector2(0, 0), 2f).SetEase(Ease.InOutQuint);
+            
+            foreach (var obj in objectsToRemove)
+            {
+                obj.SetActive(false);
+            }
+        }
+        
+        public void ShowIntroEndScreen()
+        {
+            if (!taskManager.gameFinished) return;
+           
+            introEndMenu.gameObject.SetActive(true);
+            RuntimeManager.PlayOneShot("event:/Sound/UI/GameFinish");
+            introEndMenu.DOAnchorPos(new Vector2(0, 0), 2f).SetEase(Ease.InOutQuint);
             
             foreach (var obj in objectsToRemove)
             {

@@ -12,12 +12,19 @@ namespace UI
             PlaySound();
             GameManager.instance.SetState(GameManager.GameState.Menu);
         }
+
+        public void SwitchToIntro()
+        {
+            PlaySound();
+            GameManager.instance.SetState(GameManager.GameState.Intro);
+        }
         
         public void SwitchToGame()
         {
             PlaySound();
             GameManager.instance.SetState(GameManager.GameState.InGame);
         }
+
 
         public void QuitGame()
         {

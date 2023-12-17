@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 2224005717545145755}
   serializedVersion: 2
   m_LocalRotation: {x: 0.60199517, y: 0.59729946, z: -0.37071198, w: 0.3786924}
-  m_LocalPosition: {x: 10.68, y: -0.037583113, z: -0.37}
+  m_LocalPosition: {x: 17.88, y: -0.037583113, z: 3.5}
   m_LocalScale: {x: 0.011259999, y: 0.011259999, z: 0.011259999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85,12 +85,12 @@ GameObject:
   - component: {fileID: 3136641082294852456}
   - component: {fileID: 3404392186980610135}
   - component: {fileID: 3619493874735010868}
-  - component: {fileID: 6271907626866725631}
   - component: {fileID: 6454024504689843173}
-  - component: {fileID: 1219727627118382232}
   - component: {fileID: 6049265127027950440}
   - component: {fileID: 865474023693322970}
-  - component: {fileID: 2088666889125516293}
+  - component: {fileID: 7006661017826843288}
+  - component: {fileID: 5269514160826843624}
+  - component: {fileID: 5371058348025685839}
   m_Layer: 0
   m_Name: Taxi
   m_TagString: Taxi
@@ -182,28 +182,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!64 &6271907626866725631
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3009420023505774037}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3186635122631503911, guid: 4fb93ba6d6ac8c14085e77b41002497a, type: 3}
 --- !u!114 &6454024504689843173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,18 +198,6 @@ MonoBehaviour:
     type: 3}
   spawnPoint: {fileID: 2224005717545145755}
   allPassengers: []
---- !u!114 &1219727627118382232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3009420023505774037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfe1243dd09366d458bcccff8daa6131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6049265127027950440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +224,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smokeSystem: {fileID: 8072527806822342958}
   bloodSystem: {fileID: 381558979480869143}
---- !u!114 &2088666889125516293
+--- !u!136 &7006661017826843288
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3009420023505774037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 7.56
+  m_Height: 27.2
+  m_Direction: 2
+  m_Center: {x: 0, y: 3.56, z: 0}
+--- !u!114 &5269514160826843624
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,10 +261,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
+  outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &5371058348025685839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3009420023505774037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe1243dd09366d458bcccff8daa6131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3402191873943472082
 GameObject:
   m_ObjectHideFlags: 0

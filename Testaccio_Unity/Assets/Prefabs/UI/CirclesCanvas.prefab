@@ -337,7 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.101960786, g: 0.101960786, b: 0.101960786, a: 0.92156863}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 4927446588385838346}
   m_Layer: 5
   m_Name: CirclesCanvas
-  m_TagString: Untagged
+  m_TagString: RemoveAtEnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -428,7 +428,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &2438228663365740224
 MonoBehaviour:
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &4927446588385838346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,6 +532,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TimeCompass
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758351911435897650, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758351911435897650, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_RaycastPadding.w
+      value: -7.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758351911435897650, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_RaycastPadding.x
+      value: -8.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758351911435897650, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_RaycastPadding.y
+      value: -18.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758351911435897650, guid: b20ed28242d204b9a9f9e037f3bbdf9c,
+        type: 3}
+      propertyPath: m_RaycastPadding.z
+      value: -8.97
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

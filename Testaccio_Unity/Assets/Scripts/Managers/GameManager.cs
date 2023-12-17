@@ -20,6 +20,7 @@ namespace Managers
         public enum GameState
         {
             Menu,
+            Intro,
             InGame,
             GamePaused,
             GameWon,
@@ -71,12 +72,24 @@ namespace Managers
 
                 case GameState.InGame:
 
-                    if (SceneManager.GetActiveScene().name == "MainMenu")
+                    if (SceneManager.GetActiveScene().name == "IntroScene")
                     {
-                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 1));
+                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 2));
                         AudioManager.Instance.PlayGameMusic();
                         AudioManager.Instance.StopMenuBackgroundSounds();
                         AudioManager.Instance.PlayInGameBackgroundSounds();
+                    }
+                    else
+                    {
+                        Time.timeScale = 1;
+                    }
+                    break;
+
+                case GameState.Intro:
+
+                    if (SceneManager.GetActiveScene().name == "MainMenu")
+                    {
+                        StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 1));
                     }
                     else
                     {
