@@ -34,7 +34,7 @@ namespace Animation
                 marketSignFreshFish.SetActive(false);
                 marketSignSoldOut.SetActive(true);
                 // Task Done
-                TaskManager.Instance.SetTaskToDone("Comfort Dinner");
+                TaskManager.Instance.SetTaskToDone("Buying Dinner");
                 
                 // Vignette
                 AccidentVignette.ShowAccidentVignette(transform.position);

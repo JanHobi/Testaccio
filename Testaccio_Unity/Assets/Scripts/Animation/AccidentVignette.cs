@@ -74,7 +74,7 @@ namespace Animation
             Vector2 originalVignettePos = Camera.main.WorldToScreenPoint(pos);
             float x = ExtensionMethods.Remap(originalVignettePos.x, 0, Screen.width, 0, 1 );
             float y = ExtensionMethods.Remap(originalVignettePos.y, 0, Screen.height, 0, 1 );
-            Debug.Log("Vignette Center: " + x + y);
+            //Debug.Log("Vignette Center: " + x + y);
             return new Vector2(x, y);
         }
 

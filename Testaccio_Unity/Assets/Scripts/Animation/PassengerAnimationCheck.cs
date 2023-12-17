@@ -48,10 +48,8 @@ namespace Animation
             if (other.gameObject.CompareTag("Shark"))
             {
                 // Task Done
-                TaskManager.Instance.SetTaskToDone("Here for the Goodies");
+                TaskManager.Instance.SetTaskToDone("Jaws");
                 
-               
-
                 // Play Sound
                 Vector3 passengerPos = transform.position;
                 RuntimeManager.PlayOneShot("event:/Sound/Accidents/SharkEatsPerson", passengerPos);
