@@ -62,6 +62,7 @@ namespace Managers
                     AudioManager.Instance.PlayMenuMusic();
                     AudioManager.Instance.PlayMenuBackgroundSounds();
                     AudioManager.Instance.StopInGameBackgroundSounds();
+                    AudioManager.Instance.SetGlobalEqSnapshot("Normal");
                     
                     if (SceneManager.GetActiveScene().name == "MainMenu") return;
                     
@@ -80,6 +81,7 @@ namespace Managers
                     else
                     {
                         Time.timeScale = 1;
+                        AudioManager.Instance.SetGlobalEqSnapshot("Normal");
                     }
                     break;
 
@@ -91,17 +93,20 @@ namespace Managers
                         AudioManager.Instance.StopMenuMusic();
                         AudioManager.Instance.StopMenuBackgroundSounds();
                         AudioManager.Instance.PlayInGameBackgroundSounds();
-                        
+                        AudioManager.Instance.SetGlobalEqSnapshot("Normal");
+
                         StartCoroutine(GameObject.FindObjectOfType<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, 1));
                     }
                     else
                     {
                         Time.timeScale = 1;
+                        AudioManager.Instance.SetGlobalEqSnapshot("Normal");
                     }
                     break;
             
                 case GameState.GamePaused:
                     Time.timeScale = 0;
+                    AudioManager.Instance.SetGlobalEqSnapshot("Menu");
                     break;
                 
                 case GameState.GameWon:

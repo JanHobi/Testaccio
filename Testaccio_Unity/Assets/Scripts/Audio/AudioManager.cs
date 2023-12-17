@@ -23,6 +23,10 @@ namespace Audio
         private EventInstance menuShip;
         private EventInstance deepOceanWaves;
         private List<EventInstance> uiSounds = new List<EventInstance>();
+        private FMOD.Studio.Bus masterBus;
+        private FMOD.Studio.EventInstance snapshotEvent;
+        private EventInstance normalSnap;
+        private EventInstance menuSnap;
 
         public static AudioManager Instance;
      
@@ -43,12 +47,16 @@ namespace Audio
             hover = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonHover");
             click = RuntimeManager.CreateInstance("event:/Sound/UI/ButtonClick");
             taskDone = RuntimeManager.CreateInstance("event:/Sound/UI/TaskDone");
-           
-            
+
             // UI Sounds List
             uiSounds.Add(hover);
             uiSounds.Add(click);
             uiSounds.Add(taskDone);
+            
+            masterBus = RuntimeManager.GetBus("bus:/");
+            
+            menuSnap = RuntimeManager.CreateInstance("snapshot:/Menu");
+            normalSnap = RuntimeManager.CreateInstance("snapshot:/Normal");
         }
 
         public void PlayMenuMusic()
@@ -135,6 +143,40 @@ namespace Audio
         public void PlayCircleClickSound()
         {
             RuntimeManager.PlayOneShot("event:/Sound/UI/CircleClick");
+        }
+
+        public void SetGlobalEqSnapshot(string snapshotName)
+        {
+            if (masterBus.isValid())
+            {
+                // Stop the previous snapshot event
+                if (snapshotEvent.isValid())
+                {
+                    snapshotEvent.stop(STOP_MODE.ALLOWFADEOUT);
+                }
+
+                // Set the new snapshot event based on the provided snapshotName
+                switch (snapshotName)
+                {
+                    case "Normal":
+                        snapshotEvent = normalSnap;
+                        break;
+                    case "Menu":
+                        snapshotEvent = menuSnap;
+                        break;
+
+                    default:
+                        Debug.LogWarning($"Unknown snapshot: {snapshotName}");
+                        return;
+                }
+
+                // Start the new snapshot event (optional, depends on your use case)
+                snapshotEvent.start();
+            }
+            else
+            {
+                Debug.LogWarning($"Master bus is invalid.");
+            }
         }
     }
 }
