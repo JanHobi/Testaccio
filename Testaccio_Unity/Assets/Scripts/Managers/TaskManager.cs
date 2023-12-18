@@ -62,7 +62,7 @@ namespace Managers
             if (!allShownTasksCompleted) return;
             
             // Check if ALL, like really ALL tasks are completed
-            if (allTasks.Count <= 0 && GameManager.instance.currentGameState == GameManager.GameState.InGame)
+            if (allTasks.Count <= 5 && GameManager.instance.currentGameState == GameManager.GameState.InGame)
             {
                 Debug.Log("All tasks completed!");
                 gameFinished = true;
