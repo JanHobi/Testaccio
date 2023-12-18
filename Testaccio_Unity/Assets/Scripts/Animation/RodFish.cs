@@ -36,7 +36,7 @@ namespace Animation
                 caught = true;
 
                 // Task Done
-                TaskManager.Instance.SetTaskToDone("Empty Belly");
+                TaskManager.Instance.SetTaskToDone("Lunch");
 
                 // Vignette
                 AccidentVignette.ShowAccidentVignette(transform.position);
