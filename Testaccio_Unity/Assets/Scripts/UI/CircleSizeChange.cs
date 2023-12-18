@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Animation;
 using Audio;
+using Managers;
 using UnityEngine;
 
 namespace UI
@@ -29,6 +30,7 @@ namespace UI
         // Activate the specific button filling and set activeCircleSize
         private void ChangeCircleSize(int index)
         {
+            if (GameManager.instance.currentGameState == GameManager.GameState.GamePaused) return;
             AudioManager.Instance.PlayCircleClickSound();
             
             if (index >= 0 && index <= allCircleSizes.Count)
