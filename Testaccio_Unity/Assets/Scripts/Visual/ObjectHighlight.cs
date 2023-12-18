@@ -8,7 +8,7 @@ namespace Visual
     [RequireComponent(typeof(Outline))]
     public class ObjectHighlight : MonoBehaviour
     { 
-        private static bool isClicked = false;
+        private bool isClicked = false;
         private static bool isPaused = false;
         private GameManager gameManager;
 
@@ -24,12 +24,11 @@ namespace Visual
             var outline = gameObject.GetComponent<Outline>();
             
             outline.OutlineWidth = 6f;
-
-           // Time.timeScale = 0.35f;
         }
 
         private void OnMouseExit()
         {
+            Debug.Log("Exit");
             if(gameManager.currentGameState == GameManager.GameState.GamePaused) return;
             if (isClicked) return;
             
@@ -38,9 +37,8 @@ namespace Visual
             outline.OutlineColor = Color.white;
         }
 
-        public static void ChangeToClickedColor(GameObject obj)
+        public void ChangeToClickedColor(GameObject obj)
         {
-            if (isClicked) return;
             isClicked = true;
 
             var outline = obj.GetComponent<Outline>();
@@ -49,7 +47,7 @@ namespace Visual
             Time.timeScale = 1f;
         }
 
-        public static void RemoveClickedColor(GameObject obj)
+        public void RemoveClickedColor(GameObject obj)
         {
             isClicked = false;
 

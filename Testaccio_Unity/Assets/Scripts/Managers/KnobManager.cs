@@ -17,9 +17,10 @@ namespace Managers
         [SerializeField] private GameObject timeCompass;
         [HideInInspector] public Dictionary<GameObject, Knob> InteractablesAndKnobs = new Dictionary<GameObject, Knob>();
         private GameObject selectedObject;
+        private ObjectHighlight myObjectHighlight;
 
 
-        
+
         // Update is called once per frame
         void Update()
         {
@@ -46,6 +47,9 @@ namespace Managers
                 if (hittedObject.GetComponent<RectTransform>()) return;
                 if (interactableObjects.Contains(hittedObject))
                 {
+                    // Highlight
+                    myObjectHighlight = hittedObject.GetComponent<ObjectHighlight>();
+                    
                     // Check if Object has Animator component
                     Animator animator = hit.transform.GetComponent<Animator>();
 
@@ -55,8 +59,10 @@ namespace Managers
 
                         // If I clicked on a new object, remove the color from the last clicked object
                         if (hittedObject != selectedObject && selectedObject != null)
-                            ObjectHighlight.RemoveClickedColor(selectedObject);
-
+                        {
+                            myObjectHighlight.RemoveClickedColor(selectedObject);
+                        }
+                        
                         // Add the clicked object to the variable
                         selectedObject = hittedObject;
 
@@ -89,7 +95,7 @@ namespace Managers
                 {
                     /*
                     if (selectedObject == null) return;
-                    ObjectHighlight.RemoveClickedColor(selectedObject);
+                    myObjectHighlight.RemoveClickedColor(selectedObject);
                     selectedObject = null;
                     */
                 }
@@ -109,7 +115,7 @@ namespace Managers
         
         private void AddColorToSelectedObject()
         {
-            if (selectedObject != null) ObjectHighlight.ChangeToClickedColor(selectedObject);
+            if (selectedObject != null && myObjectHighlight != null) myObjectHighlight.ChangeToClickedColor(selectedObject);
         }
     }
 }
