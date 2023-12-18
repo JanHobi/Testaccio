@@ -58,8 +58,8 @@ namespace Managers
         private void CheckTasksCompletion()
         {
             // Check tasks that are on screen
-            bool allTasksCompleted = SelectedTasks.All(task => task.Value);
-            if (!allTasksCompleted) return;
+            bool allShownTasksCompleted = SelectedTasks.All(task => task.Value);
+            if (!allShownTasksCompleted) return;
             
             // Check if ALL, like really ALL tasks are completed
             if (allTasks.Count <= 0 && GameManager.instance.currentGameState == GameManager.GameState.InGame)
