@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1220737386}
-  m_IndirectSpecularColor: {r: 0.29536164, g: 1.6214589, b: 5.1625867, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -576,14 +576,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click on the fisher or the fish to select.
+  m_text: 'Click on the fisher to select.
 
 
-    Choose a speed by clicking
-    on a bigger or smaller circle.
+    Choose a speed by clicking on a bigger
+    or smaller circle.
 
 
-    Now try to match them together!'
+    Now try to match the fisher and fish together!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c86418aa86a3157418547c40a5d70975, type: 2}
   m_sharedMaterial: {fileID: 1865037866867498286, guid: c86418aa86a3157418547c40a5d70975,
@@ -946,6 +946,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interactables
       objectReference: {fileID: 0}
+    - target: {fileID: 2800311289836231876, guid: a0e2089bd5584cc4ba2713310620668f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6282584044771914089, guid: a0e2089bd5584cc4ba2713310620668f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -986,6 +991,11 @@ PrefabInstance:
       propertyPath: fisherSpawn
       value: 
       objectReference: {fileID: 431523079}
+    - target: {fileID: 7991761544913693275, guid: a0e2089bd5584cc4ba2713310620668f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8319441524322857428, guid: a0e2089bd5584cc4ba2713310620668f,
         type: 3}
       propertyPath: gameObjectToAnimate
@@ -1288,6 +1298,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 451135623}
+    - target: {fileID: 2536663320418074343, guid: 9e0729fb39c232443bee9c25fac09099,
+        type: 3}
+      propertyPath: m_text
+      value: 'Great job!
+
+
+        You helped the fisher to catch the fish!
+
+
+        Your
+        next tasks are not gonna be that easy, good luck!'
+      objectReference: {fileID: 0}
     - target: {fileID: 5149193254661283219, guid: 9e0729fb39c232443bee9c25fac09099,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
