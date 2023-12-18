@@ -5,6 +5,7 @@ using Audio;
 using UI;
 using UnityEngine;
 using Visual;
+using UnityEngine.EventSystems;
 
 namespace Managers
 {
@@ -33,7 +34,7 @@ namespace Managers
             if (!Input.GetMouseButtonDown(0)) return;
             if (Camera.main == null) return;
             if (GameManager.instance.currentGameState == GameManager.GameState.GamePaused) return;
-            
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -41,6 +42,7 @@ namespace Managers
             {
                 // Check if hit object is in the interactable List
                 GameObject hittedObject = hit.transform.gameObject;
+                
                 if (interactableObjects.Contains(hittedObject))
                 {
                     // Check if Object has Animator component

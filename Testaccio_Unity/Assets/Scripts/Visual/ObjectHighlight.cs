@@ -29,7 +29,7 @@ namespace Visual
             var outline = gameObject.GetComponent<Outline>();
             outline.OutlineWidth = 6f;
 
-            Time.timeScale = 0.35f;
+           // Time.timeScale = 0.35f;
         }
 
         private void OnMouseExit()
