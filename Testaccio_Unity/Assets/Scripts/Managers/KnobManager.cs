@@ -40,22 +40,23 @@ namespace Managers
 
             if (Physics.Raycast(ray, out hit))
             {
-                // Check if hit object is in the interactable List
                 GameObject hittedObject = hit.transform.gameObject;
-                
+
+                // Check if it is UI and if not, check if it is an Interactable Object
+                if (hittedObject.GetComponent<RectTransform>()) return;
                 if (interactableObjects.Contains(hittedObject))
                 {
                     // Check if Object has Animator component
                     Animator animator = hit.transform.GetComponent<Animator>();
-                           
+
                     if (animator != null)
                     {
                         AudioManager.Instance.PlayObjectClickSound();
-                        
+
                         // If I clicked on a new object, remove the color from the last clicked object
                         if (hittedObject != selectedObject && selectedObject != null)
                             ObjectHighlight.RemoveClickedColor(selectedObject);
-                                
+
                         // Add the clicked object to the variable
                         selectedObject = hittedObject;
 
@@ -63,11 +64,11 @@ namespace Managers
                         {
                             // Give every interactable object a Knob
                             Knob newKnob = Instantiate(knobPrefab, timeCompass.transform);
-                                    
+
                             SelectKnob(newKnob);
-                                    
+
                             newKnob.IntializeKnob(startingCircle, animator);
-                                    
+
                             // add this knob to the all knobs list
                             InteractablesAndKnobs.Add(hittedObject, newKnob);
                         }

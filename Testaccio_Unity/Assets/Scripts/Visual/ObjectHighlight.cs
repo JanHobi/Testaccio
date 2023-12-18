@@ -17,16 +17,12 @@ namespace Visual
             gameManager = GameManager.instance;
         }
 
-        private void Update()
-        {
-            //Debug.Log(isClicked);
-        }
-
         private void OnMouseEnter()
         {
             if(gameManager.currentGameState == GameManager.GameState.GamePaused) return;
 
             var outline = gameObject.GetComponent<Outline>();
+            
             outline.OutlineWidth = 6f;
 
            // Time.timeScale = 0.35f;
@@ -35,17 +31,11 @@ namespace Visual
         private void OnMouseExit()
         {
             if(gameManager.currentGameState == GameManager.GameState.GamePaused) return;
-
-            Time.timeScale = 1f;
-
-            if (!isClicked)
-            {
-                var outline = gameObject.GetComponent<Outline>();
-                outline.OutlineWidth = 0f;
-                outline.OutlineColor = Color.white;
-            }
-
             if (isClicked) return;
+            
+            var outline = gameObject.GetComponent<Outline>();
+            outline.OutlineWidth = 0f;
+            outline.OutlineColor = Color.white;
         }
 
         public static void ChangeToClickedColor(GameObject obj)

@@ -1,15 +1,10 @@
 using System;
 using System.Collections;
-using System.Linq;
 using Calculations;
 using DG.Tweening;
-using DG.Tweening.Core;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
-using FloatParameter = UnityEngine.Rendering.FloatParameter;
-using Object = UnityEngine.Object;
+
 
 namespace Animation
 {
@@ -74,7 +69,6 @@ namespace Animation
             Vector2 originalVignettePos = Camera.main.WorldToScreenPoint(pos);
             float x = ExtensionMethods.Remap(originalVignettePos.x, 0, Screen.width, 0, 1 );
             float y = ExtensionMethods.Remap(originalVignettePos.y, 0, Screen.height, 0, 1 );
-            //Debug.Log("Vignette Center: " + x + y);
             return new Vector2(x, y);
         }
 
