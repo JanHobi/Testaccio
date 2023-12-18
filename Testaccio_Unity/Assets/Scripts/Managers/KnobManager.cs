@@ -87,9 +87,11 @@ namespace Managers
                 }
                 else
                 {
+                    /*
                     if (selectedObject == null) return;
                     ObjectHighlight.RemoveClickedColor(selectedObject);
                     selectedObject = null;
+                    */
                 }
             }
         }
