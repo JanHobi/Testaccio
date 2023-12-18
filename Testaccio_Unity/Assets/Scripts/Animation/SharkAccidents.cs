@@ -34,8 +34,13 @@ namespace Animation
 
             if (other.gameObject.CompareTag("Passenger"))
             {
+                
+                // Task Done
+                TaskManager.Instance.SetTaskToDone("Jaws");
+
+                
                 animator.SetTrigger("accidentPassenger");
-                //Destroy(other.gameObject);
+                Destroy(other.gameObject);
             }
             
             if (other.gameObject.CompareTag("Hook"))

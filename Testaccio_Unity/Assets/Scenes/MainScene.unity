@@ -481,6 +481,21 @@ PrefabInstance:
       propertyPath: taskParent
       value: 
       objectReference: {fileID: 260676855}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[5]
+      value: Watch your Head
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240382148783632629, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
+        type: 3}
+      propertyPath: allTasks.Array.data[6]
+      value: Big Catch
+      objectReference: {fileID: 0}
     - target: {fileID: 4090483701323644719, guid: d0baaa3f4ab9c894bb00d4b1d8d658ee,
         type: 3}
       propertyPath: m_Name

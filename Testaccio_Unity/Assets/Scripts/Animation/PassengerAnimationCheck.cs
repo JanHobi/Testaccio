@@ -47,8 +47,6 @@ namespace Animation
 
             if (other.gameObject.CompareTag("Shark"))
             {
-                // Task Done
-                TaskManager.Instance.SetTaskToDone("Jaws");
                 
                 // Play Sound
                 Vector3 passengerPos = transform.position;
