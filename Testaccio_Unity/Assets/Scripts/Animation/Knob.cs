@@ -159,7 +159,7 @@ namespace Animation
             }
             else
             {
-                float selectedAlpha = 0.1f;
+                float selectedAlpha = 0f;
                 Color imageColor = image.color;
                 imageColor.a = selectedAlpha;
                 image.color = imageColor;
