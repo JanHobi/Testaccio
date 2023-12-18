@@ -144,7 +144,7 @@ namespace Managers
             
             for (int i = 0; i < numberOfTasksShown; i++)
             {
-                int randomIndex = Random.Range(0, numberOfTasksShown-1);
+                int randomIndex = Random.Range(0, allTasks.Count-1);
                 string selectedTask = allTasks[randomIndex];
                 
                 // Add to dictionary
