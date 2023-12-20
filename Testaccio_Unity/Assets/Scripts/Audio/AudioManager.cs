@@ -92,7 +92,7 @@ namespace Audio
 
             IEnumerator WaitAndResetSpeed()
             {
-                yield return new WaitForSeconds(5);
+                yield return new WaitForSeconds(3);
                 Debug.Log(message: "Resetting Music Speed");
                 gameMusic.setParameterByName("MusicSpeed", value: 0);
             }
