@@ -56,11 +56,11 @@ namespace UI
         }
         public void Size3()
         {
+            AudioManager.Instance.ChangeMusicSpeed(1);
             ChangeCircleSize(2);
         }
         public void Size4()
         {
-            AudioManager.Instance.ChangeMusicSpeed(1);
             ChangeCircleSize(3);
         }
     }
